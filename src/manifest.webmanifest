@@ -1,7 +1,7 @@
 {
   "name": "Berry Dash GDevelop Remake",
   "short_name": "Berry Dash GDevelop Remake",
-  "id": "com.example.gamename",
+  "id": "xyz.bonoise.bdu",
   "description": "",
   "orientation": "landscape",
   "start_url": "./index.html",
