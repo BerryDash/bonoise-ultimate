@@ -162,7 +162,7 @@ for (var i = 0, k = 0, l = gdjs.title_32gamejamCode.GDSmallGreyButtonObjects1.le
 }
 gdjs.title_32gamejamCode.GDSmallGreyButtonObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sg", false);
 }
 }
 

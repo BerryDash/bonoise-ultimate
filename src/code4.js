@@ -19,6 +19,9 @@ gdjs.sgCode.GDNewText2Objects3= [];
 gdjs.sgCode.GDSmallGreyButton2Objects1= [];
 gdjs.sgCode.GDSmallGreyButton2Objects2= [];
 gdjs.sgCode.GDSmallGreyButton2Objects3= [];
+gdjs.sgCode.GDbackObjects1= [];
+gdjs.sgCode.GDbackObjects2= [];
+gdjs.sgCode.GDbackObjects3= [];
 
 
 gdjs.sgCode.eventsList0 = function(runtimeScene) {
@@ -223,6 +226,38 @@ gdjs.sgCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("back"), gdjs.sgCode.GDbackObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.sgCode.GDbackObjects1.length;i<l;++i) {
+    if ( gdjs.sgCode.GDbackObjects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.sgCode.GDbackObjects1[k] = gdjs.sgCode.GDbackObjects1[i];
+        ++k;
+    }
+}
+gdjs.sgCode.GDbackObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "title official", false);
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
 };
 
 gdjs.sgCode.func = function(runtimeScene) {
@@ -246,6 +281,9 @@ gdjs.sgCode.GDNewText2Objects3.length = 0;
 gdjs.sgCode.GDSmallGreyButton2Objects1.length = 0;
 gdjs.sgCode.GDSmallGreyButton2Objects2.length = 0;
 gdjs.sgCode.GDSmallGreyButton2Objects3.length = 0;
+gdjs.sgCode.GDbackObjects1.length = 0;
+gdjs.sgCode.GDbackObjects2.length = 0;
+gdjs.sgCode.GDbackObjects3.length = 0;
 
 gdjs.sgCode.eventsList1(runtimeScene);
 gdjs.sgCode.GDNewTextObjects1.length = 0;
@@ -266,6 +304,9 @@ gdjs.sgCode.GDNewText2Objects3.length = 0;
 gdjs.sgCode.GDSmallGreyButton2Objects1.length = 0;
 gdjs.sgCode.GDSmallGreyButton2Objects2.length = 0;
 gdjs.sgCode.GDSmallGreyButton2Objects3.length = 0;
+gdjs.sgCode.GDbackObjects1.length = 0;
+gdjs.sgCode.GDbackObjects2.length = 0;
+gdjs.sgCode.GDbackObjects3.length = 0;
 
 
 return;
