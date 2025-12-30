@@ -1,18 +1,17 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "Berry Dash Ultimate",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "identifier": "xyz.lncvrt.bonoise-bdu",
   "build": {
     "frontendDist": "../src"
   },
   "app": {
-    "withGlobalTauri": true,
     "windows": [
       {
         "title": "Berry Dash Ultimate",
-        "minWidth": 800,
-        "minHeight": 600,
+        "minWidth": 854,
+        "minHeight": 480,
         "maximized": true
       }
     ],
