@@ -1,54 +1,35 @@
-gdjs.BSRankCode = {};
-gdjs.BSRankCode.localVariables = [];
-gdjs.BSRankCode.idToCallbackMap = new Map();
-gdjs.BSRankCode.GDNewTextObjects1= [];
-gdjs.BSRankCode.GDNewTextObjects2= [];
-gdjs.BSRankCode.GDNewText2Objects1= [];
-gdjs.BSRankCode.GDNewText2Objects2= [];
-gdjs.BSRankCode.GDNewText3Objects1= [];
-gdjs.BSRankCode.GDNewText3Objects2= [];
-gdjs.BSRankCode.GDRedButtonObjects1= [];
-gdjs.BSRankCode.GDRedButtonObjects2= [];
+gdjs.InfoCode = {};
+gdjs.InfoCode.localVariables = [];
+gdjs.InfoCode.idToCallbackMap = new Map();
+gdjs.InfoCode.GDNewTextObjects1= [];
+gdjs.InfoCode.GDNewTextObjects2= [];
+gdjs.InfoCode.GDNewTiledSpriteObjects1= [];
+gdjs.InfoCode.GDNewTiledSpriteObjects2= [];
+gdjs.InfoCode.GDNewSpriteObjects1= [];
+gdjs.InfoCode.GDNewSpriteObjects2= [];
+gdjs.InfoCode.GDjsisbObjects1= [];
+gdjs.InfoCode.GDjsisbObjects2= [];
+gdjs.InfoCode.GDksbsbpart2Objects1= [];
+gdjs.InfoCode.GDksbsbpart2Objects2= [];
+gdjs.InfoCode.GDRedButtonObjects1= [];
+gdjs.InfoCode.GDRedButtonObjects2= [];
 
 
-gdjs.BSRankCode.eventsList0 = function(runtimeScene) {
+gdjs.InfoCode.eventsList0 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("NewText2"), gdjs.BSRankCode.GDNewText2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.BSRankCode.GDNewText3Objects1);
-{for(var i = 0, len = gdjs.BSRankCode.GDNewText2Objects1.length ;i < len;++i) {
-    gdjs.BSRankCode.GDNewText2Objects1[i].getBehavior("Text").setText("Time: " + runtimeScene.getGame().getVariables().getFromIndex(0).getAsString());
+gdjs.copyArray(runtimeScene.getObjects("NewTiledSprite"), gdjs.InfoCode.GDNewTiledSpriteObjects1);
+{for(var i = 0, len = gdjs.InfoCode.GDNewTiledSpriteObjects1.length ;i < len;++i) {
+    gdjs.InfoCode.GDNewTiledSpriteObjects1[i].setXOffset(gdjs.InfoCode.GDNewTiledSpriteObjects1[i].getXOffset() + (1));
 }
 }
-{for(var i = 0, len = gdjs.BSRankCode.GDNewText3Objects1.length ;i < len;++i) {
-    gdjs.BSRankCode.GDNewText3Objects1[i].getBehavior("Text").setText("Final Health: " + runtimeScene.getGame().getVariables().getFromIndex(1).getAsString());
+{for(var i = 0, len = gdjs.InfoCode.GDNewTiledSpriteObjects1.length ;i < len;++i) {
+    gdjs.InfoCode.GDNewTiledSpriteObjects1[i].setYOffset(gdjs.InfoCode.GDNewTiledSpriteObjects1[i].getYOffset() + (1));
 }
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("RedButton"), gdjs.BSRankCode.GDRedButtonObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.BSRankCode.GDRedButtonObjects1.length;i<l;++i) {
-    if ( gdjs.BSRankCode.GDRedButtonObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.BSRankCode.GDRedButtonObjects1[k] = gdjs.BSRankCode.GDRedButtonObjects1[i];
-        ++k;
-    }
-}
-gdjs.BSRankCode.GDRedButtonObjects1.length = k;
-if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "title official", false);
 }
 }
 
@@ -69,33 +50,85 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("RedButton"), gdjs.InfoCode.GDRedButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.InfoCode.GDRedButtonObjects1.length;i<l;++i) {
+    if ( gdjs.InfoCode.GDRedButtonObjects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.InfoCode.GDRedButtonObjects1[k] = gdjs.InfoCode.GDRedButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.InfoCode.GDRedButtonObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "title gamejam", false);
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.InfoCode.GDNewSpriteObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.InfoCode.GDNewSpriteObjects1.length;i<l;++i) {
+    if ( gdjs.InfoCode.GDNewSpriteObjects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.InfoCode.GDNewSpriteObjects1[k] = gdjs.InfoCode.GDNewSpriteObjects1[i];
+        ++k;
+    }
+}
+gdjs.InfoCode.GDNewSpriteObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Secret", false);
+}
+}
+
+}
+
+
 };
 
-gdjs.BSRankCode.func = function(runtimeScene) {
+gdjs.InfoCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.BSRankCode.GDNewTextObjects1.length = 0;
-gdjs.BSRankCode.GDNewTextObjects2.length = 0;
-gdjs.BSRankCode.GDNewText2Objects1.length = 0;
-gdjs.BSRankCode.GDNewText2Objects2.length = 0;
-gdjs.BSRankCode.GDNewText3Objects1.length = 0;
-gdjs.BSRankCode.GDNewText3Objects2.length = 0;
-gdjs.BSRankCode.GDRedButtonObjects1.length = 0;
-gdjs.BSRankCode.GDRedButtonObjects2.length = 0;
+gdjs.InfoCode.GDNewTextObjects1.length = 0;
+gdjs.InfoCode.GDNewTextObjects2.length = 0;
+gdjs.InfoCode.GDNewTiledSpriteObjects1.length = 0;
+gdjs.InfoCode.GDNewTiledSpriteObjects2.length = 0;
+gdjs.InfoCode.GDNewSpriteObjects1.length = 0;
+gdjs.InfoCode.GDNewSpriteObjects2.length = 0;
+gdjs.InfoCode.GDjsisbObjects1.length = 0;
+gdjs.InfoCode.GDjsisbObjects2.length = 0;
+gdjs.InfoCode.GDksbsbpart2Objects1.length = 0;
+gdjs.InfoCode.GDksbsbpart2Objects2.length = 0;
+gdjs.InfoCode.GDRedButtonObjects1.length = 0;
+gdjs.InfoCode.GDRedButtonObjects2.length = 0;
 
-gdjs.BSRankCode.eventsList0(runtimeScene);
-gdjs.BSRankCode.GDNewTextObjects1.length = 0;
-gdjs.BSRankCode.GDNewTextObjects2.length = 0;
-gdjs.BSRankCode.GDNewText2Objects1.length = 0;
-gdjs.BSRankCode.GDNewText2Objects2.length = 0;
-gdjs.BSRankCode.GDNewText3Objects1.length = 0;
-gdjs.BSRankCode.GDNewText3Objects2.length = 0;
-gdjs.BSRankCode.GDRedButtonObjects1.length = 0;
-gdjs.BSRankCode.GDRedButtonObjects2.length = 0;
+gdjs.InfoCode.eventsList0(runtimeScene);
+gdjs.InfoCode.GDNewTextObjects1.length = 0;
+gdjs.InfoCode.GDNewTextObjects2.length = 0;
+gdjs.InfoCode.GDNewTiledSpriteObjects1.length = 0;
+gdjs.InfoCode.GDNewTiledSpriteObjects2.length = 0;
+gdjs.InfoCode.GDNewSpriteObjects1.length = 0;
+gdjs.InfoCode.GDNewSpriteObjects2.length = 0;
+gdjs.InfoCode.GDjsisbObjects1.length = 0;
+gdjs.InfoCode.GDjsisbObjects2.length = 0;
+gdjs.InfoCode.GDksbsbpart2Objects1.length = 0;
+gdjs.InfoCode.GDksbsbpart2Objects2.length = 0;
+gdjs.InfoCode.GDRedButtonObjects1.length = 0;
+gdjs.InfoCode.GDRedButtonObjects2.length = 0;
 
 
 return;
 
 }
 
-gdjs['BSRankCode'] = gdjs.BSRankCode;
+gdjs['InfoCode'] = gdjs.InfoCode;

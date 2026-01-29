@@ -16,6 +16,9 @@ gdjs.title_32officialCode.GDNewTiledSpriteObjects3= [];
 gdjs.title_32officialCode.GDNewText2Objects1= [];
 gdjs.title_32officialCode.GDNewText2Objects2= [];
 gdjs.title_32officialCode.GDNewText2Objects3= [];
+gdjs.title_32officialCode.GDfadeObjects1= [];
+gdjs.title_32officialCode.GDfadeObjects2= [];
+gdjs.title_32officialCode.GDfadeObjects3= [];
 
 
 gdjs.title_32officialCode.eventsList0 = function(runtimeScene) {
@@ -324,6 +327,23 @@ gdjs.title_32officialCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("fade"), gdjs.title_32officialCode.GDfadeObjects1);
+{for(var i = 0, len = gdjs.title_32officialCode.GDfadeObjects1.length ;i < len;++i) {
+    gdjs.title_32officialCode.GDfadeObjects1[i].getBehavior("Tween").addObjectOpacityTween2("fade", 0, "linear", 0.5, true);
+}
+}
+}
+
+}
+
+
 };
 
 gdjs.title_32officialCode.func = function(runtimeScene) {
@@ -344,6 +364,9 @@ gdjs.title_32officialCode.GDNewTiledSpriteObjects3.length = 0;
 gdjs.title_32officialCode.GDNewText2Objects1.length = 0;
 gdjs.title_32officialCode.GDNewText2Objects2.length = 0;
 gdjs.title_32officialCode.GDNewText2Objects3.length = 0;
+gdjs.title_32officialCode.GDfadeObjects1.length = 0;
+gdjs.title_32officialCode.GDfadeObjects2.length = 0;
+gdjs.title_32officialCode.GDfadeObjects3.length = 0;
 
 gdjs.title_32officialCode.eventsList1(runtimeScene);
 gdjs.title_32officialCode.GDNewTextObjects1.length = 0;
@@ -361,6 +384,9 @@ gdjs.title_32officialCode.GDNewTiledSpriteObjects3.length = 0;
 gdjs.title_32officialCode.GDNewText2Objects1.length = 0;
 gdjs.title_32officialCode.GDNewText2Objects2.length = 0;
 gdjs.title_32officialCode.GDNewText2Objects3.length = 0;
+gdjs.title_32officialCode.GDfadeObjects1.length = 0;
+gdjs.title_32officialCode.GDfadeObjects2.length = 0;
+gdjs.title_32officialCode.GDfadeObjects3.length = 0;
 
 
 return;

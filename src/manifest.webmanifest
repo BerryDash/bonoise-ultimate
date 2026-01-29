@@ -2,7 +2,7 @@
   "name": "Berry Dash Ultimate",
   "short_name": "Berry Dash Ultimate",
   "id": "xyz.bonoise.bdu",
-  "description": "",
+  "description": "Join CARLOS THE BIRD in this berryful adventure eating berries and taking a control!",
   "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
