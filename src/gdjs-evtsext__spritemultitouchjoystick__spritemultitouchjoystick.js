@@ -5,8 +5,8 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick = gdjs.evtsExt_
  * Object generated from Multitouch Joystick
  */
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick = class SpriteMultitouchJoystick extends gdjs.CustomRuntimeObject2D {
-  constructor(parentInstanceContainer, objectData) {
-    super(parentInstanceContainer, objectData);
+  constructor(parentInstanceContainer, objectData, instanceData) {
+    super(parentInstanceContainer, objectData, instanceData);
     this._parentInstanceContainer = parentInstanceContainer;
 
     this._onceTriggers = new gdjs.OnceTriggers();
@@ -165,6 +165,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onCreatedContext.GDThumbObjects1[i].setIncludedInParentCollisionMask(false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -287,6 +288,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Thumb"), gdjs.evtsExt__SpriteMu
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDThumbObjects2[i].putAroundObject((gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects2.length !== 0 ? gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects2[0] : null), (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects2.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickForce(eventsFunctionContext)) * (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects2.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects2[0].getWidth()) / 2, (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects2.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.GDBorderObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickAngle(eventsFunctionContext)));
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -323,6 +325,7 @@ if (isConditionTrue_0) {
 }
 {eventsFunctionContext.getObjects("Object")[0]._setShouldBeHiddenWhenReleased(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -340,6 +343,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.doStepPostEventsContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -463,6 +467,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.onHotReloadingContext.GDObjectObjects1[i].UpdateConfiguration(eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -588,6 +593,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.UpdateConfigurationContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetDeadZoneRadius(eventsFunctionContext.getObjects("Object")[0]._getDeadZoneRadius(), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -722,6 +728,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.TeleportAndPressContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).ForceStartPressing(gdjs.evtTools.input.getStartedTouchOrMouseIdentifier(runtimeScene, 0), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -827,7 +834,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDBorderObjects2= [];
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0xe5bfd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0x1328268 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const touchId = eventsFunctionContext.getArgument("TouchId");
@@ -840,6 +847,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 let isConditionTrue_0 = false;
 {
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -850,7 +858,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.GDObjectObjects1;
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0xe5bfd8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchXContext.userFunc0x1328268(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -956,7 +964,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDBorderObjects2= [];
 
 
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0xe5bfd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0x13114f0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const touchId = eventsFunctionContext.getArgument("TouchId");
@@ -969,6 +977,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouc
 
 let isConditionTrue_0 = false;
 {
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -979,7 +988,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.GDObjectObjects1;
-gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0xe5bfd8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ParentTouchYContext.userFunc0x13114f0(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1100,6 +1109,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDBorderObjects1[i].activateBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"), false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1118,6 +1128,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ActivateControlContext.GDBorderObjects1[i].activateBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"), true);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1242,6 +1253,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultito
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsPressedContext.GDBorderObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1356,6 +1368,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickForceContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickForce(eventsFunctionContext));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1470,6 +1483,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickForce(eventsFunctionContext));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1584,6 +1598,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceXContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).StickForceX(eventsFunctionContext));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1698,6 +1713,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickForceYContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).StickForceY(eventsFunctionContext));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1812,6 +1828,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickAngleContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickAngle(eventsFunctionContext));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1926,6 +1943,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.StickAngleContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).JoystickAngle(eventsFunctionContext));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2049,6 +2067,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultito
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed4WayContext.GDBorderObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2173,6 +2192,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultito
 gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.IsDirectionPushed8WayContext.GDBorderObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2288,6 +2308,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.ControllerIdentifierContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getControllerIdentifier());}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2405,6 +2426,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetControllerIdentifierContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetControllerIdentifier(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2520,6 +2542,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDBorderObjects1.length === 0 ) ? "" :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.JoystickIdentifierContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getJoystickIdentifier());}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2637,6 +2660,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetJoystickIdentifierContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetJoystickIdentifier(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2752,6 +2776,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDBorderObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDBorderObjects1.length === 0 ) ? 0 :gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.DeadZoneRadiusContext.GDBorderObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick"))._getDeadZoneRadius());}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2869,6 +2894,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Border"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__SpriteMultitouchJoystick.SpriteMultitouchJoystick.prototype.SetDeadZoneRadiusContext.GDBorderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("MultitouchJoystick")).SetDeadZoneRadius(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }

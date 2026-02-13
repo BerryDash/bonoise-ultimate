@@ -18,6 +18,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(3).setNumber(eventsFunctionContext.getArgument("AmplitudeAngle"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

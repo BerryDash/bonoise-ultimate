@@ -18,6 +18,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).setString(eventsFunctionContext.getArgument("NewLayerName"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -33,6 +34,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).setString("__BaseLayer");
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -45,6 +47,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("AmplitudeAngle").setNumber(eventsFunctionContext.getArgument("AmplitudeAngle"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

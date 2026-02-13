@@ -20,6 +20,7 @@ let isConditionTrue_0 = false;
 }
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(2).setNumber(eventsFunctionContext.getArgument("AmplitudeY"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

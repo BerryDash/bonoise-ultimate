@@ -43,56 +43,56 @@ gdjs.evtsExt__Health__Health.Health = class Health extends gdjs.RuntimeBehavior 
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.Health !== newBehaviorData.Health)
-      this._behaviorData.Health = newBehaviorData.Health;
-    if (oldBehaviorData.CurrentHealth !== newBehaviorData.CurrentHealth)
-      this._behaviorData.CurrentHealth = newBehaviorData.CurrentHealth;
-    if (oldBehaviorData.MaxHealth !== newBehaviorData.MaxHealth)
-      this._behaviorData.MaxHealth = newBehaviorData.MaxHealth;
-    if (oldBehaviorData.DamageCooldown !== newBehaviorData.DamageCooldown)
-      this._behaviorData.DamageCooldown = newBehaviorData.DamageCooldown;
-    if (oldBehaviorData.AllowOverHealing !== newBehaviorData.AllowOverHealing)
-      this._behaviorData.AllowOverHealing = newBehaviorData.AllowOverHealing;
-    if (oldBehaviorData.IsHealthJustDamaged !== newBehaviorData.IsHealthJustDamaged)
-      this._behaviorData.IsHealthJustDamaged = newBehaviorData.IsHealthJustDamaged;
-    if (oldBehaviorData.DamageToBeApplied !== newBehaviorData.DamageToBeApplied)
-      this._behaviorData.DamageToBeApplied = newBehaviorData.DamageToBeApplied;
-    if (oldBehaviorData.HitAtLeastOnce !== newBehaviorData.HitAtLeastOnce)
-      this._behaviorData.HitAtLeastOnce = newBehaviorData.HitAtLeastOnce;
-    if (oldBehaviorData.ChanceToDodge !== newBehaviorData.ChanceToDodge)
-      this._behaviorData.ChanceToDodge = newBehaviorData.ChanceToDodge;
-    if (oldBehaviorData.IsJustDodged !== newBehaviorData.IsJustDodged)
-      this._behaviorData.IsJustDodged = newBehaviorData.IsJustDodged;
-    if (oldBehaviorData.HealToBeApplied !== newBehaviorData.HealToBeApplied)
-      this._behaviorData.HealToBeApplied = newBehaviorData.HealToBeApplied;
-    if (oldBehaviorData.HealthRegenRate !== newBehaviorData.HealthRegenRate)
-      this._behaviorData.HealthRegenRate = newBehaviorData.HealthRegenRate;
-    if (oldBehaviorData.HealthRegenDelay !== newBehaviorData.HealthRegenDelay)
-      this._behaviorData.HealthRegenDelay = newBehaviorData.HealthRegenDelay;
-    if (oldBehaviorData.IsJustHealed !== newBehaviorData.IsJustHealed)
-      this._behaviorData.IsJustHealed = newBehaviorData.IsJustHealed;
-    if (oldBehaviorData.CurrentShieldPoints !== newBehaviorData.CurrentShieldPoints)
-      this._behaviorData.CurrentShieldPoints = newBehaviorData.CurrentShieldPoints;
-    if (oldBehaviorData.MaxShieldPoints !== newBehaviorData.MaxShieldPoints)
-      this._behaviorData.MaxShieldPoints = newBehaviorData.MaxShieldPoints;
-    if (oldBehaviorData.ShieldDuration !== newBehaviorData.ShieldDuration)
-      this._behaviorData.ShieldDuration = newBehaviorData.ShieldDuration;
-    if (oldBehaviorData.ShieldRegenRate !== newBehaviorData.ShieldRegenRate)
-      this._behaviorData.ShieldRegenRate = newBehaviorData.ShieldRegenRate;
-    if (oldBehaviorData.BlockExcessDamage !== newBehaviorData.BlockExcessDamage)
-      this._behaviorData.BlockExcessDamage = newBehaviorData.BlockExcessDamage;
-    if (oldBehaviorData.ShieldRegenDelay !== newBehaviorData.ShieldRegenDelay)
-      this._behaviorData.ShieldRegenDelay = newBehaviorData.ShieldRegenDelay;
-    if (oldBehaviorData.IsShieldJustDamaged !== newBehaviorData.IsShieldJustDamaged)
-      this._behaviorData.IsShieldJustDamaged = newBehaviorData.IsShieldJustDamaged;
-    if (oldBehaviorData.ShieldDamageTaken !== newBehaviorData.ShieldDamageTaken)
-      this._behaviorData.ShieldDamageTaken = newBehaviorData.ShieldDamageTaken;
-    if (oldBehaviorData.FlatDamageReduction !== newBehaviorData.FlatDamageReduction)
-      this._behaviorData.FlatDamageReduction = newBehaviorData.FlatDamageReduction;
-    if (oldBehaviorData.PercentDamageReduction !== newBehaviorData.PercentDamageReduction)
-      this._behaviorData.PercentDamageReduction = newBehaviorData.PercentDamageReduction;
+    if (behaviorOverriding.Health !== undefined)
+      this._behaviorData.Health = behaviorOverriding.Health;
+    if (behaviorOverriding.CurrentHealth !== undefined)
+      this._behaviorData.CurrentHealth = behaviorOverriding.CurrentHealth;
+    if (behaviorOverriding.MaxHealth !== undefined)
+      this._behaviorData.MaxHealth = behaviorOverriding.MaxHealth;
+    if (behaviorOverriding.DamageCooldown !== undefined)
+      this._behaviorData.DamageCooldown = behaviorOverriding.DamageCooldown;
+    if (behaviorOverriding.AllowOverHealing !== undefined)
+      this._behaviorData.AllowOverHealing = behaviorOverriding.AllowOverHealing;
+    if (behaviorOverriding.IsHealthJustDamaged !== undefined)
+      this._behaviorData.IsHealthJustDamaged = behaviorOverriding.IsHealthJustDamaged;
+    if (behaviorOverriding.DamageToBeApplied !== undefined)
+      this._behaviorData.DamageToBeApplied = behaviorOverriding.DamageToBeApplied;
+    if (behaviorOverriding.HitAtLeastOnce !== undefined)
+      this._behaviorData.HitAtLeastOnce = behaviorOverriding.HitAtLeastOnce;
+    if (behaviorOverriding.ChanceToDodge !== undefined)
+      this._behaviorData.ChanceToDodge = behaviorOverriding.ChanceToDodge;
+    if (behaviorOverriding.IsJustDodged !== undefined)
+      this._behaviorData.IsJustDodged = behaviorOverriding.IsJustDodged;
+    if (behaviorOverriding.HealToBeApplied !== undefined)
+      this._behaviorData.HealToBeApplied = behaviorOverriding.HealToBeApplied;
+    if (behaviorOverriding.HealthRegenRate !== undefined)
+      this._behaviorData.HealthRegenRate = behaviorOverriding.HealthRegenRate;
+    if (behaviorOverriding.HealthRegenDelay !== undefined)
+      this._behaviorData.HealthRegenDelay = behaviorOverriding.HealthRegenDelay;
+    if (behaviorOverriding.IsJustHealed !== undefined)
+      this._behaviorData.IsJustHealed = behaviorOverriding.IsJustHealed;
+    if (behaviorOverriding.CurrentShieldPoints !== undefined)
+      this._behaviorData.CurrentShieldPoints = behaviorOverriding.CurrentShieldPoints;
+    if (behaviorOverriding.MaxShieldPoints !== undefined)
+      this._behaviorData.MaxShieldPoints = behaviorOverriding.MaxShieldPoints;
+    if (behaviorOverriding.ShieldDuration !== undefined)
+      this._behaviorData.ShieldDuration = behaviorOverriding.ShieldDuration;
+    if (behaviorOverriding.ShieldRegenRate !== undefined)
+      this._behaviorData.ShieldRegenRate = behaviorOverriding.ShieldRegenRate;
+    if (behaviorOverriding.BlockExcessDamage !== undefined)
+      this._behaviorData.BlockExcessDamage = behaviorOverriding.BlockExcessDamage;
+    if (behaviorOverriding.ShieldRegenDelay !== undefined)
+      this._behaviorData.ShieldRegenDelay = behaviorOverriding.ShieldRegenDelay;
+    if (behaviorOverriding.IsShieldJustDamaged !== undefined)
+      this._behaviorData.IsShieldJustDamaged = behaviorOverriding.IsShieldJustDamaged;
+    if (behaviorOverriding.ShieldDamageTaken !== undefined)
+      this._behaviorData.ShieldDamageTaken = behaviorOverriding.ShieldDamageTaken;
+    if (behaviorOverriding.FlatDamageReduction !== undefined)
+      this._behaviorData.FlatDamageReduction = behaviorOverriding.FlatDamageReduction;
+    if (behaviorOverriding.PercentDamageReduction !== undefined)
+      this._behaviorData.PercentDamageReduction = behaviorOverriding.PercentDamageReduction;
 
     return true;
   }
@@ -399,6 +399,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetCurrentHealth(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealth(), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -508,6 +509,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth())
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -552,6 +554,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -570,6 +573,7 @@ let isConditionTrue_0 = false;
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsJustDodged(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -607,6 +611,7 @@ gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsCont
     gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).RenewShieldDuration(eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -619,6 +624,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints()+eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldRegenRate() * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -641,6 +647,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxShieldPoints())
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -683,6 +690,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.eventsList4(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -706,12 +714,13 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepP
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22678484);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23146940);
 }
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -726,6 +735,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsShieldJustDamaged(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -879,6 +889,7 @@ if (isConditionTrue_0) {
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageToBeApplied(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -893,6 +904,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageToBeApplied(Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFlatDamageReduction()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -915,6 +927,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageToBeApplied(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied()*1 - Math.min(1, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPercentDamageReduction()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -954,6 +967,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -973,6 +987,7 @@ if (isConditionTrue_0) {
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -997,6 +1012,7 @@ if (isConditionTrue_0) {
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1025,6 +1041,7 @@ if (isConditionTrue_0) {
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageToBeApplied(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1050,6 +1067,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList5(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1100,6 +1118,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList6(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1117,6 +1136,7 @@ let isConditionTrue_0 = false;
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetCurrentHealth(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied(), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1144,6 +1164,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList8(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1208,6 +1229,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList10(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1319,6 +1341,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.eventsList0 = functi
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1415,6 +1438,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1437,6 +1461,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth(Math.min(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1537,6 +1562,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetHealth(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1645,6 +1671,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHealToBeApplied(eventsFunctionContext.getArgument("HealValue"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1672,6 +1699,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHealToBeApplied(Math.min(eventsFunctionContext.getArgument("HealValue"), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth() - eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1691,6 +1719,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth()+eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealToBeApplied())
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1710,6 +1739,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsJustHealed(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1817,6 +1847,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.eventsList0 = fun
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1913,6 +1944,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMaxHealth(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1937,6 +1969,7 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1 */
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth((( gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MaxHealth(eventsFunctionContext)))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2037,6 +2070,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetMaxHealthOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2133,6 +2167,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.eventsList0
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealthRegenRate();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2229,6 +2264,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHealthRegenRate(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2329,6 +2365,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetHealthRegenRateOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2425,6 +2462,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.even
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageCooldown();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2521,6 +2559,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageCooldown(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2621,6 +2660,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetCooldownDurationOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2717,6 +2757,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.eventsList
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealthRegenDelay();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2813,6 +2854,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHealthRegenDelay(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2913,6 +2955,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetHealthRegenDelayOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3009,6 +3052,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.eventsList0 =
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChanceToDodge();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3105,6 +3149,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setChanceToDodge(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3205,6 +3250,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetChanceToDodgeOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3301,6 +3347,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.eventsL
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFlatDamageReduction();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3397,6 +3444,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFlatDamageReduction(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3497,6 +3545,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetFlatDamageReductionOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3593,6 +3642,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.even
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPercentDamageReduction();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3689,6 +3739,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setPercentDamageReduction(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3789,6 +3840,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetPercentDamageReductionOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3886,6 +3938,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAllowOverHealing(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3901,6 +3954,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAllowOverHealing(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3998,6 +4052,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHitAtLeastOnce(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4013,6 +4068,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHitAtLeastOnce(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4110,6 +4166,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsHealthJustDamaged(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4125,6 +4182,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsHealthJustDamaged(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4242,6 +4300,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetHitAtLeastOnce(true, eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4257,6 +4316,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1[i].resetTimer("__Health.TimeSinceLastHit");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4359,6 +4419,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.eventsList0 
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4373,6 +4434,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4468,6 +4530,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.eventsList0 =
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4482,6 +4545,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4577,6 +4641,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.eventsList0 = 
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4591,6 +4656,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4686,6 +4752,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.even
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4717,6 +4784,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDOb
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4812,6 +4880,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.eve
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = 0;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4834,6 +4903,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDO
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1 */
 {eventsFunctionContext.returnValue = Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageCooldown() - (( gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__Health.TimeSinceLastHit")));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4929,6 +4999,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.eventsList0 = functi
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4943,6 +5014,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5039,6 +5111,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__Health.TimeSinceLastHit"));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5134,6 +5207,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.eventsL
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5229,6 +5303,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.eventsList0 = fun
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxShieldPoints();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5325,6 +5400,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMaxShieldPoints(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5425,6 +5501,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetMaxShieldOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5525,6 +5602,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetMaxShieldOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5621,6 +5699,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.eventsList0 = 
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5717,6 +5796,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5817,6 +5897,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetShieldPointsOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5913,6 +5994,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.eventsList0
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldRegenRate();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6009,6 +6091,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShieldRegenRate(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6109,6 +6192,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetShieldRegenRateOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6205,6 +6289,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.eventsList
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldRegenDelay();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6301,6 +6386,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShieldRegenDelay(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6401,6 +6487,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetShieldRegenDelayOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6497,6 +6584,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.eventsList0 
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDuration();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6593,6 +6681,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShieldDuration(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6693,6 +6782,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetShieldDurationOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6793,6 +6883,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.GDObjectObjects1[i].resetTimer("__Health.ShieldDuration");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6889,6 +6980,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(eventsFunctionContext.getArgument("ShieldPoints"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6905,6 +6997,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1);
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(Math.min(eventsFunctionContext.getArgument("ShieldPoints"), (( gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MaxShield(eventsFunctionContext))))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6923,6 +7016,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
     gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).RenewShieldDuration(eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7021,6 +7115,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setBlockExcessDamage(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7036,6 +7131,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setBlockExcessDamage(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7132,6 +7228,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.eventsL
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7146,6 +7243,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7241,6 +7339,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.eventsList0 = 
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7255,6 +7354,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7361,6 +7461,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7387,6 +7488,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObje
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7400,6 +7502,7 @@ if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7423,6 +7526,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7520,6 +7624,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.eventsL
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = 0;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7535,6 +7640,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1);
 {eventsFunctionContext.returnValue = Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDuration() - (( gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__Health.ShieldDuration")));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7630,6 +7736,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.even
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDamageTaken();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7725,6 +7832,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.eventsLi
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealToBeApplied();}
+elseEventsChainSatisfied = true;
 }
 
 }

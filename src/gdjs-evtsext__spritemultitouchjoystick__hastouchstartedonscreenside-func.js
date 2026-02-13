@@ -28,6 +28,7 @@ isConditionTrue_0 = gdjs.evtTools.input.getTouchX(runtimeScene, gdjs.evtTools.in
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -47,6 +48,7 @@ isConditionTrue_0 = gdjs.evtTools.input.getTouchX(runtimeScene, gdjs.evtTools.in
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -64,6 +66,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__SpriteMultitouchJoystick__HasTouchStartedOnScreenSide.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }

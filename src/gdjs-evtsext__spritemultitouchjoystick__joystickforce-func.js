@@ -17,6 +17,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__JoystickForce.eventsList0 = function(run
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = gdjs.evtsExt__SpriteMultitouchJoystick__StickForce.func(runtimeScene, eventsFunctionContext.getArgument("ControllerIdentifier"), eventsFunctionContext.getArgument("JoystickIdentifier"), eventsFunctionContext);}
+elseEventsChainSatisfied = true;
 }
 
 }

@@ -26,22 +26,22 @@ gdjs.evtsExt__SpriteMultitouchJoystick__MultitouchButton.MultitouchButton = clas
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.ControllerIdentifier !== newBehaviorData.ControllerIdentifier)
-      this._behaviorData.ControllerIdentifier = newBehaviorData.ControllerIdentifier;
-    if (oldBehaviorData.ButtonIdentifier !== newBehaviorData.ButtonIdentifier)
-      this._behaviorData.ButtonIdentifier = newBehaviorData.ButtonIdentifier;
-    if (oldBehaviorData.TouchId !== newBehaviorData.TouchId)
-      this._behaviorData.TouchId = newBehaviorData.TouchId;
-    if (oldBehaviorData.TouchIndex !== newBehaviorData.TouchIndex)
-      this._behaviorData.TouchIndex = newBehaviorData.TouchIndex;
-    if (oldBehaviorData.IsReleased !== newBehaviorData.IsReleased)
-      this._behaviorData.IsReleased = newBehaviorData.IsReleased;
-    if (oldBehaviorData.IsJustPressed !== newBehaviorData.IsJustPressed)
-      this._behaviorData.IsJustPressed = newBehaviorData.IsJustPressed;
-    if (oldBehaviorData.Radius !== newBehaviorData.Radius)
-      this._behaviorData.Radius = newBehaviorData.Radius;
+    if (behaviorOverriding.ControllerIdentifier !== undefined)
+      this._behaviorData.ControllerIdentifier = behaviorOverriding.ControllerIdentifier;
+    if (behaviorOverriding.ButtonIdentifier !== undefined)
+      this._behaviorData.ButtonIdentifier = behaviorOverriding.ButtonIdentifier;
+    if (behaviorOverriding.TouchId !== undefined)
+      this._behaviorData.TouchId = behaviorOverriding.TouchId;
+    if (behaviorOverriding.TouchIndex !== undefined)
+      this._behaviorData.TouchIndex = behaviorOverriding.TouchIndex;
+    if (behaviorOverriding.IsReleased !== undefined)
+      this._behaviorData.IsReleased = behaviorOverriding.IsReleased;
+    if (behaviorOverriding.IsJustPressed !== undefined)
+      this._behaviorData.IsJustPressed = behaviorOverriding.IsJustPressed;
+    if (behaviorOverriding.Radius !== undefined)
+      this._behaviorData.Radius = behaviorOverriding.Radius;
 
     return true;
   }
@@ -226,6 +226,7 @@ if (isConditionTrue_0) {
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsJustPressed(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -238,6 +239,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchIndex()+1)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -280,6 +282,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__MultitouchButton.MultitouchButton.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetButtonState("Idle", eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -300,6 +303,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__MultitouchButton.MultitouchButton.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetButtonState("Pressed", eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -329,6 +333,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__SpriteMultitouchJoystick__MultitouchButton.MultitouchButton.prototype.doStepPreEventsContext.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -364,6 +369,7 @@ if (isConditionTrue_0) {
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchId(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -466,6 +472,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -564,6 +571,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -662,6 +670,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -758,6 +767,7 @@ let isConditionTrue_0 = false;
 {
 {gdjs.evtsExt__SpriteMultitouchJoystick__SetButtonState.func(runtimeScene, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getControllerIdentifier(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getButtonIdentifier(), eventsFunctionContext.getArgument("ButtonState"), eventsFunctionContext);
 }
+elseEventsChainSatisfied = true;
 }
 
 }

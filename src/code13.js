@@ -1,57 +1,45 @@
-gdjs.BSRank2Code = {};
-gdjs.BSRank2Code.localVariables = [];
-gdjs.BSRank2Code.idToCallbackMap = new Map();
-gdjs.BSRank2Code.GDNewTextObjects1= [];
-gdjs.BSRank2Code.GDNewTextObjects2= [];
-gdjs.BSRank2Code.GDNewText2Objects1= [];
-gdjs.BSRank2Code.GDNewText2Objects2= [];
-gdjs.BSRank2Code.GDNewText3Objects1= [];
-gdjs.BSRank2Code.GDNewText3Objects2= [];
-gdjs.BSRank2Code.GDRedButtonObjects1= [];
-gdjs.BSRank2Code.GDRedButtonObjects2= [];
-gdjs.BSRank2Code.GDbackgroundObjects1= [];
-gdjs.BSRank2Code.GDbackgroundObjects2= [];
+gdjs.loginCode = {};
+gdjs.loginCode.localVariables = [];
+gdjs.loginCode.idToCallbackMap = new Map();
+gdjs.loginCode.GDtitleObjects1= [];
+gdjs.loginCode.GDtitleObjects2= [];
+gdjs.loginCode.GDusernameObjects1= [];
+gdjs.loginCode.GDusernameObjects2= [];
+gdjs.loginCode.GDpasswordObjects1= [];
+gdjs.loginCode.GDpasswordObjects2= [];
+gdjs.loginCode.GDlogin_9595buttonObjects1= [];
+gdjs.loginCode.GDlogin_9595buttonObjects2= [];
+gdjs.loginCode.GDExitObjects1= [];
+gdjs.loginCode.GDExitObjects2= [];
+gdjs.loginCode.GDlogininfotextObjects1= [];
+gdjs.loginCode.GDlogininfotextObjects2= [];
 
 
-gdjs.BSRank2Code.eventsList0 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("NewText2"), gdjs.BSRank2Code.GDNewText2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.BSRank2Code.GDNewText3Objects1);
-{for(var i = 0, len = gdjs.BSRank2Code.GDNewText2Objects1.length ;i < len;++i) {
-    gdjs.BSRank2Code.GDNewText2Objects1[i].getBehavior("Text").setText("Time: " + runtimeScene.getGame().getVariables().getFromIndex(0).getAsString());
-}
-}
-{for(var i = 0, len = gdjs.BSRank2Code.GDNewText3Objects1.length ;i < len;++i) {
-    gdjs.BSRank2Code.GDNewText3Objects1[i].getBehavior("Text").setText("Final Health: " + runtimeScene.getGame().getVariables().getFromIndex(1).getAsString());
-}
-}
-}
-
-}
-
+gdjs.loginCode.userFunc0xc6bf68 = function GDJSInlineCode(runtimeScene, objects) {
+"use strict";
+fetch("https://games.lncvrt.xyz/api/account/login")
+objects[]
+};
+gdjs.loginCode.eventsList0 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("RedButton"), gdjs.BSRank2Code.GDRedButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Exit"), gdjs.loginCode.GDExitObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.BSRank2Code.GDRedButtonObjects1.length;i<l;++i) {
-    if ( gdjs.BSRank2Code.GDRedButtonObjects1[i].IsClicked(null) ) {
+for (var i = 0, k = 0, l = gdjs.loginCode.GDExitObjects1.length;i<l;++i) {
+    if ( gdjs.loginCode.GDExitObjects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
         isConditionTrue_0 = true;
-        gdjs.BSRank2Code.GDRedButtonObjects1[k] = gdjs.BSRank2Code.GDRedButtonObjects1[i];
+        gdjs.loginCode.GDExitObjects1[k] = gdjs.loginCode.GDExitObjects1[i];
         ++k;
     }
 }
-gdjs.BSRank2Code.GDRedButtonObjects1.length = k;
+gdjs.loginCode.GDExitObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "title official", false);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -59,13 +47,27 @@ if (isConditionTrue_0) {
 
 {
 
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("login_button"), gdjs.loginCode.GDlogin_9595buttonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+for (var i = 0, k = 0, l = gdjs.loginCode.GDlogin_9595buttonObjects1.length;i<l;++i) {
+    if ( gdjs.loginCode.GDlogin_9595buttonObjects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.loginCode.GDlogin_9595buttonObjects1[k] = gdjs.loginCode.GDlogin_9595buttonObjects1[i];
+        ++k;
+    }
+}
+gdjs.loginCode.GDlogin_9595buttonObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playMusic(runtimeScene, "Space Termites.mp3", true, 100, 1);
-}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -73,50 +75,49 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("title"), gdjs.loginCode.GDtitleObjects1);
 
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("background"), gdjs.BSRank2Code.GDbackgroundObjects1);
-{for(var i = 0, len = gdjs.BSRank2Code.GDbackgroundObjects1.length ;i < len;++i) {
-    gdjs.BSRank2Code.GDbackgroundObjects1[i].setXOffset(gdjs.BSRank2Code.GDbackgroundObjects1[i].getXOffset() + (1));
-}
-}
-}
+const objects = gdjs.loginCode.GDtitleObjects1;
+gdjs.loginCode.userFunc0xc6bf68(runtimeScene, objects);
 
 }
 
 
 };
 
-gdjs.BSRank2Code.func = function(runtimeScene) {
+gdjs.loginCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.BSRank2Code.GDNewTextObjects1.length = 0;
-gdjs.BSRank2Code.GDNewTextObjects2.length = 0;
-gdjs.BSRank2Code.GDNewText2Objects1.length = 0;
-gdjs.BSRank2Code.GDNewText2Objects2.length = 0;
-gdjs.BSRank2Code.GDNewText3Objects1.length = 0;
-gdjs.BSRank2Code.GDNewText3Objects2.length = 0;
-gdjs.BSRank2Code.GDRedButtonObjects1.length = 0;
-gdjs.BSRank2Code.GDRedButtonObjects2.length = 0;
-gdjs.BSRank2Code.GDbackgroundObjects1.length = 0;
-gdjs.BSRank2Code.GDbackgroundObjects2.length = 0;
+gdjs.loginCode.GDtitleObjects1.length = 0;
+gdjs.loginCode.GDtitleObjects2.length = 0;
+gdjs.loginCode.GDusernameObjects1.length = 0;
+gdjs.loginCode.GDusernameObjects2.length = 0;
+gdjs.loginCode.GDpasswordObjects1.length = 0;
+gdjs.loginCode.GDpasswordObjects2.length = 0;
+gdjs.loginCode.GDlogin_9595buttonObjects1.length = 0;
+gdjs.loginCode.GDlogin_9595buttonObjects2.length = 0;
+gdjs.loginCode.GDExitObjects1.length = 0;
+gdjs.loginCode.GDExitObjects2.length = 0;
+gdjs.loginCode.GDlogininfotextObjects1.length = 0;
+gdjs.loginCode.GDlogininfotextObjects2.length = 0;
 
-gdjs.BSRank2Code.eventsList0(runtimeScene);
-gdjs.BSRank2Code.GDNewTextObjects1.length = 0;
-gdjs.BSRank2Code.GDNewTextObjects2.length = 0;
-gdjs.BSRank2Code.GDNewText2Objects1.length = 0;
-gdjs.BSRank2Code.GDNewText2Objects2.length = 0;
-gdjs.BSRank2Code.GDNewText3Objects1.length = 0;
-gdjs.BSRank2Code.GDNewText3Objects2.length = 0;
-gdjs.BSRank2Code.GDRedButtonObjects1.length = 0;
-gdjs.BSRank2Code.GDRedButtonObjects2.length = 0;
-gdjs.BSRank2Code.GDbackgroundObjects1.length = 0;
-gdjs.BSRank2Code.GDbackgroundObjects2.length = 0;
+gdjs.loginCode.eventsList0(runtimeScene);
+gdjs.loginCode.GDtitleObjects1.length = 0;
+gdjs.loginCode.GDtitleObjects2.length = 0;
+gdjs.loginCode.GDusernameObjects1.length = 0;
+gdjs.loginCode.GDusernameObjects2.length = 0;
+gdjs.loginCode.GDpasswordObjects1.length = 0;
+gdjs.loginCode.GDpasswordObjects2.length = 0;
+gdjs.loginCode.GDlogin_9595buttonObjects1.length = 0;
+gdjs.loginCode.GDlogin_9595buttonObjects2.length = 0;
+gdjs.loginCode.GDExitObjects1.length = 0;
+gdjs.loginCode.GDExitObjects2.length = 0;
+gdjs.loginCode.GDlogininfotextObjects1.length = 0;
+gdjs.loginCode.GDlogininfotextObjects2.length = 0;
 
 
 return;
 
 }
 
-gdjs['BSRank2Code'] = gdjs.BSRank2Code;
+gdjs['loginCode'] = gdjs.loginCode;

@@ -22,6 +22,7 @@ let isConditionTrue_0 = false;
 }
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).setNumber(eventsFunctionContext.getArgument("EaseDuration"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

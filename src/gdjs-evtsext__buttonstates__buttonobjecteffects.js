@@ -24,18 +24,18 @@ gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects = class Butt
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.ButtonFSM !== newBehaviorData.ButtonFSM)
-      this._behaviorData.ButtonFSM = newBehaviorData.ButtonFSM;
-    if (oldBehaviorData.Effect !== newBehaviorData.Effect)
-      this._behaviorData.Effect = newBehaviorData.Effect;
-    if (oldBehaviorData.IdleEffect !== newBehaviorData.IdleEffect)
-      this._behaviorData.IdleEffect = newBehaviorData.IdleEffect;
-    if (oldBehaviorData.FocusedEffect !== newBehaviorData.FocusedEffect)
-      this._behaviorData.FocusedEffect = newBehaviorData.FocusedEffect;
-    if (oldBehaviorData.PressedEffect !== newBehaviorData.PressedEffect)
-      this._behaviorData.PressedEffect = newBehaviorData.PressedEffect;
+    if (behaviorOverriding.ButtonFSM !== undefined)
+      this._behaviorData.ButtonFSM = behaviorOverriding.ButtonFSM;
+    if (behaviorOverriding.Effect !== undefined)
+      this._behaviorData.Effect = behaviorOverriding.Effect;
+    if (behaviorOverriding.IdleEffect !== undefined)
+      this._behaviorData.IdleEffect = behaviorOverriding.IdleEffect;
+    if (behaviorOverriding.FocusedEffect !== undefined)
+      this._behaviorData.FocusedEffect = behaviorOverriding.FocusedEffect;
+    if (behaviorOverriding.PressedEffect !== undefined)
+      this._behaviorData.PressedEffect = behaviorOverriding.PressedEffect;
 
     return true;
   }
@@ -154,6 +154,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ButtonS
     gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects.prototype.onCreatedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Effect")).enableEffect(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPressedEffect(), false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -264,6 +265,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ButtonS
     gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Effect")).enableEffect(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPressedEffect(), false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -294,6 +296,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Effect")).enableEffect(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIdleEffect(), true);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -324,6 +327,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Effect")).enableEffect(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFocusedEffect(), true);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -354,6 +358,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Effect")).enableEffect(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPressedEffect(), true);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -462,6 +467,7 @@ gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects.prototype.Id
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIdleEffect();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -560,6 +566,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIdleEffect(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -658,6 +665,7 @@ gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects.prototype.Fo
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFocusedEffect();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -756,6 +764,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFocusedEffect(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -854,6 +863,7 @@ gdjs.evtsExt__ButtonStates__ButtonObjectEffects.ButtonObjectEffects.prototype.Pr
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPressedEffect();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -952,6 +962,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setPressedEffect(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }

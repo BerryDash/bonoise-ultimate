@@ -18,6 +18,7 @@ let isConditionTrue_0 = false;
 {
 {gdjs.evtsExt__CameraShake__SetLayerShakable.func(runtimeScene, true, "", eventsFunctionContext);
 }
+elseEventsChainSatisfied = true;
 }
 
 }

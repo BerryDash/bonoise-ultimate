@@ -1,168 +1,97 @@
-gdjs.SecretCode = {};
-gdjs.SecretCode.localVariables = [];
-gdjs.SecretCode.idToCallbackMap = new Map();
-gdjs.SecretCode.GDBerryObjects1_1final = [];
+gdjs.bossfight2Code = {};
+gdjs.bossfight2Code.localVariables = [];
+gdjs.bossfight2Code.idToCallbackMap = new Map();
+gdjs.bossfight2Code.GDFireButtonObjects1_1final = [];
 
-gdjs.SecretCode.GDCaffeineBerryObjects1_1final = [];
-
-gdjs.SecretCode.GDGoodBerryObjects1_1final = [];
-
-gdjs.SecretCode.GDMinusBerryObjects1_1final = [];
-
-gdjs.SecretCode.GDNewSpriteObjects1_1final = [];
-
-gdjs.SecretCode.GDRNGBerryObjects1_1final = [];
-
-gdjs.SecretCode.GDSpeedyObjects1_1final = [];
-
-gdjs.SecretCode.GDcontrollerObjects1_1final = [];
-
-gdjs.SecretCode.GDdoublejumpberryObjects1_1final = [];
-
-gdjs.SecretCode.GDgabossObjects1_1final = [];
-
-gdjs.SecretCode.GDglitchedberryObjects1_1final = [];
-
-gdjs.SecretCode.GDnojumpberryObjects1_1final = [];
-
-gdjs.SecretCode.GDpoisonberryObjects1_1final = [];
-
-gdjs.SecretCode.GDshadowberryObjects1_1final = [];
-
-gdjs.SecretCode.GDNewTiledSpriteObjects1= [];
-gdjs.SecretCode.GDNewTiledSpriteObjects2= [];
-gdjs.SecretCode.GDNewTiledSpriteObjects3= [];
-gdjs.SecretCode.GDNewTiledSprite2Objects1= [];
-gdjs.SecretCode.GDNewTiledSprite2Objects2= [];
-gdjs.SecretCode.GDNewTiledSprite2Objects3= [];
-gdjs.SecretCode.GDPlayerObjects1= [];
-gdjs.SecretCode.GDPlayerObjects2= [];
-gdjs.SecretCode.GDPlayerObjects3= [];
-gdjs.SecretCode.GDFlatDarkJoystickObjects1= [];
-gdjs.SecretCode.GDFlatDarkJoystickObjects2= [];
-gdjs.SecretCode.GDFlatDarkJoystickObjects3= [];
-gdjs.SecretCode.GDBerryObjects1= [];
-gdjs.SecretCode.GDBerryObjects2= [];
-gdjs.SecretCode.GDBerryObjects3= [];
-gdjs.SecretCode.GDBerryNormalSpawnObjects1= [];
-gdjs.SecretCode.GDBerryNormalSpawnObjects2= [];
-gdjs.SecretCode.GDBerryNormalSpawnObjects3= [];
-gdjs.SecretCode.GDNewTextObjects1= [];
-gdjs.SecretCode.GDNewTextObjects2= [];
-gdjs.SecretCode.GDNewTextObjects3= [];
-gdjs.SecretCode.GDNewTiledSprite4Objects1= [];
-gdjs.SecretCode.GDNewTiledSprite4Objects2= [];
-gdjs.SecretCode.GDNewTiledSprite4Objects3= [];
-gdjs.SecretCode.GDSpeedySpawnerObjects1= [];
-gdjs.SecretCode.GDSpeedySpawnerObjects2= [];
-gdjs.SecretCode.GDSpeedySpawnerObjects3= [];
-gdjs.SecretCode.GDSpeedyObjects1= [];
-gdjs.SecretCode.GDSpeedyObjects2= [];
-gdjs.SecretCode.GDSpeedyObjects3= [];
-gdjs.SecretCode.GDNewText2Objects1= [];
-gdjs.SecretCode.GDNewText2Objects2= [];
-gdjs.SecretCode.GDNewText2Objects3= [];
-gdjs.SecretCode.GDPhysiscsObjects1= [];
-gdjs.SecretCode.GDPhysiscsObjects2= [];
-gdjs.SecretCode.GDPhysiscsObjects3= [];
-gdjs.SecretCode.GDRNGBerryObjects1= [];
-gdjs.SecretCode.GDRNGBerryObjects2= [];
-gdjs.SecretCode.GDRNGBerryObjects3= [];
-gdjs.SecretCode.GDrngspawnObjects1= [];
-gdjs.SecretCode.GDrngspawnObjects2= [];
-gdjs.SecretCode.GDrngspawnObjects3= [];
-gdjs.SecretCode.GDshadowberryObjects1= [];
-gdjs.SecretCode.GDshadowberryObjects2= [];
-gdjs.SecretCode.GDshadowberryObjects3= [];
-gdjs.SecretCode.GDcontrollerObjects1= [];
-gdjs.SecretCode.GDcontrollerObjects2= [];
-gdjs.SecretCode.GDcontrollerObjects3= [];
-gdjs.SecretCode.GDNewSpriteObjects1= [];
-gdjs.SecretCode.GDNewSpriteObjects2= [];
-gdjs.SecretCode.GDNewSpriteObjects3= [];
-gdjs.SecretCode.GDglitchedberryObjects1= [];
-gdjs.SecretCode.GDglitchedberryObjects2= [];
-gdjs.SecretCode.GDglitchedberryObjects3= [];
-gdjs.SecretCode.GDexplosionObjects1= [];
-gdjs.SecretCode.GDexplosionObjects2= [];
-gdjs.SecretCode.GDexplosionObjects3= [];
-gdjs.SecretCode.GDpoisonberryObjects1= [];
-gdjs.SecretCode.GDpoisonberryObjects2= [];
-gdjs.SecretCode.GDpoisonberryObjects3= [];
-gdjs.SecretCode.GDNewSprite2Objects1= [];
-gdjs.SecretCode.GDNewSprite2Objects2= [];
-gdjs.SecretCode.GDNewSprite2Objects3= [];
-gdjs.SecretCode.GDdoublejumpberryObjects1= [];
-gdjs.SecretCode.GDdoublejumpberryObjects2= [];
-gdjs.SecretCode.GDdoublejumpberryObjects3= [];
-gdjs.SecretCode.GDnojumpberryObjects1= [];
-gdjs.SecretCode.GDnojumpberryObjects2= [];
-gdjs.SecretCode.GDnojumpberryObjects3= [];
-gdjs.SecretCode.GDNewText3Objects1= [];
-gdjs.SecretCode.GDNewText3Objects2= [];
-gdjs.SecretCode.GDNewText3Objects3= [];
-gdjs.SecretCode.GDcombotimwObjects1= [];
-gdjs.SecretCode.GDcombotimwObjects2= [];
-gdjs.SecretCode.GDcombotimwObjects3= [];
-gdjs.SecretCode.GDMinusBerryObjects1= [];
-gdjs.SecretCode.GDMinusBerryObjects2= [];
-gdjs.SecretCode.GDMinusBerryObjects3= [];
-gdjs.SecretCode.GDCaffeineBerryObjects1= [];
-gdjs.SecretCode.GDCaffeineBerryObjects2= [];
-gdjs.SecretCode.GDCaffeineBerryObjects3= [];
-gdjs.SecretCode.GDGoodBerryObjects1= [];
-gdjs.SecretCode.GDGoodBerryObjects2= [];
-gdjs.SecretCode.GDGoodBerryObjects3= [];
-gdjs.SecretCode.GDLimeBerryObjects1= [];
-gdjs.SecretCode.GDLimeBerryObjects2= [];
-gdjs.SecretCode.GDLimeBerryObjects3= [];
-gdjs.SecretCode.GDkindahomelessObjects1= [];
-gdjs.SecretCode.GDkindahomelessObjects2= [];
-gdjs.SecretCode.GDkindahomelessObjects3= [];
-gdjs.SecretCode.GDosakaaaahsataandagiObjects1= [];
-gdjs.SecretCode.GDosakaaaahsataandagiObjects2= [];
-gdjs.SecretCode.GDosakaaaahsataandagiObjects3= [];
-gdjs.SecretCode.GDcarlosprimeObjects1= [];
-gdjs.SecretCode.GDcarlosprimeObjects2= [];
-gdjs.SecretCode.GDcarlosprimeObjects3= [];
-gdjs.SecretCode.GDisthatfuinglossObjects1= [];
-gdjs.SecretCode.GDisthatfuinglossObjects2= [];
-gdjs.SecretCode.GDisthatfuinglossObjects3= [];
-gdjs.SecretCode.GDGABRIELObjects1= [];
-gdjs.SecretCode.GDGABRIELObjects2= [];
-gdjs.SecretCode.GDGABRIELObjects3= [];
-gdjs.SecretCode.GDgabossObjects1= [];
-gdjs.SecretCode.GDgabossObjects2= [];
-gdjs.SecretCode.GDgabossObjects3= [];
-gdjs.SecretCode.GDNewText4Objects1= [];
-gdjs.SecretCode.GDNewText4Objects2= [];
-gdjs.SecretCode.GDNewText4Objects3= [];
+gdjs.bossfight2Code.GDNewTiledSpriteObjects1= [];
+gdjs.bossfight2Code.GDNewTiledSpriteObjects2= [];
+gdjs.bossfight2Code.GDNewTiledSpriteObjects3= [];
+gdjs.bossfight2Code.GDNewTiledSprite2Objects1= [];
+gdjs.bossfight2Code.GDNewTiledSprite2Objects2= [];
+gdjs.bossfight2Code.GDNewTiledSprite2Objects3= [];
+gdjs.bossfight2Code.GDPlayerObjects1= [];
+gdjs.bossfight2Code.GDPlayerObjects2= [];
+gdjs.bossfight2Code.GDPlayerObjects3= [];
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects1= [];
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects2= [];
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects3= [];
+gdjs.bossfight2Code.GDBerryObjects1= [];
+gdjs.bossfight2Code.GDBerryObjects2= [];
+gdjs.bossfight2Code.GDBerryObjects3= [];
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects1= [];
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects2= [];
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects3= [];
+gdjs.bossfight2Code.GDbosshptetxObjects1= [];
+gdjs.bossfight2Code.GDbosshptetxObjects2= [];
+gdjs.bossfight2Code.GDbosshptetxObjects3= [];
+gdjs.bossfight2Code.GDNewTiledSprite4Objects1= [];
+gdjs.bossfight2Code.GDNewTiledSprite4Objects2= [];
+gdjs.bossfight2Code.GDNewTiledSprite4Objects3= [];
+gdjs.bossfight2Code.GDSpeedySpawnerObjects1= [];
+gdjs.bossfight2Code.GDSpeedySpawnerObjects2= [];
+gdjs.bossfight2Code.GDSpeedySpawnerObjects3= [];
+gdjs.bossfight2Code.GDSpeedyObjects1= [];
+gdjs.bossfight2Code.GDSpeedyObjects2= [];
+gdjs.bossfight2Code.GDSpeedyObjects3= [];
+gdjs.bossfight2Code.GDcpObjects1= [];
+gdjs.bossfight2Code.GDcpObjects2= [];
+gdjs.bossfight2Code.GDcpObjects3= [];
+gdjs.bossfight2Code.GDPhysiscsObjects1= [];
+gdjs.bossfight2Code.GDPhysiscsObjects2= [];
+gdjs.bossfight2Code.GDPhysiscsObjects3= [];
+gdjs.bossfight2Code.GDRNGBerryObjects1= [];
+gdjs.bossfight2Code.GDRNGBerryObjects2= [];
+gdjs.bossfight2Code.GDRNGBerryObjects3= [];
+gdjs.bossfight2Code.GDrngspawnObjects1= [];
+gdjs.bossfight2Code.GDrngspawnObjects2= [];
+gdjs.bossfight2Code.GDrngspawnObjects3= [];
+gdjs.bossfight2Code.GDExplotionObjects1= [];
+gdjs.bossfight2Code.GDExplotionObjects2= [];
+gdjs.bossfight2Code.GDExplotionObjects3= [];
+gdjs.bossfight2Code.GDKingCarlosObjects1= [];
+gdjs.bossfight2Code.GDKingCarlosObjects2= [];
+gdjs.bossfight2Code.GDKingCarlosObjects3= [];
+gdjs.bossfight2Code.GDPlayer2Objects1= [];
+gdjs.bossfight2Code.GDPlayer2Objects2= [];
+gdjs.bossfight2Code.GDPlayer2Objects3= [];
+gdjs.bossfight2Code.GDFireButtonObjects1= [];
+gdjs.bossfight2Code.GDFireButtonObjects2= [];
+gdjs.bossfight2Code.GDFireButtonObjects3= [];
+gdjs.bossfight2Code.GDcontrollerObjects1= [];
+gdjs.bossfight2Code.GDcontrollerObjects2= [];
+gdjs.bossfight2Code.GDcontrollerObjects3= [];
+gdjs.bossfight2Code.GDexplosionObjects1= [];
+gdjs.bossfight2Code.GDexplosionObjects2= [];
+gdjs.bossfight2Code.GDexplosionObjects3= [];
+gdjs.bossfight2Code.GDbosstextObjects1= [];
+gdjs.bossfight2Code.GDbosstextObjects2= [];
+gdjs.bossfight2Code.GDbosstextObjects3= [];
+gdjs.bossfight2Code.GDNewTextObjects1= [];
+gdjs.bossfight2Code.GDNewTextObjects2= [];
+gdjs.bossfight2Code.GDNewTextObjects3= [];
+gdjs.bossfight2Code.GDNewText3Objects1= [];
+gdjs.bossfight2Code.GDNewText3Objects2= [];
+gdjs.bossfight2Code.GDNewText3Objects3= [];
+gdjs.bossfight2Code.GDNewTiledSprite3Objects1= [];
+gdjs.bossfight2Code.GDNewTiledSprite3Objects2= [];
+gdjs.bossfight2Code.GDNewTiledSprite3Objects3= [];
+gdjs.bossfight2Code.GDThePainterObjects1= [];
+gdjs.bossfight2Code.GDThePainterObjects2= [];
+gdjs.bossfight2Code.GDThePainterObjects3= [];
+gdjs.bossfight2Code.GDNewTiledSprite5Objects1= [];
+gdjs.bossfight2Code.GDNewTiledSprite5Objects2= [];
+gdjs.bossfight2Code.GDNewTiledSprite5Objects3= [];
+gdjs.bossfight2Code.GDNewSpriteObjects1= [];
+gdjs.bossfight2Code.GDNewSpriteObjects2= [];
+gdjs.bossfight2Code.GDNewSpriteObjects3= [];
 
 
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDBerryObjects1Objects = Hashtable.newFrom({"Berry": gdjs.SecretCode.GDBerryObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDSpeedyObjects1Objects = Hashtable.newFrom({"Speedy": gdjs.SecretCode.GDSpeedyObjects1});
-gdjs.SecretCode.asyncCallback23611772 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.SecretCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("NewText2"), gdjs.SecretCode.GDNewText2Objects2);
-
-gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects2);
-
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects2.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects2[i].getBehavior("PlatformerObject").setMaxSpeed(500);
+gdjs.bossfight2Code.asyncCallback24378532 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.bossfight2Code.localVariables);
+gdjs.bossfight2Code.localVariables.length = 0;
 }
-}
-{for(var i = 0, len = gdjs.SecretCode.GDNewText2Objects2.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewText2Objects2[i].hide();
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(1).add(0);
-}
-gdjs.SecretCode.localVariables.length = 0;
-}
-gdjs.SecretCode.idToCallbackMap.set(23611772, gdjs.SecretCode.asyncCallback23611772);
-gdjs.SecretCode.eventsList0 = function(runtimeScene) {
+gdjs.bossfight2Code.idToCallbackMap.set(24378532, gdjs.bossfight2Code.asyncCallback24378532);
+gdjs.bossfight2Code.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -170,80 +99,88 @@ gdjs.SecretCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.SecretCode.localVariables);
-for (const obj of gdjs.SecretCode.GDNewText2Objects1) asyncObjectsList.addObject("NewText2", obj);
-for (const obj of gdjs.SecretCode.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber()), (runtimeScene) => (gdjs.SecretCode.asyncCallback23611772(runtimeScene, asyncObjectsList)), 23611772, asyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.bossfight2Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(8), (runtimeScene) => (gdjs.bossfight2Code.asyncCallback24378532(runtimeScene, asyncObjectsList)), 24378532, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDRNGBerryObjects1Objects = Hashtable.newFrom({"RNGBerry": gdjs.SecretCode.GDRNGBerryObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDshadowberryObjects1Objects = Hashtable.newFrom({"shadowberry": gdjs.SecretCode.GDshadowberryObjects1});
-gdjs.SecretCode.eventsList1 = function(runtimeScene) {
+};gdjs.bossfight2Code.userFunc0x1dd0100 = function GDJSInlineCode(runtimeScene, objects) {
+"use strict";
+// Obtenemos la escena actual
+const scene = runtimeScene;
+
+// Configuración del spawner
+const minX = 0; // Límite izquierdo de aparición
+const maxX = scene.getGame().getGameResolutionWidth(); // Límite derecho (ancho de pantalla)
+const spawnY = -50; // Posición inicial (un poco arriba de la pantalla)
+const berryTypes = ["poisonberry", "MinusBerry"];
+
+// Intervalo en segundos entre cada spawn
+const spawnInterval = 1.5;
+
+// Verificamos si el temporizador existe; si no, lo creamos
+if (!scene.getVariables().has("berryTimer")) {
+    scene.getVariables().get("berryTimer").setNumber(0);
+}
+
+// Incrementamos el temporizador con el tiempo del frame actual
+scene.getVariables().get("berryTimer").add(scene.getTimeManager().getElapsedTime() / 1000);
+
+// Cuando el temporizador supera el intervalo...
+if (scene.getVariables().get("berryTimer").getAsNumber() >= spawnInterval) {
+    // Reseteamos el temporizador
+    scene.getVariables().get("berryTimer").setNumber(0);
+
+    // Elegimos un tipo de berry al azar
+    const randomBerryName = berryTypes[Math.floor(Math.random() * berryTypes.length)];
+
+    // Posición aleatoria en el eje X
+    const randomX = Math.random() * (maxX - minX) + minX;
+
+    // Creamos la berry en la escena
+    const berry = scene.createObject(randomBerryName);
+    if (berry) {
+        berry.setPosition(randomX, spawnY);
+    }
+}
+
+};
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects1Objects = Hashtable.newFrom({"controller": gdjs.bossfight2Code.GDcontrollerObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDThePainterObjects1Objects = Hashtable.newFrom({"ThePainter": gdjs.bossfight2Code.GDThePainterObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDexplosionObjects1Objects = Hashtable.newFrom({"explosion": gdjs.bossfight2Code.GDexplosionObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects2Objects = Hashtable.newFrom({"controller": gdjs.bossfight2Code.GDcontrollerObjects2});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects2Objects = Hashtable.newFrom({"controller": gdjs.bossfight2Code.GDcontrollerObjects2});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects1Objects = Hashtable.newFrom({"controller": gdjs.bossfight2Code.GDcontrollerObjects1});
+gdjs.bossfight2Code.eventsList1 = function(runtimeScene) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (gdjs.randomInRange(1, 2) == 1);
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(5);
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (gdjs.randomInRange(1, 2) == 2);
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(0).sub(5);
-}
-}
-
-}
-
-
-};gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDcontrollerObjects2Objects = Hashtable.newFrom({"controller": gdjs.SecretCode.GDcontrollerObjects2});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDcontrollerObjects1Objects = Hashtable.newFrom({"controller": gdjs.SecretCode.GDcontrollerObjects1});
-gdjs.SecretCode.eventsList2 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects2);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDPlayerObjects2.length;i<l;++i) {
-    if ( !(gdjs.SecretCode.GDPlayerObjects2[i].getBehavior("Flippable").isFlippedX()) ) {
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects2.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDPlayerObjects2[i].getBehavior("Flippable").isFlippedX() ) {
         isConditionTrue_0 = true;
-        gdjs.SecretCode.GDPlayerObjects2[k] = gdjs.SecretCode.GDPlayerObjects2[i];
+        gdjs.bossfight2Code.GDPlayerObjects2[k] = gdjs.bossfight2Code.GDPlayerObjects2[i];
         ++k;
     }
 }
-gdjs.SecretCode.GDPlayerObjects2.length = k;
+gdjs.bossfight2Code.GDPlayerObjects2.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDPlayerObjects2 */
-gdjs.SecretCode.GDcontrollerObjects2.length = 0;
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects2 */
+gdjs.bossfight2Code.GDcontrollerObjects2.length = 0;
 
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects2.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects2[i].getBehavior("FireBullet").Fire((gdjs.SecretCode.GDPlayerObjects2[i].getPointX("")), (gdjs.SecretCode.GDPlayerObjects2[i].getPointY("")) + 59, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDcontrollerObjects2Objects, 0, -(500), null);
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects2[i].getBehavior("FireBullet").Fire((gdjs.bossfight2Code.GDPlayerObjects2[i].getPointX("")), (gdjs.bossfight2Code.GDPlayerObjects2[i].getPointY("")) + 59, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects2Objects, 0, 500, null);
 }
 }
 {gdjs.evtTools.sound.playSound(runtimeScene, "Woosh 3.aac", false, 100, 1);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -251,378 +188,374 @@ gdjs.SecretCode.GDcontrollerObjects2.length = 0;
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("Flippable").isFlippedX() ) {
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects2.length;i<l;++i) {
+    if ( !(gdjs.bossfight2Code.GDPlayerObjects2[i].getBehavior("Flippable").isFlippedX()) ) {
         isConditionTrue_0 = true;
-        gdjs.SecretCode.GDPlayerObjects1[k] = gdjs.SecretCode.GDPlayerObjects1[i];
+        gdjs.bossfight2Code.GDPlayerObjects2[k] = gdjs.bossfight2Code.GDPlayerObjects2[i];
         ++k;
     }
 }
-gdjs.SecretCode.GDPlayerObjects1.length = k;
+gdjs.bossfight2Code.GDPlayerObjects2.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDPlayerObjects1 */
-gdjs.SecretCode.GDcontrollerObjects1.length = 0;
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects2 */
+gdjs.bossfight2Code.GDcontrollerObjects2.length = 0;
 
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("FireBullet").Fire((gdjs.SecretCode.GDPlayerObjects1[i].getPointX("")), (gdjs.SecretCode.GDPlayerObjects1[i].getPointY("")) + 59, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDcontrollerObjects1Objects, 0, 500, null);
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects2[i].getBehavior("FireBullet").Fire((gdjs.bossfight2Code.GDPlayerObjects2[i].getPointX("")), (gdjs.bossfight2Code.GDPlayerObjects2[i].getPointY("")) + 59, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects2Objects, 0, -(500), null);
 }
 }
 {gdjs.evtTools.sound.playSound(runtimeScene, "Woosh 3.aac", false, 100, 1);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
 
-
-};gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDglitchedberryObjects1Objects = Hashtable.newFrom({"glitchedberry": gdjs.SecretCode.GDglitchedberryObjects1});
-gdjs.SecretCode.asyncCallback23626924 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.SecretCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects2);
-
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects2.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects2[i].getBehavior("Effect").enableEffect("Effect", false);
-}
-}
-gdjs.SecretCode.localVariables.length = 0;
-}
-gdjs.SecretCode.idToCallbackMap.set(23626924, gdjs.SecretCode.asyncCallback23626924);
-gdjs.SecretCode.eventsList3 = function(runtimeScene) {
 
 {
 
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.SecretCode.localVariables);
-for (const obj of gdjs.SecretCode.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.SecretCode.asyncCallback23626924(runtimeScene, asyncObjectsList)), 23626924, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDcontrollerObjects2Objects = Hashtable.newFrom({"controller": gdjs.SecretCode.GDcontrollerObjects2});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDRNGBerryObjects2ObjectsGDgdjs_9546SecretCode_9546GDBerryObjects2ObjectsGDgdjs_9546SecretCode_9546GDglitchedberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDSpeedyObjects2ObjectsGDgdjs_9546SecretCode_9546GDshadowberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDpoisonberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDnojumpberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDdoublejumpberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDMinusBerryObjects2ObjectsGDgdjs_9546SecretCode_9546GDCaffeineBerryObjects2ObjectsGDgdjs_9546SecretCode_9546GDGoodBerryObjects2Objects = Hashtable.newFrom({"RNGBerry": gdjs.SecretCode.GDRNGBerryObjects2, "Berry": gdjs.SecretCode.GDBerryObjects2, "glitchedberry": gdjs.SecretCode.GDglitchedberryObjects2, "Speedy": gdjs.SecretCode.GDSpeedyObjects2, "shadowberry": gdjs.SecretCode.GDshadowberryObjects2, "poisonberry": gdjs.SecretCode.GDpoisonberryObjects2, "nojumpberry": gdjs.SecretCode.GDnojumpberryObjects2, "doublejumpberry": gdjs.SecretCode.GDdoublejumpberryObjects2, "MinusBerry": gdjs.SecretCode.GDMinusBerryObjects2, "CaffeineBerry": gdjs.SecretCode.GDCaffeineBerryObjects2, "GoodBerry": gdjs.SecretCode.GDGoodBerryObjects2});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDcontrollerObjects2Objects = Hashtable.newFrom({"controller": gdjs.SecretCode.GDcontrollerObjects2});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDgabossObjects2Objects = Hashtable.newFrom({"gaboss": gdjs.SecretCode.GDgabossObjects2});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDexplosionObjects1Objects = Hashtable.newFrom({"explosion": gdjs.SecretCode.GDexplosionObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDpoisonberryObjects1Objects = Hashtable.newFrom({"poisonberry": gdjs.SecretCode.GDpoisonberryObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDnojumpberryObjects1Objects = Hashtable.newFrom({"nojumpberry": gdjs.SecretCode.GDnojumpberryObjects1});
-gdjs.SecretCode.asyncCallback23634484 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.SecretCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects2);
-
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects2.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects2[i].getBehavior("PlatformerObject").setMaxFallingSpeed(500, false);
-}
-}
-gdjs.SecretCode.localVariables.length = 0;
-}
-gdjs.SecretCode.idToCallbackMap.set(23634484, gdjs.SecretCode.asyncCallback23634484);
-gdjs.SecretCode.eventsList4 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.SecretCode.localVariables);
-for (const obj of gdjs.SecretCode.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.SecretCode.asyncCallback23634484(runtimeScene, asyncObjectsList)), 23634484, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDMinusBerryObjects1Objects = Hashtable.newFrom({"MinusBerry": gdjs.SecretCode.GDMinusBerryObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDCaffeineBerryObjects1Objects = Hashtable.newFrom({"CaffeineBerry": gdjs.SecretCode.GDCaffeineBerryObjects1});
-gdjs.SecretCode.asyncCallback23640028 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.SecretCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects2);
-
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects2.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects2[i].getBehavior("PlatformerObject").setMaxSpeed(500);
-}
-}
-gdjs.SecretCode.localVariables.length = 0;
-}
-gdjs.SecretCode.idToCallbackMap.set(23640028, gdjs.SecretCode.asyncCallback23640028);
-gdjs.SecretCode.eventsList5 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.SecretCode.localVariables);
-for (const obj of gdjs.SecretCode.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.SecretCode.asyncCallback23640028(runtimeScene, asyncObjectsList)), 23640028, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDGoodBerryObjects1Objects = Hashtable.newFrom({"GoodBerry": gdjs.SecretCode.GDGoodBerryObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDNewTextObjects1Objects = Hashtable.newFrom({"NewText": gdjs.SecretCode.GDNewTextObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDGABRIELObjects1Objects = Hashtable.newFrom({"GABRIEL": gdjs.SecretCode.GDGABRIELObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.SecretCode.GDPlayerObjects1});
-gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDgabossObjects1Objects = Hashtable.newFrom({"gaboss": gdjs.SecretCode.GDgabossObjects1});
-gdjs.SecretCode.eventsList6 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.SecretCode.GDFlatDarkJoystickObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDFlatDarkJoystickObjects1.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDFlatDarkJoystickObjects1[i].IsDirectionPushed4Way("Left", null) ) {
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("Flippable").isFlippedX() ) {
         isConditionTrue_0 = true;
-        gdjs.SecretCode.GDFlatDarkJoystickObjects1[k] = gdjs.SecretCode.GDFlatDarkJoystickObjects1[i];
+        gdjs.bossfight2Code.GDPlayerObjects1[k] = gdjs.bossfight2Code.GDPlayerObjects1[i];
         ++k;
     }
 }
-gdjs.SecretCode.GDFlatDarkJoystickObjects1.length = k;
+gdjs.bossfight2Code.GDPlayerObjects1.length = k;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateControl("Left");
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects1 */
+gdjs.bossfight2Code.GDcontrollerObjects1.length = 0;
+
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("FireBullet").Fire((gdjs.bossfight2Code.GDPlayerObjects1[i].getPointX("")), (gdjs.bossfight2Code.GDPlayerObjects1[i].getPointY("")) + 59, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects1Objects, 0, 500, null);
 }
 }
+{gdjs.evtTools.sound.playSound(runtimeScene, "Woosh 3.aac", false, 100, 1);
+}
+elseEventsChainSatisfied = true;
 }
 
 }
 
 
-{
-
-gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.SecretCode.GDFlatDarkJoystickObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDFlatDarkJoystickObjects1.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDFlatDarkJoystickObjects1[i].IsDirectionPushed4Way("Right", null) ) {
-        isConditionTrue_0 = true;
-        gdjs.SecretCode.GDFlatDarkJoystickObjects1[k] = gdjs.SecretCode.GDFlatDarkJoystickObjects1[i];
-        ++k;
-    }
+};gdjs.bossfight2Code.asyncCallback24395300 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.bossfight2Code.localVariables);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "BSRank2", false);
 }
-gdjs.SecretCode.GDFlatDarkJoystickObjects1.length = k;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateControl("Right");
+gdjs.bossfight2Code.localVariables.length = 0;
 }
-}
-}
-
-}
-
+gdjs.bossfight2Code.idToCallbackMap.set(24395300, gdjs.bossfight2Code.asyncCallback24395300);
+gdjs.bossfight2Code.eventsList2 = function(runtimeScene) {
 
 {
 
 
-let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Berry"), gdjs.SecretCode.GDBerryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("GoodBerry"), gdjs.SecretCode.GDGoodBerryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("MinusBerry"), gdjs.SecretCode.GDMinusBerryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.SecretCode.GDNewText3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("RNGBerry"), gdjs.SecretCode.GDRNGBerryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("combotimw"), gdjs.SecretCode.GDcombotimwObjects1);
-gdjs.copyArray(runtimeScene.getObjects("controller"), gdjs.SecretCode.GDcontrollerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("glitchedberry"), gdjs.SecretCode.GDglitchedberryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("nojumpberry"), gdjs.SecretCode.GDnojumpberryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("poisonberry"), gdjs.SecretCode.GDpoisonberryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("shadowberry"), gdjs.SecretCode.GDshadowberryObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDBerryObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDRNGBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDRNGBerryObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDshadowberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDshadowberryObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDcontrollerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDcontrollerObjects1[i].getBehavior("Scale").setScale(0.4);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDglitchedberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDglitchedberryObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDcontrollerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDcontrollerObjects1[i].rotate(100, runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDpoisonberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDpoisonberryObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDnojumpberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDnojumpberryObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDNewText3Objects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewText3Objects1[i].getBehavior("Text").setText("art gallery!1!1");
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDcombotimwObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDcombotimwObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "combotime"), 2)));
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDMinusBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDMinusBerryObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDGoodBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDGoodBerryObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
-}
-
-}
-
-
 {
-
-gdjs.copyArray(runtimeScene.getObjects("Berry"), gdjs.SecretCode.GDBerryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDBerryObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23607508);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDBerryObjects1 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Eat.mp3", false, 100, gdjs.randomFloatInRange(0.9, 1.2));
-}
-{for(var i = 0, len = gdjs.SecretCode.GDBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDBerryObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(1);
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.bossfight2Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.bossfight2Code.asyncCallback24395300(runtimeScene, asyncObjectsList)), 24395300, asyncObjectsList);
 }
 }
 
 }
 
 
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.SecretCode.GDFlatDarkJoystickObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText2"), gdjs.SecretCode.GDNewText2Objects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDFlatDarkJoystickObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDFlatDarkJoystickObjects1[i].getBehavior("Opacity").setOpacity(130);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDNewText2Objects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewText2Objects1[i].hide();
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
-}
-}
-}
-
-}
-
+};gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewTextObjects1Objects = Hashtable.newFrom({"NewText": gdjs.bossfight2Code.GDNewTextObjects1});
+gdjs.bossfight2Code.eventsList3 = function(runtimeScene, asyncObjectsList) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.SecretCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewTextObjects1[i].getBehavior("Text").setText("hi");
+/* Reuse gdjs.bossfight2Code.GDNewTextObjects2 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDNewTextObjects2.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDNewTextObjects2[i].getBehavior("Opacity").setOpacity(gdjs.bossfight2Code.GDNewTextObjects2[i].getBehavior("Opacity").getOpacity() - (10));
 }
 }
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("Speedy"), gdjs.SecretCode.GDSpeedyObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDSpeedyObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDSpeedyObjects1[i].getBehavior("Scale").setScale(0.7);
-}
-}
+elseEventsChainSatisfied = true;
 }
 
 }
 
 
-{
+};gdjs.bossfight2Code.asyncCallback24398388 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.bossfight2Code.localVariables);
+gdjs.copyArray(asyncObjectsList.getObjects("NewText"), gdjs.bossfight2Code.GDNewTextObjects2);
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Speedy"), gdjs.SecretCode.GDSpeedyObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDSpeedyObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewText2"), gdjs.SecretCode.GDNewText2Objects1);
-/* Reuse gdjs.SecretCode.GDPlayerObjects1 */
-/* Reuse gdjs.SecretCode.GDSpeedyObjects1 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Powerup.mp3", false, 100, 1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDNewTextObjects2.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDNewTextObjects2[i].deleteFromScene(runtimeScene);
 }
-{for(var i = 0, len = gdjs.SecretCode.GDSpeedyObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDSpeedyObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(1);
-}
-{for(var i = 0, len = gdjs.SecretCode.GDNewText2Objects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewText2Objects1[i].hide(false);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").setMaxSpeed(700);
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(1).add(5);
 }
 
 { //Subevents
-gdjs.SecretCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.bossfight2Code.eventsList3(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.bossfight2Code.localVariables.length = 0;
+}
+gdjs.bossfight2Code.idToCallbackMap.set(24398388, gdjs.bossfight2Code.asyncCallback24398388);
+gdjs.bossfight2Code.eventsList4 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.bossfight2Code.localVariables);
+for (const obj of gdjs.bossfight2Code.GDNewTextObjects1) asyncObjectsList.addObject("NewText", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.bossfight2Code.asyncCallback24398388(runtimeScene, asyncObjectsList)), 24398388, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDThePainterObjects1Objects = Hashtable.newFrom({"ThePainter": gdjs.bossfight2Code.GDThePainterObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.bossfight2Code.GDPlayerObjects1});
+gdjs.bossfight2Code.eventsList5 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.bossfight2Code.GDNewTextObjects2);
+{for(var i = 0, len = gdjs.bossfight2Code.GDNewTextObjects2.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDNewTextObjects2[i].getBehavior("Opacity").setOpacity(gdjs.bossfight2Code.GDNewTextObjects2[i].getBehavior("Opacity").getOpacity() - (10));
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+};gdjs.bossfight2Code.asyncCallback24401556 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.bossfight2Code.localVariables);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "bossfight2", false);
+}
+
+{ //Subevents
+gdjs.bossfight2Code.eventsList5(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.bossfight2Code.localVariables.length = 0;
+}
+gdjs.bossfight2Code.idToCallbackMap.set(24401556, gdjs.bossfight2Code.asyncCallback24401556);
+gdjs.bossfight2Code.eventsList6 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.bossfight2Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.bossfight2Code.asyncCallback24401556(runtimeScene, asyncObjectsList)), 24401556, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects2Objects = Hashtable.newFrom({"controller": gdjs.bossfight2Code.GDcontrollerObjects2});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects2Objects = Hashtable.newFrom({"controller": gdjs.bossfight2Code.GDcontrollerObjects2});
+gdjs.bossfight2Code.eventsList7 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects2.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDPlayerObjects2[i].getBehavior("Flippable").isFlippedX() ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDPlayerObjects2[k] = gdjs.bossfight2Code.GDPlayerObjects2[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDPlayerObjects2.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects2 */
+gdjs.bossfight2Code.GDcontrollerObjects2.length = 0;
+
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects2[i].getBehavior("FireBullet").Fire((gdjs.bossfight2Code.GDPlayerObjects2[i].getPointX("")), (gdjs.bossfight2Code.GDPlayerObjects2[i].getPointY("")) + 59, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects2Objects, 0, 500, null);
+}
+}
+{gdjs.evtTools.sound.playSound(runtimeScene, "Woosh 3.aac", false, 100, 1);
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects2.length;i<l;++i) {
+    if ( !(gdjs.bossfight2Code.GDPlayerObjects2[i].getBehavior("Flippable").isFlippedX()) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDPlayerObjects2[k] = gdjs.bossfight2Code.GDPlayerObjects2[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDPlayerObjects2.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects2 */
+gdjs.bossfight2Code.GDcontrollerObjects2.length = 0;
+
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects2[i].getBehavior("FireBullet").Fire((gdjs.bossfight2Code.GDPlayerObjects2[i].getPointX("")), (gdjs.bossfight2Code.GDPlayerObjects2[i].getPointY("")) + 59, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects2Objects, 0, -(500), null);
+}
+}
+{gdjs.evtTools.sound.playSound(runtimeScene, "Woosh 3.aac", false, 100, 1);
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+};gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.bossfight2Code.GDPlayerObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewTiledSprite5Objects1Objects = Hashtable.newFrom({"NewTiledSprite5": gdjs.bossfight2Code.GDNewTiledSprite5Objects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.bossfight2Code.GDPlayerObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewTiledSprite5Objects1Objects = Hashtable.newFrom({"NewTiledSprite5": gdjs.bossfight2Code.GDNewTiledSprite5Objects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewSpriteObjects1Objects = Hashtable.newFrom({"NewSprite": gdjs.bossfight2Code.GDNewSpriteObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.bossfight2Code.GDPlayerObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewSpriteObjects1Objects = Hashtable.newFrom({"NewSprite": gdjs.bossfight2Code.GDNewSpriteObjects1});
+gdjs.bossfight2Code.eventsList8 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+/* Reuse gdjs.bossfight2Code.GDThePainterObjects1 */
+gdjs.bossfight2Code.GDNewSpriteObjects1.length = 0;
+
+{for(var i = 0, len = gdjs.bossfight2Code.GDThePainterObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("FireBullet").Fire((gdjs.bossfight2Code.GDThePainterObjects1[i].getPointX("")), (gdjs.bossfight2Code.GDThePainterObjects1[i].getPointY("")) + 51, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewSpriteObjects1Objects, 0, 500, null);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+};gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewSpriteObjects1Objects = Hashtable.newFrom({"NewSprite": gdjs.bossfight2Code.GDNewSpriteObjects1});
+gdjs.bossfight2Code.eventsList9 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+/* Reuse gdjs.bossfight2Code.GDThePainterObjects1 */
+gdjs.bossfight2Code.GDNewSpriteObjects1.length = 0;
+
+{for(var i = 0, len = gdjs.bossfight2Code.GDThePainterObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("FireBullet").Fire((gdjs.bossfight2Code.GDThePainterObjects1[i].getPointX("")), (gdjs.bossfight2Code.GDThePainterObjects1[i].getPointY("")) + 51, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewSpriteObjects1Objects, 0, -(500), null);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+};gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects1Objects = Hashtable.newFrom({"controller": gdjs.bossfight2Code.GDcontrollerObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewSpriteObjects1Objects = Hashtable.newFrom({"NewSprite": gdjs.bossfight2Code.GDNewSpriteObjects1});
+gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDexplosionObjects1Objects = Hashtable.newFrom({"explosion": gdjs.bossfight2Code.GDexplosionObjects1});
+gdjs.bossfight2Code.eventsList10 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.bossfight2Code.GDFlatDarkJoystickObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i].IsDirectionPushed4Way("Left", null) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[k] = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateControl("Left");
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.bossfight2Code.GDFlatDarkJoystickObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i].IsDirectionPushed4Way("Right", null) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[k] = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateControl("Right");
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("bosshptetx"), gdjs.bossfight2Code.GDbosshptetxObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDbosshptetxObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDbosshptetxObjects1[i].getBehavior("Text").setText("Score: " + runtimeScene.getScene().getVariables().getFromIndex(0).getAsString());
+}
+}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -635,6 +568,12 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Painting in the Wrong Canvas.mp3", 1, true, 100, 1);
+}
+
+{ //Subevents
+gdjs.bossfight2Code.eventsList0(runtimeScene);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -642,24 +581,25 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").isUsingControl("Left") ) {
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").isUsingControl("Left") ) {
         isConditionTrue_0 = true;
-        gdjs.SecretCode.GDPlayerObjects1[k] = gdjs.SecretCode.GDPlayerObjects1[i];
+        gdjs.bossfight2Code.GDPlayerObjects1[k] = gdjs.bossfight2Code.GDPlayerObjects1[i];
         ++k;
     }
 }
-gdjs.SecretCode.GDPlayerObjects1.length = k;
+gdjs.bossfight2Code.GDPlayerObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDPlayerObjects1 */
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("Flippable").flipX(false);
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects1 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("Flippable").flipX(false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -667,24 +607,25 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").isUsingControl("Right") ) {
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").isUsingControl("Right") ) {
         isConditionTrue_0 = true;
-        gdjs.SecretCode.GDPlayerObjects1[k] = gdjs.SecretCode.GDPlayerObjects1[i];
+        gdjs.bossfight2Code.GDPlayerObjects1[k] = gdjs.bossfight2Code.GDPlayerObjects1[i];
         ++k;
     }
 }
-gdjs.SecretCode.GDPlayerObjects1.length = k;
+gdjs.bossfight2Code.GDPlayerObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDPlayerObjects1 */
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("Flippable").flipX(true);
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects1 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("Flippable").flipX(true);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -692,39 +633,25 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("RNGBerry"), gdjs.SecretCode.GDRNGBerryObjects1);
+gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.bossfight2Code.GDFlatDarkJoystickObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDRNGBerryObjects1Objects, false, runtimeScene, false);
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i].IsDirectionPushed4Way("Up", null) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[k] = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length = k;
 if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDRNGBerryObjects1 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Eat.mp3", false, 100, gdjs.randomFloatInRange(0.9, 1.2));
-}
-{for(var i = 0, len = gdjs.SecretCode.GDRNGBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDRNGBerryObjects1[i].deleteFromScene(runtimeScene);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateUpKey();
 }
 }
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(gdjs.randomInRange(0, 5));
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateLeftKey();
-}
-}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -734,14 +661,426 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObject
 
 
 let isConditionTrue_0 = false;
+{
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("BerryNormalSpawn"), gdjs.bossfight2Code.GDBerryNormalSpawnObjects1);
+
+const objects = gdjs.bossfight2Code.GDBerryNormalSpawnObjects1;
+gdjs.bossfight2Code.userFunc0x1dd0100(runtimeScene, objects);
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.bossfight2Code.GDFlatDarkJoystickObjects1);
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i].IsDirectionPushed4Way("Up", null) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[k] = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length = k;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateRightKey();
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateJumpKey();
 }
 }
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDThePainterObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Pathfinding").moveTo(runtimeScene, (( gdjs.bossfight2Code.GDPlayerObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDPlayerObjects1[0].getPointX("")), (( gdjs.bossfight2Code.GDPlayerObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDPlayerObjects1[0].getPointY("")));
+}
+}
+{for(var i = 0, len = gdjs.bossfight2Code.GDThePainterObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Pathfinding").setSpeed(150);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+gdjs.copyArray(runtimeScene.getObjects("controller"), gdjs.bossfight2Code.GDcontrollerObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects1Objects, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDThePainterObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24386052);
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Berry"), gdjs.bossfight2Code.GDBerryObjects1);
+/* Reuse gdjs.bossfight2Code.GDThePainterObjects1 */
+gdjs.bossfight2Code.GDexplosionObjects1.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDexplosionObjects1Objects, (( gdjs.bossfight2Code.GDThePainterObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDThePainterObjects1[0].getPointX("")), (( gdjs.bossfight2Code.GDThePainterObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDThePainterObjects1[0].getPointY("")) - 10, "");
+}
+{for(var i = 0, len = gdjs.bossfight2Code.GDBerryObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDBerryObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+{for(var i = 0, len = gdjs.bossfight2Code.GDThePainterObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Health").Hit(5, true, true, null);
+}
+}
+{for(var i = 0, len = gdjs.bossfight2Code.GDexplosionObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDexplosionObjects1[i].getBehavior("Scale").setScale(2);
+}
+}
+{gdjs.evtTools.sound.playSound(runtimeScene, "ssvid.app--deltarune-explosion-greenscreen.mp3", false, 100, 1);
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("explosion"), gdjs.bossfight2Code.GDexplosionObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDexplosionObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDexplosionObjects1[i].getBehavior("Animation").hasAnimationEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDexplosionObjects1[k] = gdjs.bossfight2Code.GDexplosionObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDexplosionObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDexplosionObjects1 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDexplosionObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDexplosionObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("KingCarlos"), gdjs.bossfight2Code.GDKingCarlosObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDKingCarlosObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDKingCarlosObjects1[i].getBehavior("Physics2").getLinearVelocityX() == gdjs.evtTools.common.pi() ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDKingCarlosObjects1[k] = gdjs.bossfight2Code.GDKingCarlosObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDKingCarlosObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDKingCarlosObjects1 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDKingCarlosObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDKingCarlosObjects1[i].getBehavior("Flippable").flipX(true);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("KingCarlos"), gdjs.bossfight2Code.GDKingCarlosObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDKingCarlosObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDKingCarlosObjects1[i].getBehavior("Physics2").getLinearVelocityX() == -(200) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDKingCarlosObjects1[k] = gdjs.bossfight2Code.GDKingCarlosObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDKingCarlosObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDKingCarlosObjects1 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDKingCarlosObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDKingCarlosObjects1[i].getBehavior("Flippable").flipX(false);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.bossfight2Code.GDFireButtonObjects1.length = 0;
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{gdjs.bossfight2Code.GDFireButtonObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "z");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(runtimeScene.getObjects("FireButton"), gdjs.bossfight2Code.GDFireButtonObjects2);
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDFireButtonObjects2.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDFireButtonObjects2[i].getBehavior("MultitouchButton").IsPressed(null) ) {
+        isConditionTrue_1 = true;
+        gdjs.bossfight2Code.GDFireButtonObjects2[k] = gdjs.bossfight2Code.GDFireButtonObjects2[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDFireButtonObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.bossfight2Code.GDFireButtonObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.bossfight2Code.GDFireButtonObjects1_1final.indexOf(gdjs.bossfight2Code.GDFireButtonObjects2[j]) === -1 )
+            gdjs.bossfight2Code.GDFireButtonObjects1_1final.push(gdjs.bossfight2Code.GDFireButtonObjects2[j]);
+    }
+}
+}
+{
+isConditionTrue_1 = gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonJustPressed.func(runtimeScene, 1, "b", null);
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(gdjs.bossfight2Code.GDFireButtonObjects1_1final, gdjs.bossfight2Code.GDFireButtonObjects1);
+}
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24390220);
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.bossfight2Code.eventsList1(runtimeScene);} //End of subevents
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("controller"), gdjs.bossfight2Code.GDcontrollerObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDcontrollerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDcontrollerObjects1[i].getBehavior("Scale").setScale(0.4);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDThePainterObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Health").IsDead(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDThePainterObjects1[k] = gdjs.bossfight2Code.GDThePainterObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDThePainterObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDThePainterObjects1 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDThePainterObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDThePainterObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+{gdjs.evtTools.sound.fadeMusicVolume(runtimeScene, 1, 0, 1.5);
+}
+{gdjs.evtTools.runtimeScene.pauseTimer(runtimeScene, "bs");
+}
+
+{ //Subevents
+gdjs.bossfight2Code.eventsList2(runtimeScene);} //End of subevents
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.bossfight2Code.GDNewText3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+gdjs.copyArray(runtimeScene.getObjects("bosshptetx"), gdjs.bossfight2Code.GDbosshptetxObjects1);
+gdjs.copyArray(runtimeScene.getObjects("controller"), gdjs.bossfight2Code.GDcontrollerObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDbosshptetxObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDbosshptetxObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString((( gdjs.bossfight2Code.GDThePainterObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDThePainterObjects1[0].getBehavior("Health").Health(null))) + "/100");
+}
+}
+{for(var i = 0, len = gdjs.bossfight2Code.GDNewText3Objects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDNewText3Objects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString((( gdjs.bossfight2Code.GDPlayerObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDPlayerObjects1[0].getBehavior("Health").Health(null))) + "/10");
+}
+}
+{for(var i = 0, len = gdjs.bossfight2Code.GDcontrollerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDcontrollerObjects1[i].rotate(100, runtimeScene);
+}
+}
+{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber((( gdjs.bossfight2Code.GDPlayerObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDPlayerObjects1[0].getBehavior("Health").Health(null)));
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDThePainterObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Health").IsJustDodged(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDThePainterObjects1[k] = gdjs.bossfight2Code.GDThePainterObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDThePainterObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDThePainterObjects1 */
+gdjs.bossfight2Code.GDNewTextObjects1.length = 0;
+
+{gdjs.evtTools.sound.playSound(runtimeScene, "Lose 6.aac", false, 100, 1);
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewTextObjects1Objects, (( gdjs.bossfight2Code.GDThePainterObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDThePainterObjects1[0].getPointX("")), (( gdjs.bossfight2Code.GDThePainterObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDThePainterObjects1[0].getPointY("")) - 10, "");
+}
+
+{ //Subevents
+gdjs.bossfight2Code.eventsList4(runtimeScene);} //End of subevents
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDThePainterObjects1Objects, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDPlayerObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects1 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("Health").Hit(1, true, true, null);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("Health").IsJustDamaged(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDPlayerObjects1[k] = gdjs.bossfight2Code.GDPlayerObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDPlayerObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "Death.mp3", false, 100, 1);
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDPlayerObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("Health").IsDead(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDPlayerObjects1[k] = gdjs.bossfight2Code.GDPlayerObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDPlayerObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects1 */
+{gdjs.evtTools.sound.playSound(runtimeScene, "Death.mp3", false, 100, 1);
+}
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+
+{ //Subevents
+gdjs.bossfight2Code.eventsList6(runtimeScene);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -752,13 +1091,50 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObject
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "w");
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateUpKey();
+gdjs.copyArray(runtimeScene.getObjects("FireButton"), gdjs.bossfight2Code.GDFireButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.bossfight2Code.GDFlatDarkJoystickObjects1);
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "bs");
+}
+{for(var i = 0, len = gdjs.bossfight2Code.GDFireButtonObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDFireButtonObjects1[i].hide();
 }
 }
+{for(var i = 0, len = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i].hide();
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.common.roundTo(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "bs"), 2));
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("cp"), gdjs.bossfight2Code.GDcpObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDcpObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDcpObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(0).getAsString());
+}
+}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -771,16 +1147,17 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isMobile();
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.SecretCode.GDFlatDarkJoystickObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.SecretCode.GDNewSpriteObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDFlatDarkJoystickObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDFlatDarkJoystickObjects1[i].hide(false);
+gdjs.copyArray(runtimeScene.getObjects("FireButton"), gdjs.bossfight2Code.GDFireButtonObjects1);
+gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.bossfight2Code.GDFlatDarkJoystickObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDFireButtonObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDFireButtonObjects1[i].hide(false);
 }
 }
-{for(var i = 0, len = gdjs.SecretCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewSpriteObjects1[i].hide(false);
+{for(var i = 0, len = gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDFlatDarkJoystickObjects1[i].hide(false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -791,51 +1168,17 @@ gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.SecretCode.GDNewSprite
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isMobile());
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.SecretCode.GDFlatDarkJoystickObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.SecretCode.GDNewSpriteObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDFlatDarkJoystickObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDFlatDarkJoystickObjects1[i].hide();
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewSpriteObjects1[i].hide();
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewSpriteObjects1[i].getBehavior("Opacity").setOpacity(67);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("shadowberry"), gdjs.SecretCode.GDshadowberryObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDshadowberryObjects1Objects, false, runtimeScene, false);
+isConditionTrue_0 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "z");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23620252);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24405196);
 }
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDshadowberryObjects1 */
-{for(var i = 0, len = gdjs.SecretCode.GDshadowberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDshadowberryObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{gdjs.evtTools.sound.playSound(runtimeScene, "e_double_sided.ogg", false, 100, 1);
-}
 
 { //Subevents
-gdjs.SecretCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.bossfight2Code.eventsList7(runtimeScene);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -843,46 +1186,142 @@ gdjs.SecretCode.eventsList1(runtimeScene);} //End of subevents
 
 {
 
-gdjs.SecretCode.GDNewSpriteObjects1.length = 0;
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("NewTiledSprite3"), gdjs.bossfight2Code.GDNewTiledSprite3Objects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDNewTiledSprite3Objects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDNewTiledSprite3Objects1[i].setXOffset(gdjs.bossfight2Code.GDNewTiledSprite3Objects1[i].getXOffset() + (0.1));
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{gdjs.SecretCode.GDNewSpriteObjects1_1final.length = 0;
-let isConditionTrue_1 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateControl("Right");
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{
-isConditionTrue_1 = gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "z");
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateControl("Left");
 }
 }
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
 {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.SecretCode.GDNewSpriteObjects2);
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDNewSpriteObjects2.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDNewSpriteObjects2[i].getBehavior("ButtonFSM").IsClicked(null) ) {
-        isConditionTrue_1 = true;
-        gdjs.SecretCode.GDNewSpriteObjects2[k] = gdjs.SecretCode.GDNewSpriteObjects2[i];
+
+gdjs.copyArray(runtimeScene.getObjects("NewTiledSprite5"), gdjs.bossfight2Code.GDNewTiledSprite5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDPlayerObjects1Objects, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewTiledSprite5Objects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDThePainterObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Flippable").flipX(true);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("NewTiledSprite5"), gdjs.bossfight2Code.GDNewTiledSprite5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDPlayerObjects1Objects, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewTiledSprite5Objects1Objects, true, runtimeScene, false);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+{for(var i = 0, len = gdjs.bossfight2Code.GDThePainterObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Flippable").flipX(false);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.bossfight2Code.GDNewSpriteObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.bossfight2Code.GDPlayerObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewSpriteObjects1Objects, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDPlayerObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24394556);
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.bossfight2Code.GDPlayerObjects1 */
+{for(var i = 0, len = gdjs.bossfight2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDPlayerObjects1[i].getBehavior("Health").Hit(1, true, true, null);
+}
+}
+{gdjs.evtTools.sound.playSound(runtimeScene, "Death.mp3", false, 100, 1);
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDThePainterObjects1.length;i<l;++i) {
+    if ( !(gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Flippable").isFlippedX()) ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDThePainterObjects1[k] = gdjs.bossfight2Code.GDThePainterObjects1[i];
         ++k;
     }
 }
-gdjs.SecretCode.GDNewSpriteObjects2.length = k;
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.SecretCode.GDNewSpriteObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDNewSpriteObjects1_1final.indexOf(gdjs.SecretCode.GDNewSpriteObjects2[j]) === -1 )
-            gdjs.SecretCode.GDNewSpriteObjects1_1final.push(gdjs.SecretCode.GDNewSpriteObjects2[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.SecretCode.GDNewSpriteObjects1_1final, gdjs.SecretCode.GDNewSpriteObjects1);
-}
-}
+gdjs.bossfight2Code.GDThePainterObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.SecretCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.bossfight2Code.eventsList8(runtimeScene);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -890,35 +1329,23 @@ gdjs.SecretCode.eventsList2(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("glitchedberry"), gdjs.SecretCode.GDglitchedberryObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ThePainter"), gdjs.bossfight2Code.GDThePainterObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDglitchedberryObjects1Objects, false, runtimeScene, false);
+for (var i = 0, k = 0, l = gdjs.bossfight2Code.GDThePainterObjects1.length;i<l;++i) {
+    if ( gdjs.bossfight2Code.GDThePainterObjects1[i].getBehavior("Flippable").isFlippedX() ) {
+        isConditionTrue_0 = true;
+        gdjs.bossfight2Code.GDThePainterObjects1[k] = gdjs.bossfight2Code.GDThePainterObjects1[i];
+        ++k;
+    }
+}
+gdjs.bossfight2Code.GDThePainterObjects1.length = k;
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23625660);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDPlayerObjects1 */
-/* Reuse gdjs.SecretCode.GDglitchedberryObjects1 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "e_glitched.ogg", false, 100, gdjs.randomFloatInRange(0.9, 1.2));
-}
-{for(var i = 0, len = gdjs.SecretCode.GDglitchedberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDglitchedberryObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(3);
-}
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("Effect").enableEffect("Effect", true);
-}
-}
 
 { //Subevents
-gdjs.SecretCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.bossfight2Code.eventsList9(runtimeScene);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -926,357 +1353,39 @@ gdjs.SecretCode.eventsList3(runtimeScene);} //End of subevents
 
 {
 
-gdjs.SecretCode.GDBerryObjects1.length = 0;
-
-gdjs.SecretCode.GDCaffeineBerryObjects1.length = 0;
-
-gdjs.SecretCode.GDGoodBerryObjects1.length = 0;
-
-gdjs.SecretCode.GDMinusBerryObjects1.length = 0;
-
-gdjs.SecretCode.GDRNGBerryObjects1.length = 0;
-
-gdjs.SecretCode.GDSpeedyObjects1.length = 0;
-
-gdjs.SecretCode.GDcontrollerObjects1.length = 0;
-
-gdjs.SecretCode.GDdoublejumpberryObjects1.length = 0;
-
-gdjs.SecretCode.GDgabossObjects1.length = 0;
-
-gdjs.SecretCode.GDglitchedberryObjects1.length = 0;
-
-gdjs.SecretCode.GDnojumpberryObjects1.length = 0;
-
-gdjs.SecretCode.GDpoisonberryObjects1.length = 0;
-
-gdjs.SecretCode.GDshadowberryObjects1.length = 0;
-
+gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.bossfight2Code.GDNewSpriteObjects1);
+gdjs.copyArray(runtimeScene.getObjects("controller"), gdjs.bossfight2Code.GDcontrollerObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{gdjs.SecretCode.GDBerryObjects1_1final.length = 0;
-gdjs.SecretCode.GDCaffeineBerryObjects1_1final.length = 0;
-gdjs.SecretCode.GDGoodBerryObjects1_1final.length = 0;
-gdjs.SecretCode.GDMinusBerryObjects1_1final.length = 0;
-gdjs.SecretCode.GDRNGBerryObjects1_1final.length = 0;
-gdjs.SecretCode.GDSpeedyObjects1_1final.length = 0;
-gdjs.SecretCode.GDcontrollerObjects1_1final.length = 0;
-gdjs.SecretCode.GDdoublejumpberryObjects1_1final.length = 0;
-gdjs.SecretCode.GDgabossObjects1_1final.length = 0;
-gdjs.SecretCode.GDglitchedberryObjects1_1final.length = 0;
-gdjs.SecretCode.GDnojumpberryObjects1_1final.length = 0;
-gdjs.SecretCode.GDpoisonberryObjects1_1final.length = 0;
-gdjs.SecretCode.GDshadowberryObjects1_1final.length = 0;
-let isConditionTrue_1 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDcontrollerObjects1Objects, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDNewSpriteObjects1Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("Berry"), gdjs.SecretCode.GDBerryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("CaffeineBerry"), gdjs.SecretCode.GDCaffeineBerryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("GoodBerry"), gdjs.SecretCode.GDGoodBerryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("MinusBerry"), gdjs.SecretCode.GDMinusBerryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RNGBerry"), gdjs.SecretCode.GDRNGBerryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Speedy"), gdjs.SecretCode.GDSpeedyObjects2);
-gdjs.copyArray(runtimeScene.getObjects("controller"), gdjs.SecretCode.GDcontrollerObjects2);
-gdjs.copyArray(runtimeScene.getObjects("doublejumpberry"), gdjs.SecretCode.GDdoublejumpberryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("glitchedberry"), gdjs.SecretCode.GDglitchedberryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("nojumpberry"), gdjs.SecretCode.GDnojumpberryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("poisonberry"), gdjs.SecretCode.GDpoisonberryObjects2);
-gdjs.copyArray(runtimeScene.getObjects("shadowberry"), gdjs.SecretCode.GDshadowberryObjects2);
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDcontrollerObjects2Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDRNGBerryObjects2ObjectsGDgdjs_9546SecretCode_9546GDBerryObjects2ObjectsGDgdjs_9546SecretCode_9546GDglitchedberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDSpeedyObjects2ObjectsGDgdjs_9546SecretCode_9546GDshadowberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDpoisonberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDnojumpberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDdoublejumpberryObjects2ObjectsGDgdjs_9546SecretCode_9546GDMinusBerryObjects2ObjectsGDgdjs_9546SecretCode_9546GDCaffeineBerryObjects2ObjectsGDgdjs_9546SecretCode_9546GDGoodBerryObjects2Objects, false, runtimeScene, false);
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.SecretCode.GDBerryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDBerryObjects1_1final.indexOf(gdjs.SecretCode.GDBerryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDBerryObjects1_1final.push(gdjs.SecretCode.GDBerryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDCaffeineBerryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDCaffeineBerryObjects1_1final.indexOf(gdjs.SecretCode.GDCaffeineBerryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDCaffeineBerryObjects1_1final.push(gdjs.SecretCode.GDCaffeineBerryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDGoodBerryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDGoodBerryObjects1_1final.indexOf(gdjs.SecretCode.GDGoodBerryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDGoodBerryObjects1_1final.push(gdjs.SecretCode.GDGoodBerryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDMinusBerryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDMinusBerryObjects1_1final.indexOf(gdjs.SecretCode.GDMinusBerryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDMinusBerryObjects1_1final.push(gdjs.SecretCode.GDMinusBerryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDRNGBerryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDRNGBerryObjects1_1final.indexOf(gdjs.SecretCode.GDRNGBerryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDRNGBerryObjects1_1final.push(gdjs.SecretCode.GDRNGBerryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDSpeedyObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDSpeedyObjects1_1final.indexOf(gdjs.SecretCode.GDSpeedyObjects2[j]) === -1 )
-            gdjs.SecretCode.GDSpeedyObjects1_1final.push(gdjs.SecretCode.GDSpeedyObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDcontrollerObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDcontrollerObjects1_1final.indexOf(gdjs.SecretCode.GDcontrollerObjects2[j]) === -1 )
-            gdjs.SecretCode.GDcontrollerObjects1_1final.push(gdjs.SecretCode.GDcontrollerObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDdoublejumpberryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDdoublejumpberryObjects1_1final.indexOf(gdjs.SecretCode.GDdoublejumpberryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDdoublejumpberryObjects1_1final.push(gdjs.SecretCode.GDdoublejumpberryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDglitchedberryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDglitchedberryObjects1_1final.indexOf(gdjs.SecretCode.GDglitchedberryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDglitchedberryObjects1_1final.push(gdjs.SecretCode.GDglitchedberryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDnojumpberryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDnojumpberryObjects1_1final.indexOf(gdjs.SecretCode.GDnojumpberryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDnojumpberryObjects1_1final.push(gdjs.SecretCode.GDnojumpberryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDpoisonberryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDpoisonberryObjects1_1final.indexOf(gdjs.SecretCode.GDpoisonberryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDpoisonberryObjects1_1final.push(gdjs.SecretCode.GDpoisonberryObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDshadowberryObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDshadowberryObjects1_1final.indexOf(gdjs.SecretCode.GDshadowberryObjects2[j]) === -1 )
-            gdjs.SecretCode.GDshadowberryObjects1_1final.push(gdjs.SecretCode.GDshadowberryObjects2[j]);
-    }
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("controller"), gdjs.SecretCode.GDcontrollerObjects2);
-gdjs.copyArray(runtimeScene.getObjects("gaboss"), gdjs.SecretCode.GDgabossObjects2);
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDcontrollerObjects2Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDgabossObjects2Objects, false, runtimeScene, false);
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.SecretCode.GDcontrollerObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDcontrollerObjects1_1final.indexOf(gdjs.SecretCode.GDcontrollerObjects2[j]) === -1 )
-            gdjs.SecretCode.GDcontrollerObjects1_1final.push(gdjs.SecretCode.GDcontrollerObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.SecretCode.GDgabossObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.SecretCode.GDgabossObjects1_1final.indexOf(gdjs.SecretCode.GDgabossObjects2[j]) === -1 )
-            gdjs.SecretCode.GDgabossObjects1_1final.push(gdjs.SecretCode.GDgabossObjects2[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.SecretCode.GDBerryObjects1_1final, gdjs.SecretCode.GDBerryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDCaffeineBerryObjects1_1final, gdjs.SecretCode.GDCaffeineBerryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDGoodBerryObjects1_1final, gdjs.SecretCode.GDGoodBerryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDMinusBerryObjects1_1final, gdjs.SecretCode.GDMinusBerryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDRNGBerryObjects1_1final, gdjs.SecretCode.GDRNGBerryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDSpeedyObjects1_1final, gdjs.SecretCode.GDSpeedyObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDcontrollerObjects1_1final, gdjs.SecretCode.GDcontrollerObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDdoublejumpberryObjects1_1final, gdjs.SecretCode.GDdoublejumpberryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDgabossObjects1_1final, gdjs.SecretCode.GDgabossObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDglitchedberryObjects1_1final, gdjs.SecretCode.GDglitchedberryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDnojumpberryObjects1_1final, gdjs.SecretCode.GDnojumpberryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDpoisonberryObjects1_1final, gdjs.SecretCode.GDpoisonberryObjects1);
-gdjs.copyArray(gdjs.SecretCode.GDshadowberryObjects1_1final, gdjs.SecretCode.GDshadowberryObjects1);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24414820);
 }
 }
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23628180);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDBerryObjects1 */
-/* Reuse gdjs.SecretCode.GDCaffeineBerryObjects1 */
-/* Reuse gdjs.SecretCode.GDGoodBerryObjects1 */
-/* Reuse gdjs.SecretCode.GDMinusBerryObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.SecretCode.GDNewText3Objects1);
-/* Reuse gdjs.SecretCode.GDRNGBerryObjects1 */
-/* Reuse gdjs.SecretCode.GDSpeedyObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("combotimw"), gdjs.SecretCode.GDcombotimwObjects1);
-/* Reuse gdjs.SecretCode.GDcontrollerObjects1 */
-/* Reuse gdjs.SecretCode.GDdoublejumpberryObjects1 */
-/* Reuse gdjs.SecretCode.GDgabossObjects1 */
-/* Reuse gdjs.SecretCode.GDglitchedberryObjects1 */
-/* Reuse gdjs.SecretCode.GDnojumpberryObjects1 */
-/* Reuse gdjs.SecretCode.GDpoisonberryObjects1 */
-/* Reuse gdjs.SecretCode.GDshadowberryObjects1 */
-gdjs.SecretCode.GDexplosionObjects1.length = 0;
+/* Reuse gdjs.bossfight2Code.GDNewSpriteObjects1 */
+/* Reuse gdjs.bossfight2Code.GDcontrollerObjects1 */
+gdjs.bossfight2Code.GDexplosionObjects1.length = 0;
 
-{for(var i = 0, len = gdjs.SecretCode.GDRNGBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDRNGBerryObjects1[i].deleteFromScene(runtimeScene);
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.bossfight2Code.mapOfGDgdjs_9546bossfight2Code_9546GDexplosionObjects1Objects, (( gdjs.bossfight2Code.GDNewSpriteObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDNewSpriteObjects1[0].getPointX("")), (( gdjs.bossfight2Code.GDNewSpriteObjects1.length === 0 ) ? 0 :gdjs.bossfight2Code.GDNewSpriteObjects1[0].getPointY("")) - 10, "");
 }
-for(var i = 0, len = gdjs.SecretCode.GDBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDBerryObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDglitchedberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDglitchedberryObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDSpeedyObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDSpeedyObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDshadowberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDshadowberryObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDpoisonberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDpoisonberryObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDnojumpberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDnojumpberryObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDdoublejumpberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDdoublejumpberryObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDMinusBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDMinusBerryObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDCaffeineBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDCaffeineBerryObjects1[i].deleteFromScene(runtimeScene);
-}
-for(var i = 0, len = gdjs.SecretCode.GDGoodBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDGoodBerryObjects1[i].deleteFromScene(runtimeScene);
+{for(var i = 0, len = gdjs.bossfight2Code.GDcontrollerObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDcontrollerObjects1[i].deleteFromScene(runtimeScene);
 }
 }
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "combotime");
+{for(var i = 0, len = gdjs.bossfight2Code.GDNewSpriteObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDNewSpriteObjects1[i].deleteFromScene(runtimeScene);
 }
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDexplosionObjects1Objects, (( gdjs.SecretCode.GDcontrollerObjects1.length === 0 ) ? 0 :gdjs.SecretCode.GDcontrollerObjects1[0].getPointX("")) - 100, (( gdjs.SecretCode.GDcontrollerObjects1.length === 0 ) ? 0 :gdjs.SecretCode.GDcontrollerObjects1[0].getPointY("")) - 100, "");
 }
-{for(var i = 0, len = gdjs.SecretCode.GDexplosionObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDexplosionObjects1[i].getBehavior("Scale").setScale(3);
+{for(var i = 0, len = gdjs.bossfight2Code.GDexplosionObjects1.length ;i < len;++i) {
+    gdjs.bossfight2Code.GDexplosionObjects1[i].getBehavior("Scale").setScale(2);
 }
 }
 {gdjs.evtTools.sound.playSound(runtimeScene, "ssvid.app--deltarune-explosion-greenscreen.mp3", false, 100, 1);
 }
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(1);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
-}
-{for(var i = 0, len = gdjs.SecretCode.GDNewText3Objects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewText3Objects1[i].hide(false);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDcombotimwObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDcombotimwObjects1[i].hide(false);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDgabossObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDgabossObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("explosion"), gdjs.SecretCode.GDexplosionObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDexplosionObjects1.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDexplosionObjects1[i].getBehavior("Animation").hasAnimationEnded() ) {
-        isConditionTrue_0 = true;
-        gdjs.SecretCode.GDexplosionObjects1[k] = gdjs.SecretCode.GDexplosionObjects1[i];
-        ++k;
-    }
-}
-gdjs.SecretCode.GDexplosionObjects1.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDexplosionObjects1 */
-{for(var i = 0, len = gdjs.SecretCode.GDexplosionObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDexplosionObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("poisonberry"), gdjs.SecretCode.GDpoisonberryObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDpoisonberryObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23631196);
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite2"), gdjs.SecretCode.GDNewSprite2Objects1);
-/* Reuse gdjs.SecretCode.GDPlayerObjects1 */
-/* Reuse gdjs.SecretCode.GDpoisonberryObjects1 */
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, (( gdjs.SecretCode.GDNewSprite2Objects1.length === 0 ) ? 0 :gdjs.SecretCode.GDNewSprite2Objects1[0].getPointX("")), (( gdjs.SecretCode.GDNewSprite2Objects1.length === 0 ) ? 0 :gdjs.SecretCode.GDNewSprite2Objects1[0].getPointY("")), "");
-}
-{gdjs.evtTools.sound.playSound(runtimeScene, "Death.mp3", false, 100, 1);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(0);
-}
-{for(var i = 0, len = gdjs.SecretCode.GDpoisonberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDpoisonberryObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-gdjs.copyArray(runtimeScene.getObjects("nojumpberry"), gdjs.SecretCode.GDnojumpberryObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDnojumpberryObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23633348);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDPlayerObjects1 */
-/* Reuse gdjs.SecretCode.GDnojumpberryObjects1 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Eat.mp3", false, 100, gdjs.randomFloatInRange(0.9, 1.2));
-}
-{for(var i = 0, len = gdjs.SecretCode.GDnojumpberryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDnojumpberryObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(3);
-}
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").setMaxFallingSpeed(0, false);
-}
-}
-
-{ //Subevents
-gdjs.SecretCode.eventsList4(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("FlatDarkJoystick"), gdjs.SecretCode.GDFlatDarkJoystickObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDFlatDarkJoystickObjects1.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDFlatDarkJoystickObjects1[i].IsDirectionPushed4Way("Up", null) ) {
-        isConditionTrue_0 = true;
-        gdjs.SecretCode.GDFlatDarkJoystickObjects1[k] = gdjs.SecretCode.GDFlatDarkJoystickObjects1[i];
-        ++k;
-    }
-}
-gdjs.SecretCode.GDFlatDarkJoystickObjects1.length = k;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateJumpKey();
-}
-}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1286,200 +1395,8 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObject
 
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "combotime") >= 5;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.SecretCode.GDNewText3Objects1);
-gdjs.copyArray(runtimeScene.getObjects("combotimw"), gdjs.SecretCode.GDcombotimwObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDNewText3Objects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDNewText3Objects1[i].hide();
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(0);
-}
-{for(var i = 0, len = gdjs.SecretCode.GDcombotimwObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDcombotimwObjects1[i].hide();
-}
-}
-}
-
-}
-
-
 {
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "soda breakcore.mp3", 1, true, 100, 1);
-}
-}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("MinusBerry"), gdjs.SecretCode.GDMinusBerryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDMinusBerryObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23637756);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDMinusBerryObjects1 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Eat.mp3", false, 100, gdjs.randomFloatInRange(0.7, 0.9));
-}
-{for(var i = 0, len = gdjs.SecretCode.GDMinusBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDMinusBerryObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(-(15));
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("CaffeineBerry"), gdjs.SecretCode.GDCaffeineBerryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDCaffeineBerryObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23639004);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDCaffeineBerryObjects1 */
-/* Reuse gdjs.SecretCode.GDPlayerObjects1 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Powerup.mp3", false, 100, gdjs.randomFloatInRange(0.7, 0.9));
-}
-{for(var i = 0, len = gdjs.SecretCode.GDCaffeineBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDCaffeineBerryObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(5);
-}
-{for(var i = 0, len = gdjs.SecretCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").setMaxSpeed(1000);
-}
-}
-
-{ //Subevents
-gdjs.SecretCode.eventsList5(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("GoodBerry"), gdjs.SecretCode.GDGoodBerryObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDGoodBerryObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23641212);
-}
-}
-if (isConditionTrue_0) {
-/* Reuse gdjs.SecretCode.GDGoodBerryObjects1 */
-{gdjs.evtTools.sound.playSound(runtimeScene, "Eat.mp3", false, 100, gdjs.randomFloatInRange(0.9, 1.2));
-}
-{for(var i = 0, len = gdjs.SecretCode.GDGoodBerryObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDGoodBerryObjects1[i].deleteFromScene(runtimeScene);
-}
-}
-{runtimeScene.getScene().getVariables().getFromIndex(0).add(10);
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("BerryNormalSpawn"), gdjs.SecretCode.GDBerryNormalSpawnObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.SecretCode.GDNewTextObjects1);
-{for(var i = 0, len = gdjs.SecretCode.GDBerryNormalSpawnObjects1.length ;i < len;++i) {
-    gdjs.SecretCode.GDBerryNormalSpawnObjects1[i].getBehavior("ObjectSpawner").SpawnObject(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDNewTextObjects1Objects, null);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("osakaaaahsataandagi"), gdjs.SecretCode.GDosakaaaahsataandagiObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SecretCode.GDosakaaaahsataandagiObjects1.length;i<l;++i) {
-    if ( gdjs.SecretCode.GDosakaaaahsataandagiObjects1[i].getBehavior("ButtonFSM").IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.SecretCode.GDosakaaaahsataandagiObjects1[k] = gdjs.SecretCode.GDosakaaaahsataandagiObjects1[i];
-        ++k;
-    }
-}
-gdjs.SecretCode.GDosakaaaahsataandagiObjects1.length = k;
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "ssvid.app--ULTRAKILL-Parry-Sound-Effect.mp3", false, 100, 1);
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("GABRIEL"), gdjs.SecretCode.GDGABRIELObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.SecretCode.GDPlayerObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDGABRIELObjects1Objects, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDPlayerObjects1Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23644132);
-}
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewTiledSprite4"), gdjs.SecretCode.GDNewTiledSprite4Objects1);
-gdjs.SecretCode.GDgabossObjects1.length = 0;
-
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.SecretCode.mapOfGDgdjs_9546SecretCode_9546GDgabossObjects1Objects, (( gdjs.SecretCode.GDNewTiledSprite4Objects1.length === 0 ) ? 0 :gdjs.SecretCode.GDNewTiledSprite4Objects1[0].getX()), (( gdjs.SecretCode.GDNewTiledSprite4Objects1.length === 0 ) ? 0 :gdjs.SecretCode.GDNewTiledSprite4Objects1[0].getY()), "");
-}
-{gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 1);
-}
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "divine intervention 000001 accuracy .mp3", 1, true, 100, 1);
-}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1487,231 +1404,177 @@ gdjs.SecretCode.GDgabossObjects1.length = 0;
 
 };
 
-gdjs.SecretCode.func = function(runtimeScene) {
+gdjs.bossfight2Code.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.SecretCode.GDNewTiledSpriteObjects1.length = 0;
-gdjs.SecretCode.GDNewTiledSpriteObjects2.length = 0;
-gdjs.SecretCode.GDNewTiledSpriteObjects3.length = 0;
-gdjs.SecretCode.GDNewTiledSprite2Objects1.length = 0;
-gdjs.SecretCode.GDNewTiledSprite2Objects2.length = 0;
-gdjs.SecretCode.GDNewTiledSprite2Objects3.length = 0;
-gdjs.SecretCode.GDPlayerObjects1.length = 0;
-gdjs.SecretCode.GDPlayerObjects2.length = 0;
-gdjs.SecretCode.GDPlayerObjects3.length = 0;
-gdjs.SecretCode.GDFlatDarkJoystickObjects1.length = 0;
-gdjs.SecretCode.GDFlatDarkJoystickObjects2.length = 0;
-gdjs.SecretCode.GDFlatDarkJoystickObjects3.length = 0;
-gdjs.SecretCode.GDBerryObjects1.length = 0;
-gdjs.SecretCode.GDBerryObjects2.length = 0;
-gdjs.SecretCode.GDBerryObjects3.length = 0;
-gdjs.SecretCode.GDBerryNormalSpawnObjects1.length = 0;
-gdjs.SecretCode.GDBerryNormalSpawnObjects2.length = 0;
-gdjs.SecretCode.GDBerryNormalSpawnObjects3.length = 0;
-gdjs.SecretCode.GDNewTextObjects1.length = 0;
-gdjs.SecretCode.GDNewTextObjects2.length = 0;
-gdjs.SecretCode.GDNewTextObjects3.length = 0;
-gdjs.SecretCode.GDNewTiledSprite4Objects1.length = 0;
-gdjs.SecretCode.GDNewTiledSprite4Objects2.length = 0;
-gdjs.SecretCode.GDNewTiledSprite4Objects3.length = 0;
-gdjs.SecretCode.GDSpeedySpawnerObjects1.length = 0;
-gdjs.SecretCode.GDSpeedySpawnerObjects2.length = 0;
-gdjs.SecretCode.GDSpeedySpawnerObjects3.length = 0;
-gdjs.SecretCode.GDSpeedyObjects1.length = 0;
-gdjs.SecretCode.GDSpeedyObjects2.length = 0;
-gdjs.SecretCode.GDSpeedyObjects3.length = 0;
-gdjs.SecretCode.GDNewText2Objects1.length = 0;
-gdjs.SecretCode.GDNewText2Objects2.length = 0;
-gdjs.SecretCode.GDNewText2Objects3.length = 0;
-gdjs.SecretCode.GDPhysiscsObjects1.length = 0;
-gdjs.SecretCode.GDPhysiscsObjects2.length = 0;
-gdjs.SecretCode.GDPhysiscsObjects3.length = 0;
-gdjs.SecretCode.GDRNGBerryObjects1.length = 0;
-gdjs.SecretCode.GDRNGBerryObjects2.length = 0;
-gdjs.SecretCode.GDRNGBerryObjects3.length = 0;
-gdjs.SecretCode.GDrngspawnObjects1.length = 0;
-gdjs.SecretCode.GDrngspawnObjects2.length = 0;
-gdjs.SecretCode.GDrngspawnObjects3.length = 0;
-gdjs.SecretCode.GDshadowberryObjects1.length = 0;
-gdjs.SecretCode.GDshadowberryObjects2.length = 0;
-gdjs.SecretCode.GDshadowberryObjects3.length = 0;
-gdjs.SecretCode.GDcontrollerObjects1.length = 0;
-gdjs.SecretCode.GDcontrollerObjects2.length = 0;
-gdjs.SecretCode.GDcontrollerObjects3.length = 0;
-gdjs.SecretCode.GDNewSpriteObjects1.length = 0;
-gdjs.SecretCode.GDNewSpriteObjects2.length = 0;
-gdjs.SecretCode.GDNewSpriteObjects3.length = 0;
-gdjs.SecretCode.GDglitchedberryObjects1.length = 0;
-gdjs.SecretCode.GDglitchedberryObjects2.length = 0;
-gdjs.SecretCode.GDglitchedberryObjects3.length = 0;
-gdjs.SecretCode.GDexplosionObjects1.length = 0;
-gdjs.SecretCode.GDexplosionObjects2.length = 0;
-gdjs.SecretCode.GDexplosionObjects3.length = 0;
-gdjs.SecretCode.GDpoisonberryObjects1.length = 0;
-gdjs.SecretCode.GDpoisonberryObjects2.length = 0;
-gdjs.SecretCode.GDpoisonberryObjects3.length = 0;
-gdjs.SecretCode.GDNewSprite2Objects1.length = 0;
-gdjs.SecretCode.GDNewSprite2Objects2.length = 0;
-gdjs.SecretCode.GDNewSprite2Objects3.length = 0;
-gdjs.SecretCode.GDdoublejumpberryObjects1.length = 0;
-gdjs.SecretCode.GDdoublejumpberryObjects2.length = 0;
-gdjs.SecretCode.GDdoublejumpberryObjects3.length = 0;
-gdjs.SecretCode.GDnojumpberryObjects1.length = 0;
-gdjs.SecretCode.GDnojumpberryObjects2.length = 0;
-gdjs.SecretCode.GDnojumpberryObjects3.length = 0;
-gdjs.SecretCode.GDNewText3Objects1.length = 0;
-gdjs.SecretCode.GDNewText3Objects2.length = 0;
-gdjs.SecretCode.GDNewText3Objects3.length = 0;
-gdjs.SecretCode.GDcombotimwObjects1.length = 0;
-gdjs.SecretCode.GDcombotimwObjects2.length = 0;
-gdjs.SecretCode.GDcombotimwObjects3.length = 0;
-gdjs.SecretCode.GDMinusBerryObjects1.length = 0;
-gdjs.SecretCode.GDMinusBerryObjects2.length = 0;
-gdjs.SecretCode.GDMinusBerryObjects3.length = 0;
-gdjs.SecretCode.GDCaffeineBerryObjects1.length = 0;
-gdjs.SecretCode.GDCaffeineBerryObjects2.length = 0;
-gdjs.SecretCode.GDCaffeineBerryObjects3.length = 0;
-gdjs.SecretCode.GDGoodBerryObjects1.length = 0;
-gdjs.SecretCode.GDGoodBerryObjects2.length = 0;
-gdjs.SecretCode.GDGoodBerryObjects3.length = 0;
-gdjs.SecretCode.GDLimeBerryObjects1.length = 0;
-gdjs.SecretCode.GDLimeBerryObjects2.length = 0;
-gdjs.SecretCode.GDLimeBerryObjects3.length = 0;
-gdjs.SecretCode.GDkindahomelessObjects1.length = 0;
-gdjs.SecretCode.GDkindahomelessObjects2.length = 0;
-gdjs.SecretCode.GDkindahomelessObjects3.length = 0;
-gdjs.SecretCode.GDosakaaaahsataandagiObjects1.length = 0;
-gdjs.SecretCode.GDosakaaaahsataandagiObjects2.length = 0;
-gdjs.SecretCode.GDosakaaaahsataandagiObjects3.length = 0;
-gdjs.SecretCode.GDcarlosprimeObjects1.length = 0;
-gdjs.SecretCode.GDcarlosprimeObjects2.length = 0;
-gdjs.SecretCode.GDcarlosprimeObjects3.length = 0;
-gdjs.SecretCode.GDisthatfuinglossObjects1.length = 0;
-gdjs.SecretCode.GDisthatfuinglossObjects2.length = 0;
-gdjs.SecretCode.GDisthatfuinglossObjects3.length = 0;
-gdjs.SecretCode.GDGABRIELObjects1.length = 0;
-gdjs.SecretCode.GDGABRIELObjects2.length = 0;
-gdjs.SecretCode.GDGABRIELObjects3.length = 0;
-gdjs.SecretCode.GDgabossObjects1.length = 0;
-gdjs.SecretCode.GDgabossObjects2.length = 0;
-gdjs.SecretCode.GDgabossObjects3.length = 0;
-gdjs.SecretCode.GDNewText4Objects1.length = 0;
-gdjs.SecretCode.GDNewText4Objects2.length = 0;
-gdjs.SecretCode.GDNewText4Objects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSpriteObjects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSpriteObjects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSpriteObjects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite2Objects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite2Objects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite2Objects3.length = 0;
+gdjs.bossfight2Code.GDPlayerObjects1.length = 0;
+gdjs.bossfight2Code.GDPlayerObjects2.length = 0;
+gdjs.bossfight2Code.GDPlayerObjects3.length = 0;
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length = 0;
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects2.length = 0;
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects3.length = 0;
+gdjs.bossfight2Code.GDBerryObjects1.length = 0;
+gdjs.bossfight2Code.GDBerryObjects2.length = 0;
+gdjs.bossfight2Code.GDBerryObjects3.length = 0;
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects1.length = 0;
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects2.length = 0;
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects3.length = 0;
+gdjs.bossfight2Code.GDbosshptetxObjects1.length = 0;
+gdjs.bossfight2Code.GDbosshptetxObjects2.length = 0;
+gdjs.bossfight2Code.GDbosshptetxObjects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite4Objects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite4Objects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite4Objects3.length = 0;
+gdjs.bossfight2Code.GDSpeedySpawnerObjects1.length = 0;
+gdjs.bossfight2Code.GDSpeedySpawnerObjects2.length = 0;
+gdjs.bossfight2Code.GDSpeedySpawnerObjects3.length = 0;
+gdjs.bossfight2Code.GDSpeedyObjects1.length = 0;
+gdjs.bossfight2Code.GDSpeedyObjects2.length = 0;
+gdjs.bossfight2Code.GDSpeedyObjects3.length = 0;
+gdjs.bossfight2Code.GDcpObjects1.length = 0;
+gdjs.bossfight2Code.GDcpObjects2.length = 0;
+gdjs.bossfight2Code.GDcpObjects3.length = 0;
+gdjs.bossfight2Code.GDPhysiscsObjects1.length = 0;
+gdjs.bossfight2Code.GDPhysiscsObjects2.length = 0;
+gdjs.bossfight2Code.GDPhysiscsObjects3.length = 0;
+gdjs.bossfight2Code.GDRNGBerryObjects1.length = 0;
+gdjs.bossfight2Code.GDRNGBerryObjects2.length = 0;
+gdjs.bossfight2Code.GDRNGBerryObjects3.length = 0;
+gdjs.bossfight2Code.GDrngspawnObjects1.length = 0;
+gdjs.bossfight2Code.GDrngspawnObjects2.length = 0;
+gdjs.bossfight2Code.GDrngspawnObjects3.length = 0;
+gdjs.bossfight2Code.GDExplotionObjects1.length = 0;
+gdjs.bossfight2Code.GDExplotionObjects2.length = 0;
+gdjs.bossfight2Code.GDExplotionObjects3.length = 0;
+gdjs.bossfight2Code.GDKingCarlosObjects1.length = 0;
+gdjs.bossfight2Code.GDKingCarlosObjects2.length = 0;
+gdjs.bossfight2Code.GDKingCarlosObjects3.length = 0;
+gdjs.bossfight2Code.GDPlayer2Objects1.length = 0;
+gdjs.bossfight2Code.GDPlayer2Objects2.length = 0;
+gdjs.bossfight2Code.GDPlayer2Objects3.length = 0;
+gdjs.bossfight2Code.GDFireButtonObjects1.length = 0;
+gdjs.bossfight2Code.GDFireButtonObjects2.length = 0;
+gdjs.bossfight2Code.GDFireButtonObjects3.length = 0;
+gdjs.bossfight2Code.GDcontrollerObjects1.length = 0;
+gdjs.bossfight2Code.GDcontrollerObjects2.length = 0;
+gdjs.bossfight2Code.GDcontrollerObjects3.length = 0;
+gdjs.bossfight2Code.GDexplosionObjects1.length = 0;
+gdjs.bossfight2Code.GDexplosionObjects2.length = 0;
+gdjs.bossfight2Code.GDexplosionObjects3.length = 0;
+gdjs.bossfight2Code.GDbosstextObjects1.length = 0;
+gdjs.bossfight2Code.GDbosstextObjects2.length = 0;
+gdjs.bossfight2Code.GDbosstextObjects3.length = 0;
+gdjs.bossfight2Code.GDNewTextObjects1.length = 0;
+gdjs.bossfight2Code.GDNewTextObjects2.length = 0;
+gdjs.bossfight2Code.GDNewTextObjects3.length = 0;
+gdjs.bossfight2Code.GDNewText3Objects1.length = 0;
+gdjs.bossfight2Code.GDNewText3Objects2.length = 0;
+gdjs.bossfight2Code.GDNewText3Objects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite3Objects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite3Objects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite3Objects3.length = 0;
+gdjs.bossfight2Code.GDThePainterObjects1.length = 0;
+gdjs.bossfight2Code.GDThePainterObjects2.length = 0;
+gdjs.bossfight2Code.GDThePainterObjects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite5Objects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite5Objects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite5Objects3.length = 0;
+gdjs.bossfight2Code.GDNewSpriteObjects1.length = 0;
+gdjs.bossfight2Code.GDNewSpriteObjects2.length = 0;
+gdjs.bossfight2Code.GDNewSpriteObjects3.length = 0;
 
-gdjs.SecretCode.eventsList6(runtimeScene);
-gdjs.SecretCode.GDNewTiledSpriteObjects1.length = 0;
-gdjs.SecretCode.GDNewTiledSpriteObjects2.length = 0;
-gdjs.SecretCode.GDNewTiledSpriteObjects3.length = 0;
-gdjs.SecretCode.GDNewTiledSprite2Objects1.length = 0;
-gdjs.SecretCode.GDNewTiledSprite2Objects2.length = 0;
-gdjs.SecretCode.GDNewTiledSprite2Objects3.length = 0;
-gdjs.SecretCode.GDPlayerObjects1.length = 0;
-gdjs.SecretCode.GDPlayerObjects2.length = 0;
-gdjs.SecretCode.GDPlayerObjects3.length = 0;
-gdjs.SecretCode.GDFlatDarkJoystickObjects1.length = 0;
-gdjs.SecretCode.GDFlatDarkJoystickObjects2.length = 0;
-gdjs.SecretCode.GDFlatDarkJoystickObjects3.length = 0;
-gdjs.SecretCode.GDBerryObjects1.length = 0;
-gdjs.SecretCode.GDBerryObjects2.length = 0;
-gdjs.SecretCode.GDBerryObjects3.length = 0;
-gdjs.SecretCode.GDBerryNormalSpawnObjects1.length = 0;
-gdjs.SecretCode.GDBerryNormalSpawnObjects2.length = 0;
-gdjs.SecretCode.GDBerryNormalSpawnObjects3.length = 0;
-gdjs.SecretCode.GDNewTextObjects1.length = 0;
-gdjs.SecretCode.GDNewTextObjects2.length = 0;
-gdjs.SecretCode.GDNewTextObjects3.length = 0;
-gdjs.SecretCode.GDNewTiledSprite4Objects1.length = 0;
-gdjs.SecretCode.GDNewTiledSprite4Objects2.length = 0;
-gdjs.SecretCode.GDNewTiledSprite4Objects3.length = 0;
-gdjs.SecretCode.GDSpeedySpawnerObjects1.length = 0;
-gdjs.SecretCode.GDSpeedySpawnerObjects2.length = 0;
-gdjs.SecretCode.GDSpeedySpawnerObjects3.length = 0;
-gdjs.SecretCode.GDSpeedyObjects1.length = 0;
-gdjs.SecretCode.GDSpeedyObjects2.length = 0;
-gdjs.SecretCode.GDSpeedyObjects3.length = 0;
-gdjs.SecretCode.GDNewText2Objects1.length = 0;
-gdjs.SecretCode.GDNewText2Objects2.length = 0;
-gdjs.SecretCode.GDNewText2Objects3.length = 0;
-gdjs.SecretCode.GDPhysiscsObjects1.length = 0;
-gdjs.SecretCode.GDPhysiscsObjects2.length = 0;
-gdjs.SecretCode.GDPhysiscsObjects3.length = 0;
-gdjs.SecretCode.GDRNGBerryObjects1.length = 0;
-gdjs.SecretCode.GDRNGBerryObjects2.length = 0;
-gdjs.SecretCode.GDRNGBerryObjects3.length = 0;
-gdjs.SecretCode.GDrngspawnObjects1.length = 0;
-gdjs.SecretCode.GDrngspawnObjects2.length = 0;
-gdjs.SecretCode.GDrngspawnObjects3.length = 0;
-gdjs.SecretCode.GDshadowberryObjects1.length = 0;
-gdjs.SecretCode.GDshadowberryObjects2.length = 0;
-gdjs.SecretCode.GDshadowberryObjects3.length = 0;
-gdjs.SecretCode.GDcontrollerObjects1.length = 0;
-gdjs.SecretCode.GDcontrollerObjects2.length = 0;
-gdjs.SecretCode.GDcontrollerObjects3.length = 0;
-gdjs.SecretCode.GDNewSpriteObjects1.length = 0;
-gdjs.SecretCode.GDNewSpriteObjects2.length = 0;
-gdjs.SecretCode.GDNewSpriteObjects3.length = 0;
-gdjs.SecretCode.GDglitchedberryObjects1.length = 0;
-gdjs.SecretCode.GDglitchedberryObjects2.length = 0;
-gdjs.SecretCode.GDglitchedberryObjects3.length = 0;
-gdjs.SecretCode.GDexplosionObjects1.length = 0;
-gdjs.SecretCode.GDexplosionObjects2.length = 0;
-gdjs.SecretCode.GDexplosionObjects3.length = 0;
-gdjs.SecretCode.GDpoisonberryObjects1.length = 0;
-gdjs.SecretCode.GDpoisonberryObjects2.length = 0;
-gdjs.SecretCode.GDpoisonberryObjects3.length = 0;
-gdjs.SecretCode.GDNewSprite2Objects1.length = 0;
-gdjs.SecretCode.GDNewSprite2Objects2.length = 0;
-gdjs.SecretCode.GDNewSprite2Objects3.length = 0;
-gdjs.SecretCode.GDdoublejumpberryObjects1.length = 0;
-gdjs.SecretCode.GDdoublejumpberryObjects2.length = 0;
-gdjs.SecretCode.GDdoublejumpberryObjects3.length = 0;
-gdjs.SecretCode.GDnojumpberryObjects1.length = 0;
-gdjs.SecretCode.GDnojumpberryObjects2.length = 0;
-gdjs.SecretCode.GDnojumpberryObjects3.length = 0;
-gdjs.SecretCode.GDNewText3Objects1.length = 0;
-gdjs.SecretCode.GDNewText3Objects2.length = 0;
-gdjs.SecretCode.GDNewText3Objects3.length = 0;
-gdjs.SecretCode.GDcombotimwObjects1.length = 0;
-gdjs.SecretCode.GDcombotimwObjects2.length = 0;
-gdjs.SecretCode.GDcombotimwObjects3.length = 0;
-gdjs.SecretCode.GDMinusBerryObjects1.length = 0;
-gdjs.SecretCode.GDMinusBerryObjects2.length = 0;
-gdjs.SecretCode.GDMinusBerryObjects3.length = 0;
-gdjs.SecretCode.GDCaffeineBerryObjects1.length = 0;
-gdjs.SecretCode.GDCaffeineBerryObjects2.length = 0;
-gdjs.SecretCode.GDCaffeineBerryObjects3.length = 0;
-gdjs.SecretCode.GDGoodBerryObjects1.length = 0;
-gdjs.SecretCode.GDGoodBerryObjects2.length = 0;
-gdjs.SecretCode.GDGoodBerryObjects3.length = 0;
-gdjs.SecretCode.GDLimeBerryObjects1.length = 0;
-gdjs.SecretCode.GDLimeBerryObjects2.length = 0;
-gdjs.SecretCode.GDLimeBerryObjects3.length = 0;
-gdjs.SecretCode.GDkindahomelessObjects1.length = 0;
-gdjs.SecretCode.GDkindahomelessObjects2.length = 0;
-gdjs.SecretCode.GDkindahomelessObjects3.length = 0;
-gdjs.SecretCode.GDosakaaaahsataandagiObjects1.length = 0;
-gdjs.SecretCode.GDosakaaaahsataandagiObjects2.length = 0;
-gdjs.SecretCode.GDosakaaaahsataandagiObjects3.length = 0;
-gdjs.SecretCode.GDcarlosprimeObjects1.length = 0;
-gdjs.SecretCode.GDcarlosprimeObjects2.length = 0;
-gdjs.SecretCode.GDcarlosprimeObjects3.length = 0;
-gdjs.SecretCode.GDisthatfuinglossObjects1.length = 0;
-gdjs.SecretCode.GDisthatfuinglossObjects2.length = 0;
-gdjs.SecretCode.GDisthatfuinglossObjects3.length = 0;
-gdjs.SecretCode.GDGABRIELObjects1.length = 0;
-gdjs.SecretCode.GDGABRIELObjects2.length = 0;
-gdjs.SecretCode.GDGABRIELObjects3.length = 0;
-gdjs.SecretCode.GDgabossObjects1.length = 0;
-gdjs.SecretCode.GDgabossObjects2.length = 0;
-gdjs.SecretCode.GDgabossObjects3.length = 0;
-gdjs.SecretCode.GDNewText4Objects1.length = 0;
-gdjs.SecretCode.GDNewText4Objects2.length = 0;
-gdjs.SecretCode.GDNewText4Objects3.length = 0;
+gdjs.bossfight2Code.eventsList10(runtimeScene);
+gdjs.bossfight2Code.GDNewTiledSpriteObjects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSpriteObjects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSpriteObjects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite2Objects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite2Objects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite2Objects3.length = 0;
+gdjs.bossfight2Code.GDPlayerObjects1.length = 0;
+gdjs.bossfight2Code.GDPlayerObjects2.length = 0;
+gdjs.bossfight2Code.GDPlayerObjects3.length = 0;
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects1.length = 0;
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects2.length = 0;
+gdjs.bossfight2Code.GDFlatDarkJoystickObjects3.length = 0;
+gdjs.bossfight2Code.GDBerryObjects1.length = 0;
+gdjs.bossfight2Code.GDBerryObjects2.length = 0;
+gdjs.bossfight2Code.GDBerryObjects3.length = 0;
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects1.length = 0;
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects2.length = 0;
+gdjs.bossfight2Code.GDBerryNormalSpawnObjects3.length = 0;
+gdjs.bossfight2Code.GDbosshptetxObjects1.length = 0;
+gdjs.bossfight2Code.GDbosshptetxObjects2.length = 0;
+gdjs.bossfight2Code.GDbosshptetxObjects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite4Objects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite4Objects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite4Objects3.length = 0;
+gdjs.bossfight2Code.GDSpeedySpawnerObjects1.length = 0;
+gdjs.bossfight2Code.GDSpeedySpawnerObjects2.length = 0;
+gdjs.bossfight2Code.GDSpeedySpawnerObjects3.length = 0;
+gdjs.bossfight2Code.GDSpeedyObjects1.length = 0;
+gdjs.bossfight2Code.GDSpeedyObjects2.length = 0;
+gdjs.bossfight2Code.GDSpeedyObjects3.length = 0;
+gdjs.bossfight2Code.GDcpObjects1.length = 0;
+gdjs.bossfight2Code.GDcpObjects2.length = 0;
+gdjs.bossfight2Code.GDcpObjects3.length = 0;
+gdjs.bossfight2Code.GDPhysiscsObjects1.length = 0;
+gdjs.bossfight2Code.GDPhysiscsObjects2.length = 0;
+gdjs.bossfight2Code.GDPhysiscsObjects3.length = 0;
+gdjs.bossfight2Code.GDRNGBerryObjects1.length = 0;
+gdjs.bossfight2Code.GDRNGBerryObjects2.length = 0;
+gdjs.bossfight2Code.GDRNGBerryObjects3.length = 0;
+gdjs.bossfight2Code.GDrngspawnObjects1.length = 0;
+gdjs.bossfight2Code.GDrngspawnObjects2.length = 0;
+gdjs.bossfight2Code.GDrngspawnObjects3.length = 0;
+gdjs.bossfight2Code.GDExplotionObjects1.length = 0;
+gdjs.bossfight2Code.GDExplotionObjects2.length = 0;
+gdjs.bossfight2Code.GDExplotionObjects3.length = 0;
+gdjs.bossfight2Code.GDKingCarlosObjects1.length = 0;
+gdjs.bossfight2Code.GDKingCarlosObjects2.length = 0;
+gdjs.bossfight2Code.GDKingCarlosObjects3.length = 0;
+gdjs.bossfight2Code.GDPlayer2Objects1.length = 0;
+gdjs.bossfight2Code.GDPlayer2Objects2.length = 0;
+gdjs.bossfight2Code.GDPlayer2Objects3.length = 0;
+gdjs.bossfight2Code.GDFireButtonObjects1.length = 0;
+gdjs.bossfight2Code.GDFireButtonObjects2.length = 0;
+gdjs.bossfight2Code.GDFireButtonObjects3.length = 0;
+gdjs.bossfight2Code.GDcontrollerObjects1.length = 0;
+gdjs.bossfight2Code.GDcontrollerObjects2.length = 0;
+gdjs.bossfight2Code.GDcontrollerObjects3.length = 0;
+gdjs.bossfight2Code.GDexplosionObjects1.length = 0;
+gdjs.bossfight2Code.GDexplosionObjects2.length = 0;
+gdjs.bossfight2Code.GDexplosionObjects3.length = 0;
+gdjs.bossfight2Code.GDbosstextObjects1.length = 0;
+gdjs.bossfight2Code.GDbosstextObjects2.length = 0;
+gdjs.bossfight2Code.GDbosstextObjects3.length = 0;
+gdjs.bossfight2Code.GDNewTextObjects1.length = 0;
+gdjs.bossfight2Code.GDNewTextObjects2.length = 0;
+gdjs.bossfight2Code.GDNewTextObjects3.length = 0;
+gdjs.bossfight2Code.GDNewText3Objects1.length = 0;
+gdjs.bossfight2Code.GDNewText3Objects2.length = 0;
+gdjs.bossfight2Code.GDNewText3Objects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite3Objects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite3Objects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite3Objects3.length = 0;
+gdjs.bossfight2Code.GDThePainterObjects1.length = 0;
+gdjs.bossfight2Code.GDThePainterObjects2.length = 0;
+gdjs.bossfight2Code.GDThePainterObjects3.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite5Objects1.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite5Objects2.length = 0;
+gdjs.bossfight2Code.GDNewTiledSprite5Objects3.length = 0;
+gdjs.bossfight2Code.GDNewSpriteObjects1.length = 0;
+gdjs.bossfight2Code.GDNewSpriteObjects2.length = 0;
+gdjs.bossfight2Code.GDNewSpriteObjects3.length = 0;
 
 
 return;
 
 }
 
-gdjs['SecretCode'] = gdjs.SecretCode;
+gdjs['bossfight2Code'] = gdjs.bossfight2Code;

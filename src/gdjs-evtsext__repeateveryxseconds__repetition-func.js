@@ -17,6 +17,7 @@ gdjs.evtsExt__RepeatEveryXSeconds__Repetition.eventsList0 = function(runtimeScen
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__RepeatEveryXSeconds").getChild("Repetitions").getChild(eventsFunctionContext.getArgument("TimerName")));}
+elseEventsChainSatisfied = true;
 }
 
 }

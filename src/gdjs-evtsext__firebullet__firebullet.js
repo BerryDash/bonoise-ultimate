@@ -45,60 +45,60 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet = class FireBullet extends gdjs.
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.FireCooldown !== newBehaviorData.FireCooldown)
-      this._behaviorData.FireCooldown = newBehaviorData.FireCooldown;
-    if (oldBehaviorData.HasJustFired !== newBehaviorData.HasJustFired)
-      this._behaviorData.HasJustFired = newBehaviorData.HasJustFired;
-    if (oldBehaviorData.RotateBullet !== newBehaviorData.RotateBullet)
-      this._behaviorData.RotateBullet = newBehaviorData.RotateBullet;
-    if (oldBehaviorData.FiringArc !== newBehaviorData.FiringArc)
-      this._behaviorData.FiringArc = newBehaviorData.FiringArc;
-    if (oldBehaviorData.BulletQuantity !== newBehaviorData.BulletQuantity)
-      this._behaviorData.BulletQuantity = newBehaviorData.BulletQuantity;
-    if (oldBehaviorData.AngleVariance !== newBehaviorData.AngleVariance)
-      this._behaviorData.AngleVariance = newBehaviorData.AngleVariance;
-    if (oldBehaviorData.BulletSpeedVariance !== newBehaviorData.BulletSpeedVariance)
-      this._behaviorData.BulletSpeedVariance = newBehaviorData.BulletSpeedVariance;
-    if (oldBehaviorData.AmmoQuantity !== newBehaviorData.AmmoQuantity)
-      this._behaviorData.AmmoQuantity = newBehaviorData.AmmoQuantity;
-    if (oldBehaviorData.ShotsPerReload !== newBehaviorData.ShotsPerReload)
-      this._behaviorData.ShotsPerReload = newBehaviorData.ShotsPerReload;
-    if (oldBehaviorData.ReloadDuration !== newBehaviorData.ReloadDuration)
-      this._behaviorData.ReloadDuration = newBehaviorData.ReloadDuration;
-    if (oldBehaviorData.MaxAmmo !== newBehaviorData.MaxAmmo)
-      this._behaviorData.MaxAmmo = newBehaviorData.MaxAmmo;
-    if (oldBehaviorData.ShotsBeforeNextReload !== newBehaviorData.ShotsBeforeNextReload)
-      this._behaviorData.ShotsBeforeNextReload = newBehaviorData.ShotsBeforeNextReload;
-    if (oldBehaviorData.TotalShotsFired !== newBehaviorData.TotalShotsFired)
-      this._behaviorData.TotalShotsFired = newBehaviorData.TotalShotsFired;
-    if (oldBehaviorData.TotalBulletsCreated !== newBehaviorData.TotalBulletsCreated)
-      this._behaviorData.TotalBulletsCreated = newBehaviorData.TotalBulletsCreated;
-    if (oldBehaviorData.StartingAmmo !== newBehaviorData.StartingAmmo)
-      this._behaviorData.StartingAmmo = newBehaviorData.StartingAmmo;
-    if (oldBehaviorData.TotalReloadsCompleted !== newBehaviorData.TotalReloadsCompleted)
-      this._behaviorData.TotalReloadsCompleted = newBehaviorData.TotalReloadsCompleted;
-    if (oldBehaviorData.UnlimitedAmmo !== newBehaviorData.UnlimitedAmmo)
-      this._behaviorData.UnlimitedAmmo = newBehaviorData.UnlimitedAmmo;
-    if (oldBehaviorData.ReloadInProgress !== newBehaviorData.ReloadInProgress)
-      this._behaviorData.ReloadInProgress = newBehaviorData.ReloadInProgress;
-    if (oldBehaviorData.HeatIncreasePerShot !== newBehaviorData.HeatIncreasePerShot)
-      this._behaviorData.HeatIncreasePerShot = newBehaviorData.HeatIncreasePerShot;
-    if (oldBehaviorData.HeatLevel !== newBehaviorData.HeatLevel)
-      this._behaviorData.HeatLevel = newBehaviorData.HeatLevel;
-    if (oldBehaviorData.AutomaticReloading !== newBehaviorData.AutomaticReloading)
-      this._behaviorData.AutomaticReloading = newBehaviorData.AutomaticReloading;
-    if (oldBehaviorData.OverheatDuration !== newBehaviorData.OverheatDuration)
-      this._behaviorData.OverheatDuration = newBehaviorData.OverheatDuration;
-    if (oldBehaviorData.LinearCoolingRate !== newBehaviorData.LinearCoolingRate)
-      this._behaviorData.LinearCoolingRate = newBehaviorData.LinearCoolingRate;
-    if (oldBehaviorData.ExponentialCoolingRate !== newBehaviorData.ExponentialCoolingRate)
-      this._behaviorData.ExponentialCoolingRate = newBehaviorData.ExponentialCoolingRate;
-    if (oldBehaviorData.BulletLayer !== newBehaviorData.BulletLayer)
-      this._behaviorData.BulletLayer = newBehaviorData.BulletLayer;
-    if (oldBehaviorData.RandomizedAngle !== newBehaviorData.RandomizedAngle)
-      this._behaviorData.RandomizedAngle = newBehaviorData.RandomizedAngle;
+    if (behaviorOverriding.FireCooldown !== undefined)
+      this._behaviorData.FireCooldown = behaviorOverriding.FireCooldown;
+    if (behaviorOverriding.HasJustFired !== undefined)
+      this._behaviorData.HasJustFired = behaviorOverriding.HasJustFired;
+    if (behaviorOverriding.RotateBullet !== undefined)
+      this._behaviorData.RotateBullet = behaviorOverriding.RotateBullet;
+    if (behaviorOverriding.FiringArc !== undefined)
+      this._behaviorData.FiringArc = behaviorOverriding.FiringArc;
+    if (behaviorOverriding.BulletQuantity !== undefined)
+      this._behaviorData.BulletQuantity = behaviorOverriding.BulletQuantity;
+    if (behaviorOverriding.AngleVariance !== undefined)
+      this._behaviorData.AngleVariance = behaviorOverriding.AngleVariance;
+    if (behaviorOverriding.BulletSpeedVariance !== undefined)
+      this._behaviorData.BulletSpeedVariance = behaviorOverriding.BulletSpeedVariance;
+    if (behaviorOverriding.AmmoQuantity !== undefined)
+      this._behaviorData.AmmoQuantity = behaviorOverriding.AmmoQuantity;
+    if (behaviorOverriding.ShotsPerReload !== undefined)
+      this._behaviorData.ShotsPerReload = behaviorOverriding.ShotsPerReload;
+    if (behaviorOverriding.ReloadDuration !== undefined)
+      this._behaviorData.ReloadDuration = behaviorOverriding.ReloadDuration;
+    if (behaviorOverriding.MaxAmmo !== undefined)
+      this._behaviorData.MaxAmmo = behaviorOverriding.MaxAmmo;
+    if (behaviorOverriding.ShotsBeforeNextReload !== undefined)
+      this._behaviorData.ShotsBeforeNextReload = behaviorOverriding.ShotsBeforeNextReload;
+    if (behaviorOverriding.TotalShotsFired !== undefined)
+      this._behaviorData.TotalShotsFired = behaviorOverriding.TotalShotsFired;
+    if (behaviorOverriding.TotalBulletsCreated !== undefined)
+      this._behaviorData.TotalBulletsCreated = behaviorOverriding.TotalBulletsCreated;
+    if (behaviorOverriding.StartingAmmo !== undefined)
+      this._behaviorData.StartingAmmo = behaviorOverriding.StartingAmmo;
+    if (behaviorOverriding.TotalReloadsCompleted !== undefined)
+      this._behaviorData.TotalReloadsCompleted = behaviorOverriding.TotalReloadsCompleted;
+    if (behaviorOverriding.UnlimitedAmmo !== undefined)
+      this._behaviorData.UnlimitedAmmo = behaviorOverriding.UnlimitedAmmo;
+    if (behaviorOverriding.ReloadInProgress !== undefined)
+      this._behaviorData.ReloadInProgress = behaviorOverriding.ReloadInProgress;
+    if (behaviorOverriding.HeatIncreasePerShot !== undefined)
+      this._behaviorData.HeatIncreasePerShot = behaviorOverriding.HeatIncreasePerShot;
+    if (behaviorOverriding.HeatLevel !== undefined)
+      this._behaviorData.HeatLevel = behaviorOverriding.HeatLevel;
+    if (behaviorOverriding.AutomaticReloading !== undefined)
+      this._behaviorData.AutomaticReloading = behaviorOverriding.AutomaticReloading;
+    if (behaviorOverriding.OverheatDuration !== undefined)
+      this._behaviorData.OverheatDuration = behaviorOverriding.OverheatDuration;
+    if (behaviorOverriding.LinearCoolingRate !== undefined)
+      this._behaviorData.LinearCoolingRate = behaviorOverriding.LinearCoolingRate;
+    if (behaviorOverriding.ExponentialCoolingRate !== undefined)
+      this._behaviorData.ExponentialCoolingRate = behaviorOverriding.ExponentialCoolingRate;
+    if (behaviorOverriding.BulletLayer !== undefined)
+      this._behaviorData.BulletLayer = behaviorOverriding.BulletLayer;
+    if (behaviorOverriding.RandomizedAngle !== undefined)
+      this._behaviorData.RandomizedAngle = behaviorOverriding.RandomizedAngle;
 
     return true;
   }
@@ -417,6 +417,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShotsBeforeNextReload(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShotsPerReload())
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -518,6 +519,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAmmoQuantity(Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAmmoQuantity() - 1))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -533,6 +535,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShotsBeforeNextReload(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShotsBeforeNextReload()-1)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -575,6 +578,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ReloadAmmo(eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -607,6 +611,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.GDObjectObjects1[i].resetTimer("__FireBullet.OverheatDuration");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -627,6 +632,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -677,6 +683,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
 
 { //Subevents
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -702,6 +709,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShotsBeforeNextReload(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShotsPerReload())
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -731,6 +739,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShotsBeforeNextReload(Math.min(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShotsPerReload(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAmmoQuantity()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -778,6 +787,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.eventsList5(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -795,6 +805,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHeatLevel(Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHeatLevel() - gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getExponentialCoolingRate() * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHeatLevel()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -810,6 +821,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHeatLevel(Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHeatLevel() - gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene) * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getLinearCoolingRate()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -828,6 +840,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.doStepPreEventsContext.eventsList7(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -962,6 +975,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardObjectContex
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardObjectContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).Fire(eventsFunctionContext.getArgument("XPosition"), eventsFunctionContext.getArgument("YPosition"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardObjectContext.mapOfGDgdjs_9546evtsExt_9595_9595FireBullet_9595_9595FireBullet_9546FireBullet_9546prototype_9546FireTowardObjectContext_9546GDBulletObjects1Objects, (gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardObjectContext.GDObjectObjects1[i].getAngleToObject((gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardObjectContext.GDTargetObjectObjects1.length !== 0 ? gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardObjectContext.GDTargetObjectObjects1[0] : null))), eventsFunctionContext.getArgument("Speed"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1081,6 +1095,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionCont
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).Fire(eventsFunctionContext.getArgument("XPosition"), eventsFunctionContext.getArgument("YPosition"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.mapOfGDgdjs_9546evtsExt_9595_9595FireBullet_9595_9595FireBullet_9546FireBullet_9546prototype_9546FireTowardPositionContext_9546GDBulletObjects1Objects, (gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireTowardPositionContext.GDObjectObjects1[i].getAngleToPosition(eventsFunctionContext.getArgument("TargetXPosition"), eventsFunctionContext.getArgument("TargetYPosition"))), eventsFunctionContext.getArgument("Speed"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1207,6 +1222,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectOb
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(eventsFunctionContext.getArgument("Angle") + gdjs.evtTools.common.lerp(-(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFiringArc()) / 2, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFiringArc() / 2, eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber() / (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBulletQuantity() - 1)));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1237,6 +1253,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectOb
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(eventsFunctionContext.getArgument("Angle") + gdjs.evtTools.common.lerp(-(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFiringArc()) / 2, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFiringArc() / 2, eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber() / eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBulletQuantity()));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1257,6 +1274,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletOb
 }
 {eventsFunctionContext.localVariables[0].getFromIndex(1).add(1);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1306,6 +1324,7 @@ let isConditionTrue_0 = false;
 
 { //Subevents
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 eventsFunctionContext.localVariables.pop();
 
@@ -1330,6 +1349,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDBulletOb
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FireSingleBullet(eventsFunctionContext.getArgument("XPosition"), eventsFunctionContext.getArgument("YPosition"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.mapOfGDgdjs_9546evtsExt_9595_9595FireBullet_9595_9595FireBullet_9546FireBullet_9546prototype_9546FireContext_9546GDBulletObjects2Objects, eventsFunctionContext.getArgument("Angle"), eventsFunctionContext.getArgument("Speed"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1346,6 +1366,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1373,6 +1394,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireContext.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1507,6 +1529,7 @@ gdjs.copyArray(gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireSin
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireSingleBulletContext.GDBulletObjects3[i].addPolarForce(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getRandomizedAngle(), eventsFunctionContext.getArgument("Speed") + gdjs.randomInRange(-(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBulletSpeedVariance()), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBulletSpeedVariance()), 1);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1532,6 +1555,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireSingleBulletContext.GDBulletObjects2[i].setAngle(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getRandomizedAngle());
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1558,6 +1582,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireSingleBulletContex
 
 { //Subevents
 gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FireSingleBulletContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1577,6 +1602,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTotalBulletsCreated(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTotalBulletsCreated()+1)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1715,6 +1741,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ReloadAmmoContext.GDObjectObjects1[i].resetTimer("__FireBullet.ReloadingTimer");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1813,6 +1840,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1911,6 +1939,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2006,6 +2035,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.FiringArcContext.event
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFiringArc();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2102,6 +2132,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFiringArc(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2202,6 +2233,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetFiringArcContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetFiringArcOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2298,6 +2330,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.AngleVarianceContext.e
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAngleVariance();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2394,6 +2427,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAngleVariance(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2494,6 +2528,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetAngleVarianceContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetAngleVarianceOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2590,6 +2625,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.BulletSpeedVarianceCon
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBulletSpeedVariance();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2686,6 +2722,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setBulletSpeedVariance(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2786,6 +2823,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetBulletSpeedVarianceContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetBulletSpeedVarianceOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2882,6 +2920,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.BulletQuantityContext.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBulletQuantity();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2978,6 +3017,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setBulletQuantity(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3078,6 +3118,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetBulletQuantityContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetBulletQuantityOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3175,6 +3216,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setBulletLayer(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3275,6 +3317,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setRotateBullet(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3290,6 +3333,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setRotateBullet(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3390,6 +3434,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setUnlimitedAmmo(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3405,6 +3450,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setUnlimitedAmmo(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3501,6 +3547,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.CooldownContext.events
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFireCooldown();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3597,6 +3644,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFireCooldown(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3697,6 +3745,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetCooldownContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetCooldownOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3793,6 +3842,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ReloadDurationContext.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getReloadDuration();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3889,6 +3939,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setReloadDuration(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -3989,6 +4040,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetReloadDurationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetReloadDurationOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4085,6 +4137,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.OverheatDurationContex
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOverheatDuration();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4181,6 +4234,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOverheatDuration(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4281,6 +4335,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetOverheatDurationContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetOverheatDurationOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4377,6 +4432,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.AmmoQuantityContext.ev
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAmmoQuantity();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4473,6 +4529,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAmmoQuantity(Math.max(0, eventsFunctionContext.getArgument("Value")))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4573,6 +4630,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetAmmoQuantityContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetAmmoQuantityOp(Math.max(0, eventsFunctionContext.getArgument("Value")), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4669,6 +4727,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HeatIncreasePerShotCon
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHeatIncreasePerShot();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4765,6 +4824,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHeatIncreasePerShot(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4865,6 +4925,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetHeatPerShotContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetHeatPerShotOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -4961,6 +5022,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.MaxAmmoContext.eventsL
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxAmmo();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5057,6 +5119,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMaxAmmo(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5072,6 +5135,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAmmoQuantity(Math.min(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxAmmo(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAmmoQuantity()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5172,6 +5236,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetMaxAmmoContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetMaxAmmoOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5269,6 +5334,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTotalShotsFired(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5365,6 +5431,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTotalBulletsCreated(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5461,6 +5528,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTotalReloadsCompleted(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5556,6 +5624,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ShotsPerReloadContext.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShotsPerReload();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5652,6 +5721,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShotsPerReload(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5667,6 +5737,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShotsBeforeNextReload(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShotsPerReload())
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5767,6 +5838,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetShotsPerReloadContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetShotsPerReloadOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5864,6 +5936,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAutomaticReloading(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5879,6 +5952,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAutomaticReloading(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -5975,6 +6049,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.LinearCoolingRateConte
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getLinearCoolingRate();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6071,6 +6146,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setLinearCoolingRate(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6171,6 +6247,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetLinearCoolingRateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetLinearCoolingRateOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6267,6 +6344,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ExponentialCoolingRate
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getExponentialCoolingRate();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6363,6 +6441,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setExponentialCoolingRate(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6463,6 +6542,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBul
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.SetExponentialCoolingRateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetExponentialCoolingRateOp(eventsFunctionContext.getArgument("Value"), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6560,6 +6640,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAmmoQuantity(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAmmoQuantity()+eventsFunctionContext.getArgument("AmmoGained"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6582,6 +6663,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAmmoQuantity(Math.min(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxAmmo(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAmmoQuantity()))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6612,6 +6694,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IncreaseAmmoContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ReloadAmmo(eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6708,6 +6791,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.BulletLayerContext.eve
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBulletLayer();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6803,6 +6887,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.HeatLevelContext.event
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = Math.min(1, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHeatLevel());}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6898,6 +6983,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.TotalShotsFiredContext
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTotalShotsFired();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -6993,6 +7079,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.TotalBulletsCreatedCon
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTotalBulletsCreated();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7088,6 +7175,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.TotalReloadsCompletedC
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTotalReloadsCompleted();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7183,6 +7271,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ShotsBeforeNextReloadC
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShotsBeforeNextReload();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7279,6 +7368,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.CooldownTimeLeftContext.GDObjectObjects1);
 {eventsFunctionContext.returnValue = Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFireCooldown() - (( gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.CooldownTimeLeftContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.CooldownTimeLeftContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__FireBullet.FiringCooldown")));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7385,6 +7475,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.OverheatTimeLeftContex
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.OverheatTimeLeftContext.GDObjectObjects1 */
 {eventsFunctionContext.returnValue = Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOverheatDuration() - (( gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.OverheatTimeLeftContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.OverheatTimeLeftContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__FireBullet.OverheatDuration")));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7491,6 +7582,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ReloadTimeLeftContext.
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ReloadTimeLeftContext.GDObjectObjects1 */
 {eventsFunctionContext.returnValue = Math.max(0, eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getReloadDuration() - (( gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ReloadTimeLeftContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.ReloadTimeLeftContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__FireBullet.ReloadingTimer")));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7586,6 +7678,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsReloadInProgressCont
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7600,6 +7693,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7697,6 +7791,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsReadyToShootContext.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7802,6 +7897,7 @@ gdjs.copyArray(gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsReady
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7897,6 +7993,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsAutomaticReloadingEn
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -7911,6 +8008,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8006,6 +8104,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsUnlimitedAmmoContext
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8020,6 +8119,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8115,6 +8215,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsOutOfAmmoContext.eve
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8141,6 +8242,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8236,6 +8338,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsReloadNeededContext.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8262,6 +8365,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8359,6 +8463,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsOverheatedContext.ev
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8399,6 +8504,7 @@ gdjs.copyArray(gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsOverh
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8494,6 +8600,7 @@ gdjs.evtsExt__FireBullet__FireBullet.FireBullet.prototype.IsFiringCooldownActive
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = false;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -8509,6 +8616,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }

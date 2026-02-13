@@ -28,26 +28,26 @@ gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner = class ObjectSpawner e
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.SpawnPeriod !== newBehaviorData.SpawnPeriod)
-      this._behaviorData.SpawnPeriod = newBehaviorData.SpawnPeriod;
-    if (oldBehaviorData.OffsetX !== newBehaviorData.OffsetX)
-      this._behaviorData.OffsetX = newBehaviorData.OffsetX;
-    if (oldBehaviorData.OffsetY !== newBehaviorData.OffsetY)
-      this._behaviorData.OffsetY = newBehaviorData.OffsetY;
-    if (oldBehaviorData.JustSpawnedAnObject !== newBehaviorData.JustSpawnedAnObject)
-      this._behaviorData.JustSpawnedAnObject = newBehaviorData.JustSpawnedAnObject;
-    if (oldBehaviorData.MaxQuantityReached !== newBehaviorData.MaxQuantityReached)
-      this._behaviorData.MaxQuantityReached = newBehaviorData.MaxQuantityReached;
-    if (oldBehaviorData.MaxQuantity !== newBehaviorData.MaxQuantity)
-      this._behaviorData.MaxQuantity = newBehaviorData.MaxQuantity;
-    if (oldBehaviorData.SpawnerCapacity !== newBehaviorData.SpawnerCapacity)
-      this._behaviorData.SpawnerCapacity = newBehaviorData.SpawnerCapacity;
-    if (oldBehaviorData.UnlimitedCapacity !== newBehaviorData.UnlimitedCapacity)
-      this._behaviorData.UnlimitedCapacity = newBehaviorData.UnlimitedCapacity;
-    if (oldBehaviorData.RandomPosition !== newBehaviorData.RandomPosition)
-      this._behaviorData.RandomPosition = newBehaviorData.RandomPosition;
+    if (behaviorOverriding.SpawnPeriod !== undefined)
+      this._behaviorData.SpawnPeriod = behaviorOverriding.SpawnPeriod;
+    if (behaviorOverriding.OffsetX !== undefined)
+      this._behaviorData.OffsetX = behaviorOverriding.OffsetX;
+    if (behaviorOverriding.OffsetY !== undefined)
+      this._behaviorData.OffsetY = behaviorOverriding.OffsetY;
+    if (behaviorOverriding.JustSpawnedAnObject !== undefined)
+      this._behaviorData.JustSpawnedAnObject = behaviorOverriding.JustSpawnedAnObject;
+    if (behaviorOverriding.MaxQuantityReached !== undefined)
+      this._behaviorData.MaxQuantityReached = behaviorOverriding.MaxQuantityReached;
+    if (behaviorOverriding.MaxQuantity !== undefined)
+      this._behaviorData.MaxQuantity = behaviorOverriding.MaxQuantity;
+    if (behaviorOverriding.SpawnerCapacity !== undefined)
+      this._behaviorData.SpawnerCapacity = behaviorOverriding.SpawnerCapacity;
+    if (behaviorOverriding.UnlimitedCapacity !== undefined)
+      this._behaviorData.UnlimitedCapacity = behaviorOverriding.UnlimitedCapacity;
+    if (behaviorOverriding.RandomPosition !== undefined)
+      this._behaviorData.RandomPosition = behaviorOverriding.RandomPosition;
 
     return true;
   }
@@ -206,6 +206,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ObjectS
     gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.onCreatedContext.GDObjectObjects1[i].resetTimer("__ObjectSpawner.SpawnTimer");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -305,6 +306,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ObjectS
     gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.onActivateContext.GDObjectObjects1[i].unpauseTimer("__ObjectSpawner.SpawnTimer");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -404,6 +406,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ObjectS
     gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.onDeActivateContext.GDObjectObjects1[i].pauseTimer("__ObjectSpawner.SpawnTimer");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -518,7 +521,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(21942324);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22278580);
 }
 }
 if (isConditionTrue_0) {
@@ -528,6 +531,7 @@ gdjs.copyArray(gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototyp
     gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects2[i].resetTimer("__ObjectSpawner.SpawnTimer");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -550,6 +554,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMaxQuantityReached(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -564,6 +569,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMaxQuantityReached(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -593,6 +599,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -641,6 +648,7 @@ gdjs.copyArray(gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototyp
     gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectToSpawnObjects2[i].setCenterPositionInScene((( gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects2[0].getAABBCenterX()) + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetX(),(( gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects2[0].getAABBCenterY()) + eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetY());
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -674,6 +682,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectToSpawnObjects1[i].setCenterPositionInScene((( gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects1[0].getAABBLeft()) + gdjs.random((( gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects1[0].getWidth())),(( gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects1[0].getAABBTop()) + gdjs.random((( gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.GDObjectObjects1[0].getHeight())));
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -703,6 +712,7 @@ gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectCo
 
 { //Subevents
 gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -724,6 +734,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setJustSpawnedAnObject(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -816,6 +827,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnObjectContext.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -938,6 +950,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOffsetX(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1035,6 +1048,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setOffsetY(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1132,6 +1146,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpawnPeriod(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1228,6 +1243,7 @@ gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.OffsetXContex
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetX();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1324,6 +1340,7 @@ gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.OffsetYContex
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getOffsetY();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1420,6 +1437,7 @@ gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnPeriodCo
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpawnPeriod();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1519,6 +1537,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ObjectS
     gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.ResetSpawnTimerContext.GDObjectObjects1[i].resetTimer("__ObjectSpawner.SpawnTimer");
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1667,6 +1686,7 @@ gdjs.copyArray(gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototyp
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpawnPeriod();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1682,6 +1702,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.TimeBeforeSpawnContext.GDObjectObjects1);
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpawnPeriod() - (( gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.TimeBeforeSpawnContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.TimeBeforeSpawnContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__ObjectSpawner.SpawnTimer"));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1780,6 +1801,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1875,6 +1897,7 @@ gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.MaxQuantityCo
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxQuantity();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1971,6 +1994,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMaxQuantity(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2070,6 +2094,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2169,6 +2194,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setUnlimitedCapacity(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2184,6 +2210,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setUnlimitedCapacity(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2280,6 +2307,7 @@ gdjs.evtsExt__ObjectSpawner__ObjectSpawner.ObjectSpawner.prototype.SpawnerCapaci
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpawnerCapacity();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2376,6 +2404,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpawnerCapacity(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2475,6 +2504,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2574,6 +2604,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setRandomPosition(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2589,6 +2620,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setRandomPosition(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }

@@ -17,6 +17,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.eventsList0 = function(runtim
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getChild(eventsFunctionContext.getArgument("ControllerIdentifier")).getChild("Joystick").getChild(eventsFunctionContext.getArgument("JoystickIdentifier")).getChild("Angle").getAsNumber();}
+elseEventsChainSatisfied = true;
 }
 
 }

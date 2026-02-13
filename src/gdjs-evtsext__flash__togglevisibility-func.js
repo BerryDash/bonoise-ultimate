@@ -23,6 +23,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__
     gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].setVariableBoolean(gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].getVariables().get("__Flash_VisibilityToggled"), false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -52,6 +53,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].setVariableBoolean(gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].getVariables().get("__Flash_VisibilityToggled"), true);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -88,6 +90,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__Flash__ToggleVisibility.GDObjectObjects1[i].hide(false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }

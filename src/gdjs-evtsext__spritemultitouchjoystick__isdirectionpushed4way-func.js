@@ -30,6 +30,7 @@ isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__IsAngleIn4WayDirecti
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }

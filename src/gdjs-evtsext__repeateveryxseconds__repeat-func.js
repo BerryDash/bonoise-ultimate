@@ -22,6 +22,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getScene().getVariables().get("__RepeatEveryXSeconds").getChild("Repetitions").getChild(eventsFunctionContext.getArgument("TimerName")).setNumber(0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -46,6 +47,7 @@ if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().get("__RepeatEveryXSeconds").getChild("Repetitions").getChild(eventsFunctionContext.getArgument("TimerName")).add(1);
 }
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }

@@ -18,6 +18,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getChild(eventsFunctionContext.getArgument("ControllerIdentifier")).getChild("Buttons").getChild(eventsFunctionContext.getArgument("Button")).getChild("State").setString(eventsFunctionContext.getArgument("ButtonState"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

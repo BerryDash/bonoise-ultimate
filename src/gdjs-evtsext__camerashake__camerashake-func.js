@@ -21,6 +21,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).setNumber(1 / eventsFunctionContext.getArgument("ShakePeriod"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -36,6 +37,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).setNumber(1 / 0.08);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -52,6 +54,7 @@ let isConditionTrue_0 = false;
 }
 {gdjs.evtsExt__CameraShake__SetLayerShakable.func(runtimeScene, true, eventsFunctionContext.getArgument("NewLayer"), eventsFunctionContext);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -83,6 +86,7 @@ let isConditionTrue_0 = false;
 
 { //Subevents
 gdjs.evtsExt__CameraShake__CameraShake.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -105,6 +109,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).setNumber(1234567890);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -127,6 +132,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).setNumber(0.5);
 }
+elseEventsChainSatisfied = true;
 }
 
 }

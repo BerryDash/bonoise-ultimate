@@ -2,11 +2,11 @@
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton || {};
 
 /**
- * Object generated from Button (panel sprite)
+ * Object generated from Labeled button
  */
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton = class PanelSpriteButton extends gdjs.CustomRuntimeObject2D {
-  constructor(parentInstanceContainer, objectData) {
-    super(parentInstanceContainer, objectData);
+  constructor(parentInstanceContainer, objectData, instanceData) {
+    super(parentInstanceContainer, objectData, instanceData);
     this._parentInstanceContainer = parentInstanceContainer;
 
     this._onceTriggers = new gdjs.OnceTriggers();
@@ -154,6 +154,7 @@ for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpr
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDBitmapLabelObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(eventsFunctionContext.getObjects("Object")[0]._getLabelText());
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -312,6 +313,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDObjectObjects1[i].SetLabelOffset(eventsFunctionContext.getObjects("Object")[0]._getPressedLabelOffsetY(), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -331,6 +333,7 @@ for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpr
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onHotReloadingContext.GDBitmapLabelObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(eventsFunctionContext.getObjects("Object")[0]._getLabelText());
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -505,6 +508,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Tween")).addObjectOpacityTween2("Fadeout", 0, "linear", eventsFunctionContext.getObjects("Object")[0]._getHoveredFadeOutDuration(), false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -523,12 +527,38 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Hovered"), gdjs.evtsExt__PanelS
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2[i].hide();
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
 
 
 };gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0]._getHoveredFadeOutDuration() > 0);
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2 */
+{for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2.length ;i < len;++i) {
+    gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Tween")).removeTween("Fadeout");
+}
+}
+{for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2.length ;i < len;++i) {
+    gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Opacity")).setOpacity(255);
+}
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+};gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -553,7 +583,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22195932);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22531892);
 }
 }
 if (isConditionTrue_0) {
@@ -575,6 +605,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Pressed"), gdjs.evtsExt__PanelS
 
 { //Subevents
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -604,6 +635,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Opacity")).setOpacity(255);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -625,7 +657,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22201308);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22537356);
 }
 }
 if (isConditionTrue_0) {
@@ -649,14 +681,10 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Pressed"), gdjs.evtsExt__PanelS
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects2[i].hide();
 }
 }
-{for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Tween")).removeTween("Fadeout");
-}
-}
-{for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2.length ;i < len;++i) {
-    gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDHoveredObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Opacity")).setOpacity(255);
-}
-}
+
+{ //Subevents
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -678,7 +706,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22203668);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22540444);
 }
 }
 if (isConditionTrue_0) {
@@ -702,6 +730,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Pressed"), gdjs.evtsExt__PanelS
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects2[i].hide(false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -723,7 +752,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22205428);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22542492);
 }
 }
 if (isConditionTrue_0) {
@@ -747,17 +776,18 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Pressed"), gdjs.evtsExt__PanelS
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDPressedObjects1[i].hide();
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
 
 
-};gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList3 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList1(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList2(runtimeScene, eventsFunctionContext);
 }
 
 
@@ -870,7 +900,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.d
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDBitmapLabelObjects3.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDBitmapLabelObjects4.length = 0;
 
-gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList2(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.eventsList3(runtimeScene, eventsFunctionContext);
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects1.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = 0;
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects3.length = 0;
@@ -933,6 +963,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsIdleContext.GDIdleObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1086,6 +1117,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsClickedContext.GDIdleObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1239,6 +1271,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsHoveredContext.GDIdleObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1392,6 +1425,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsFocusedContext.GDIdleObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1545,6 +1579,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsPressedContext.GDIdleObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1696,6 +1731,7 @@ for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpr
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextContext.GDBitmapLabelObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(eventsFunctionContext.getArgument("Value"));
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1848,6 +1884,7 @@ for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpr
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.SetLabelTextOpContext.GDBitmapLabelObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText(eventsFunctionContext.getArgument("Value"));
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1994,6 +2031,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("BitmapLabel"), gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDBitmapLabelObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("Label"), gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDLabelObjects1);
 {eventsFunctionContext.returnValue = (( gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDBitmapLabelObjects1.length === 0 ) ? (( gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDLabelObjects1.length === 0 ) ? "" :gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDLabelObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Text")).getText()) :gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.LabelTextContext.GDBitmapLabelObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Text")).getText());}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2144,6 +2182,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Idle"), gdjs.evtsExt__PanelSpri
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDIdleObjects1[i].activateBehavior(eventsFunctionContext.getBehaviorName("ButtonFSM"), true);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2162,6 +2201,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Idle"), gdjs.evtsExt__PanelSpri
     gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.ActivateContext.GDIdleObjects1[i].activateBehavior(eventsFunctionContext.getBehaviorName("ButtonFSM"), false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2316,6 +2356,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.IsActivatedContext.GDIdleObjects1.length = k;
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2459,6 +2500,7 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.L
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0]._getLabelOffset();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -2612,6 +2654,7 @@ for(var i = 0, len = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpr
 }
 {eventsFunctionContext.getObjects("Object")[0]._setLabelOffset(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }

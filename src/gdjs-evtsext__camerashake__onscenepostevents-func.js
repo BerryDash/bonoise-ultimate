@@ -20,6 +20,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(eventsFunctionCon
 if (isConditionTrue_0) {
 {gdjs.evtsExt__CameraShake__SetFrequency.func(runtimeScene, eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("Frequency").getAsNumber(), "", eventsFunctionContext);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -34,6 +35,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(eventsFunctionCon
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("AmplitudeX").getAsNumber());
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -48,6 +50,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(eventsFunctionCon
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(1).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("AmplitudeY").getAsNumber());
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -62,6 +65,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(eventsFunctionCon
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(2).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("AmplitudeAngle").getAsNumber());
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -76,6 +80,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(eventsFunctionCon
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(3).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(7).getChild("AmplitudeZoom").getAsNumber());
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -100,6 +105,7 @@ if (isConditionTrue_0) {
 }
 {gdjs.evtTools.camera.setCameraX(runtimeScene, gdjs.evtTools.camera.getCameraX(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0) + (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaX").getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -117,6 +123,7 @@ if (isConditionTrue_0) {
 }
 {gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0) + (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaY").getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -134,6 +141,7 @@ if (isConditionTrue_0) {
 }
 {gdjs.evtTools.camera.setCameraRotation(runtimeScene, gdjs.evtTools.camera.getCameraRotation(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0) + (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaAngle").getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -151,6 +159,7 @@ if (isConditionTrue_0) {
 }
 {gdjs.evtTools.camera.setCameraZoom(runtimeScene, gdjs.evtTools.camera.getCameraZoom(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0) * eventsFunctionContext.sceneVariablesForExtension.getFromIndex(6).getChild(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString()).getChild("CameraDeltaZoom").getAsNumber(), eventsFunctionContext.localVariables[0].getFromIndex(5).getAsString(), 0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -165,6 +174,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.localVariables[0].getFromIndex(5).setString(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(8).getAsString());
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -180,6 +190,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(5).setString("");
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -218,6 +229,7 @@ let isConditionTrue_0 = false;
 
 { //Subevents
 gdjs.evtsExt__CameraShake__onScenePostEvents.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -240,6 +252,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(4).setNumber(gdjs.evtTools.common.clamp(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber() / eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber(), 0, 1));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -255,6 +268,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(4).setNumber(gdjs.evtTools.common.clamp((eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() - eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).getAsNumber()) / eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber(), 0, 1));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -351,6 +365,7 @@ let isConditionTrue_0 = false;
 
 { //Subevents
 gdjs.evtsExt__CameraShake__onScenePostEvents.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 eventsFunctionContext.localVariables.pop();
 
@@ -373,6 +388,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(9).add(gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -388,6 +404,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__CameraShake__onScenePostEvents.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }

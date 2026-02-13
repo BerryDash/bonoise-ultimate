@@ -20,6 +20,7 @@ let isConditionTrue_0 = false;
 }
 {gdjs.evtTools.variable.variableRemoveChild(runtimeScene.getScene().getVariables().get("__RepeatEveryXSeconds").getChild("Repetitions"), eventsFunctionContext.getArgument("TimerName"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

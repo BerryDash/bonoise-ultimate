@@ -28,6 +28,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(Math.min(eventsFunctionContext.getArgument("TargetedSpeed"), eventsFunctionContext.getArgument("CurrentSpeed") + eventsFunctionContext.getArgument("Acceleration") * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -48,6 +49,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).sub(eventsFunctionContext.getArgument("Acceleration") * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -70,6 +72,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(Math.max(eventsFunctionContext.getArgument("TargetedSpeed"), eventsFunctionContext.getArgument("CurrentSpeed") - Math.max(eventsFunctionContext.getArgument("Acceleration"), eventsFunctionContext.getArgument("Deceleration")) * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -94,6 +97,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(Math.max(eventsFunctionContext.getArgument("TargetedSpeed"), eventsFunctionContext.getArgument("CurrentSpeed") - eventsFunctionContext.getArgument("Acceleration") * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -114,6 +118,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).add(eventsFunctionContext.getArgument("Acceleration") * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -136,6 +141,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(Math.min(eventsFunctionContext.getArgument("TargetedSpeed"), eventsFunctionContext.getArgument("CurrentSpeed") + Math.max(eventsFunctionContext.getArgument("Acceleration"), eventsFunctionContext.getArgument("Deceleration")) * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -153,6 +159,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(Math.min(0, eventsFunctionContext.getArgument("CurrentSpeed") + eventsFunctionContext.getArgument("Acceleration") * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -168,6 +175,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setNumber(Math.max(0, eventsFunctionContext.getArgument("CurrentSpeed") - eventsFunctionContext.getArgument("Acceleration") * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -186,6 +194,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -202,6 +211,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -218,6 +228,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -229,6 +240,7 @@ gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed.eventsList2(runtimeScen
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = gdjs.evtTools.common.clamp(eventsFunctionContext.localVariables[0].getFromIndex(0).getAsNumber(), -(eventsFunctionContext.getArgument("SpeedMax")), eventsFunctionContext.getArgument("SpeedMax"));}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -255,6 +267,7 @@ let isConditionTrue_0 = false;
 
 { //Subevents
 gdjs.evtsExt__SpriteMultitouchJoystick__AcceleratedSpeed.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 eventsFunctionContext.localVariables.pop();
 

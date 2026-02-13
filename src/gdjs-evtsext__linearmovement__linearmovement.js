@@ -21,12 +21,12 @@ gdjs.evtsExt__LinearMovement__LinearMovement.LinearMovement = class LinearMoveme
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.SpeedX !== newBehaviorData.SpeedX)
-      this._behaviorData.SpeedX = newBehaviorData.SpeedX;
-    if (oldBehaviorData.SpeedY !== newBehaviorData.SpeedY)
-      this._behaviorData.SpeedY = newBehaviorData.SpeedY;
+    if (behaviorOverriding.SpeedX !== undefined)
+      this._behaviorData.SpeedX = behaviorOverriding.SpeedX;
+    if (behaviorOverriding.SpeedY !== undefined)
+      this._behaviorData.SpeedY = behaviorOverriding.SpeedY;
 
     return true;
   }
@@ -110,6 +110,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__LinearM
     gdjs.evtsExt__LinearMovement__LinearMovement.LinearMovement.prototype.doStepPreEventsContext.GDObjectObjects1[i].addForce(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeedX(), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeedY(), 0);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -205,6 +206,7 @@ gdjs.evtsExt__LinearMovement__LinearMovement.LinearMovement.prototype.SpeedXCont
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeedX();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -301,6 +303,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeedX(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -397,6 +400,7 @@ gdjs.evtsExt__LinearMovement__LinearMovement.LinearMovement.prototype.SpeedYCont
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSpeedY();}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -493,6 +497,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setSpeedY(eventsFunctionContext.getArgument("Value"))
 }
+elseEventsChainSatisfied = true;
 }
 
 }

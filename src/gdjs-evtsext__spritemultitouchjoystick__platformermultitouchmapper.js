@@ -23,16 +23,16 @@ gdjs.evtsExt__SpriteMultitouchJoystick__PlatformerMultitouchMapper.PlatformerMul
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.Property !== newBehaviorData.Property)
-      this._behaviorData.Property = newBehaviorData.Property;
-    if (oldBehaviorData.ControllerIdentifier !== newBehaviorData.ControllerIdentifier)
-      this._behaviorData.ControllerIdentifier = newBehaviorData.ControllerIdentifier;
-    if (oldBehaviorData.JoystickIdentifier !== newBehaviorData.JoystickIdentifier)
-      this._behaviorData.JoystickIdentifier = newBehaviorData.JoystickIdentifier;
-    if (oldBehaviorData.JumpButton !== newBehaviorData.JumpButton)
-      this._behaviorData.JumpButton = newBehaviorData.JumpButton;
+    if (behaviorOverriding.Property !== undefined)
+      this._behaviorData.Property = behaviorOverriding.Property;
+    if (behaviorOverriding.ControllerIdentifier !== undefined)
+      this._behaviorData.ControllerIdentifier = behaviorOverriding.ControllerIdentifier;
+    if (behaviorOverriding.JoystickIdentifier !== undefined)
+      this._behaviorData.JoystickIdentifier = behaviorOverriding.JoystickIdentifier;
+    if (behaviorOverriding.JumpButton !== undefined)
+      this._behaviorData.JumpButton = behaviorOverriding.JumpButton;
 
     return true;
   }
@@ -136,6 +136,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__PlatformerMultitouchMapper.PlatformerMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Property")).simulateLeftKey();
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -153,6 +154,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__PlatformerMultitouchMapper.PlatformerMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Property")).simulateRightKey();
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -174,6 +176,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__PlatformerMultitouchMapper.PlatformerMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Property")).simulateLadderKey();
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -191,6 +194,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__PlatformerMultitouchMapper.PlatformerMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Property")).simulateDownKey();
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -208,6 +212,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SpriteM
     gdjs.evtsExt__SpriteMultitouchJoystick__PlatformerMultitouchMapper.PlatformerMultitouchMapper.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Property")).simulateJumpKey();
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }

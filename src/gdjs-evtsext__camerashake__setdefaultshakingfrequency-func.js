@@ -18,6 +18,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).setNumber(eventsFunctionContext.getArgument("Frequency"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

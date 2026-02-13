@@ -24,6 +24,7 @@ let isConditionTrue_0 = false;
 }
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).setNumber(eventsFunctionContext.getArgument("NewStopEaseDuration"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -41,6 +42,7 @@ if (isConditionTrue_0) {
 }
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).setNumber(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber() * eventsFunctionContext.sceneVariablesForExtension.getFromIndex(5).getAsNumber() / (eventsFunctionContext.sceneVariablesForExtension.getFromIndex(10).getAsNumber() + eventsFunctionContext.sceneVariablesForExtension.getFromIndex(11).getAsNumber()));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

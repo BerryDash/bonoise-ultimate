@@ -21,6 +21,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.localVariables[0].getFromIndex(0).setString("");
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -36,6 +37,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraX(runtimeScene, gdjs.evtTools.camera.getCameraX(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0) - (eventsFunctionContext.localVariables[0].getFromIndex(1).getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -51,6 +53,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0) - (eventsFunctionContext.localVariables[0].getFromIndex(2).getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -66,6 +69,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraRotation(runtimeScene, gdjs.evtTools.camera.getCameraRotation(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0) - (eventsFunctionContext.localVariables[0].getFromIndex(3).getAsNumber()), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -81,6 +85,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraZoom(runtimeScene, gdjs.evtTools.camera.getCameraZoom(runtimeScene, eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0) / eventsFunctionContext.localVariables[0].getFromIndex(4).getAsNumber(), eventsFunctionContext.localVariables[0].getFromIndex(0).getAsString(), 0);
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -184,6 +189,7 @@ let isConditionTrue_0 = false;
 
 { //Subevents
 gdjs.evtsExt__CameraShake__onScenePreEvents.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 eventsFunctionContext.localVariables.pop();
 
@@ -209,6 +215,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__CameraShake__onScenePreEvents.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }

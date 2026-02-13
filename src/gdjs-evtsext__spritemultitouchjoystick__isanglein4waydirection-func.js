@@ -24,6 +24,7 @@ isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo4Way.func(run
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -42,6 +43,7 @@ isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo4Way.func(run
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -60,6 +62,7 @@ isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo4Way.func(run
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -78,6 +81,7 @@ isConditionTrue_0 = gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo4Way.func(run
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }

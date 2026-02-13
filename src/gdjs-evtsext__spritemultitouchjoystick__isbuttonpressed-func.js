@@ -37,6 +37,7 @@ if(isConditionTrue_1) {
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }

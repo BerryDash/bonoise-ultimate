@@ -34,38 +34,38 @@ gdjs.evtsExt__SmoothCamera__SmoothPlatformerCamera.SmoothPlatformerCamera = clas
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.PlatformerCharacter !== newBehaviorData.PlatformerCharacter)
-      this._behaviorData.PlatformerCharacter = newBehaviorData.PlatformerCharacter;
-    if (oldBehaviorData.SmoothCamera !== newBehaviorData.SmoothCamera)
-      this._behaviorData.SmoothCamera = newBehaviorData.SmoothCamera;
-    if (oldBehaviorData.JumpOriginY !== newBehaviorData.JumpOriginY)
-      this._behaviorData.JumpOriginY = newBehaviorData.JumpOriginY;
-    if (oldBehaviorData.AirFollowFreeAreaTop !== newBehaviorData.AirFollowFreeAreaTop)
-      this._behaviorData.AirFollowFreeAreaTop = newBehaviorData.AirFollowFreeAreaTop;
-    if (oldBehaviorData.AirFollowFreeAreaBottom !== newBehaviorData.AirFollowFreeAreaBottom)
-      this._behaviorData.AirFollowFreeAreaBottom = newBehaviorData.AirFollowFreeAreaBottom;
-    if (oldBehaviorData.FloorFollowFreeAreaTop !== newBehaviorData.FloorFollowFreeAreaTop)
-      this._behaviorData.FloorFollowFreeAreaTop = newBehaviorData.FloorFollowFreeAreaTop;
-    if (oldBehaviorData.FloorFollowFreeAreaBottom !== newBehaviorData.FloorFollowFreeAreaBottom)
-      this._behaviorData.FloorFollowFreeAreaBottom = newBehaviorData.FloorFollowFreeAreaBottom;
-    if (oldBehaviorData.AirUpwardSpeed !== newBehaviorData.AirUpwardSpeed)
-      this._behaviorData.AirUpwardSpeed = newBehaviorData.AirUpwardSpeed;
-    if (oldBehaviorData.AirDownwardSpeed !== newBehaviorData.AirDownwardSpeed)
-      this._behaviorData.AirDownwardSpeed = newBehaviorData.AirDownwardSpeed;
-    if (oldBehaviorData.FloorUpwardSpeed !== newBehaviorData.FloorUpwardSpeed)
-      this._behaviorData.FloorUpwardSpeed = newBehaviorData.FloorUpwardSpeed;
-    if (oldBehaviorData.FloorDownwardSpeed !== newBehaviorData.FloorDownwardSpeed)
-      this._behaviorData.FloorDownwardSpeed = newBehaviorData.FloorDownwardSpeed;
-    if (oldBehaviorData.AirUpwardSpeedMax !== newBehaviorData.AirUpwardSpeedMax)
-      this._behaviorData.AirUpwardSpeedMax = newBehaviorData.AirUpwardSpeedMax;
-    if (oldBehaviorData.AirDownwardSpeedMax !== newBehaviorData.AirDownwardSpeedMax)
-      this._behaviorData.AirDownwardSpeedMax = newBehaviorData.AirDownwardSpeedMax;
-    if (oldBehaviorData.FloorUpwardSpeedMax !== newBehaviorData.FloorUpwardSpeedMax)
-      this._behaviorData.FloorUpwardSpeedMax = newBehaviorData.FloorUpwardSpeedMax;
-    if (oldBehaviorData.FloorDownwardSpeedMax !== newBehaviorData.FloorDownwardSpeedMax)
-      this._behaviorData.FloorDownwardSpeedMax = newBehaviorData.FloorDownwardSpeedMax;
+    if (behaviorOverriding.PlatformerCharacter !== undefined)
+      this._behaviorData.PlatformerCharacter = behaviorOverriding.PlatformerCharacter;
+    if (behaviorOverriding.SmoothCamera !== undefined)
+      this._behaviorData.SmoothCamera = behaviorOverriding.SmoothCamera;
+    if (behaviorOverriding.JumpOriginY !== undefined)
+      this._behaviorData.JumpOriginY = behaviorOverriding.JumpOriginY;
+    if (behaviorOverriding.AirFollowFreeAreaTop !== undefined)
+      this._behaviorData.AirFollowFreeAreaTop = behaviorOverriding.AirFollowFreeAreaTop;
+    if (behaviorOverriding.AirFollowFreeAreaBottom !== undefined)
+      this._behaviorData.AirFollowFreeAreaBottom = behaviorOverriding.AirFollowFreeAreaBottom;
+    if (behaviorOverriding.FloorFollowFreeAreaTop !== undefined)
+      this._behaviorData.FloorFollowFreeAreaTop = behaviorOverriding.FloorFollowFreeAreaTop;
+    if (behaviorOverriding.FloorFollowFreeAreaBottom !== undefined)
+      this._behaviorData.FloorFollowFreeAreaBottom = behaviorOverriding.FloorFollowFreeAreaBottom;
+    if (behaviorOverriding.AirUpwardSpeed !== undefined)
+      this._behaviorData.AirUpwardSpeed = behaviorOverriding.AirUpwardSpeed;
+    if (behaviorOverriding.AirDownwardSpeed !== undefined)
+      this._behaviorData.AirDownwardSpeed = behaviorOverriding.AirDownwardSpeed;
+    if (behaviorOverriding.FloorUpwardSpeed !== undefined)
+      this._behaviorData.FloorUpwardSpeed = behaviorOverriding.FloorUpwardSpeed;
+    if (behaviorOverriding.FloorDownwardSpeed !== undefined)
+      this._behaviorData.FloorDownwardSpeed = behaviorOverriding.FloorDownwardSpeed;
+    if (behaviorOverriding.AirUpwardSpeedMax !== undefined)
+      this._behaviorData.AirUpwardSpeedMax = behaviorOverriding.AirUpwardSpeedMax;
+    if (behaviorOverriding.AirDownwardSpeedMax !== undefined)
+      this._behaviorData.AirDownwardSpeedMax = behaviorOverriding.AirDownwardSpeedMax;
+    if (behaviorOverriding.FloorUpwardSpeedMax !== undefined)
+      this._behaviorData.FloorUpwardSpeedMax = behaviorOverriding.FloorUpwardSpeedMax;
+    if (behaviorOverriding.FloorDownwardSpeedMax !== undefined)
+      this._behaviorData.FloorDownwardSpeedMax = behaviorOverriding.FloorDownwardSpeedMax;
 
     return true;
   }
@@ -309,6 +309,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__SmoothCamera__SmoothPlatformerCamera.SmoothPlatformerCamera.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("SmoothCamera")).SetDownwardSpeedMax(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFloorDownwardSpeedMax(), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -390,6 +391,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__SmoothCamera__SmoothPlatformerCamera.SmoothPlatformerCamera.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("SmoothCamera")).SetDownwardSpeedMax(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAirDownwardSpeedMax(), eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }

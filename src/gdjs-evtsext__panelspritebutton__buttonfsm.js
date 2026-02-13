@@ -25,20 +25,20 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM = class ButtonFSM extends g
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.ShouldCheckHovering !== newBehaviorData.ShouldCheckHovering)
-      this._behaviorData.ShouldCheckHovering = newBehaviorData.ShouldCheckHovering;
-    if (oldBehaviorData.State !== newBehaviorData.State)
-      this._behaviorData.State = newBehaviorData.State;
-    if (oldBehaviorData.TouchId !== newBehaviorData.TouchId)
-      this._behaviorData.TouchId = newBehaviorData.TouchId;
-    if (oldBehaviorData.TouchIsInside !== newBehaviorData.TouchIsInside)
-      this._behaviorData.TouchIsInside = newBehaviorData.TouchIsInside;
-    if (oldBehaviorData.MouseIsInside !== newBehaviorData.MouseIsInside)
-      this._behaviorData.MouseIsInside = newBehaviorData.MouseIsInside;
-    if (oldBehaviorData.Index !== newBehaviorData.Index)
-      this._behaviorData.Index = newBehaviorData.Index;
+    if (behaviorOverriding.ShouldCheckHovering !== undefined)
+      this._behaviorData.ShouldCheckHovering = behaviorOverriding.ShouldCheckHovering;
+    if (behaviorOverriding.State !== undefined)
+      this._behaviorData.State = behaviorOverriding.State;
+    if (behaviorOverriding.TouchId !== undefined)
+      this._behaviorData.TouchId = behaviorOverriding.TouchId;
+    if (behaviorOverriding.TouchIsInside !== undefined)
+      this._behaviorData.TouchIsInside = behaviorOverriding.TouchIsInside;
+    if (behaviorOverriding.MouseIsInside !== undefined)
+      this._behaviorData.MouseIsInside = behaviorOverriding.MouseIsInside;
+    if (behaviorOverriding.Index !== undefined)
+      this._behaviorData.Index = behaviorOverriding.Index;
 
     return true;
   }
@@ -176,6 +176,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMouseIsInside(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -203,6 +204,7 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMouseIsInside(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -222,6 +224,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchIsInside(false)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -249,6 +252,7 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchIsInside(true)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -310,6 +314,7 @@ gdjs.copyArray(gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.do
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("PressedInside")
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -339,6 +344,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -351,6 +357,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIndex(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIndex()+1)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -390,6 +397,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -412,6 +420,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Idle")
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -432,6 +441,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Hovered")
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -452,6 +462,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("PressedOutside")
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -472,6 +483,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("PressedInside")
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -489,6 +501,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Validated")
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -509,6 +522,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Idle")
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -528,6 +542,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList6(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -552,6 +567,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setState("Idle")
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -606,6 +622,7 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList9(runtimeScene, eventsFunctionContext);} //End of subevents
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -711,6 +728,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSp
     gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.onDeActivateContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).ResetState(eventsFunctionContext);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -809,6 +827,7 @@ let isConditionTrue_0 = false;
 }
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setTouchId(0)
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -907,6 +926,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1005,6 +1025,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1103,6 +1124,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1201,6 +1223,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1215,6 +1238,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1313,6 +1337,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1411,6 +1436,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.returnValue = true;}
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -1506,6 +1532,7 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.TouchIdContext.ev
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getTouchId();}
+elseEventsChainSatisfied = true;
 }
 
 }

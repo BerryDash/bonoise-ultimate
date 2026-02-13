@@ -18,6 +18,7 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(4).setNumber(eventsFunctionContext.getArgument("AmplitudeZoom"));
 }
+elseEventsChainSatisfied = true;
 }
 
 }

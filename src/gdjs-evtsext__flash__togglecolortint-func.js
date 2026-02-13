@@ -28,6 +28,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__
     gdjs.evtsExt__Flash__ToggleColorTint.GDObjectObjects2[i].setVariableBoolean(gdjs.evtsExt__Flash__ToggleColorTint.GDObjectObjects2[i].getVariables().get("__Flash_ColorTintToggled"), false);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -50,6 +51,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__Flash__ToggleColorTint.GDObjectObjects2[i].setVariableBoolean(gdjs.evtsExt__Flash__ToggleColorTint.GDObjectObjects2[i].getVariables().get("__Flash_ColorTintToggled"), true);
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
@@ -79,6 +81,7 @@ if (isConditionTrue_0) {
     gdjs.evtsExt__Flash__ToggleColorTint.GDObjectObjects1[i].setColor((gdjs.RuntimeObject.getVariableString(gdjs.evtsExt__Flash__ToggleColorTint.GDObjectObjects1[i].getVariables().get("__FlashColor_StartingTint"))));
 }
 }
+elseEventsChainSatisfied = true;
 }
 
 }
